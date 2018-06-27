@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-  YoUGoal is a soccer player and team rating app toolkit to orgqnize and rate different famous and important soccer player and team around the world.
+  YoUGoal is a soccer player and team rating app toolkit used to look through and rate different famous and important soccer players and teams from around the world.  Users ratings of individual players and teams will be compared to the current FIFA ratings of the players and teams.  
 
 ## API
    - ReactJS framework
