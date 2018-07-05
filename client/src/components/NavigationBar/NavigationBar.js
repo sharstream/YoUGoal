@@ -18,12 +18,12 @@ export default () => {
 				    <a className="navbar-brand" href="#">YuOGoal Sport Try</a>
 				  </div>
 				  <div className="navbar-brand">
-				  	
+
 				    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 				      <span className="navbar-toggler-icon"></span>
 				    </button>
 				    <ul className="nav navbar-nav">
-				      <li className="active"><Link to="/" className="navbar-brand">Home</Link></li>
+				      <li className="active"><a href="#">Home</a></li>
 				    </ul>
 				    <form className="navbar-form navbar-left" href="/login">
 				      <div className="form-group">
@@ -35,15 +35,15 @@ export default () => {
 				  <div className="collapse navbar-collapse">
 				    <ul className="nav navbar-nav navbar-right">
 				      <li>
-				      	<Link to="/signup" className="navbar-brand">
+				      	<a href="#">
 				      		<span className="glyphicon glyphicon-user"></span> Sign Up
-		      			</Link>
+		      			</a>
 		      		  </li>
 				      <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
 				    </ul>
 				  </div>
 				</div>
-			</nav> 
+			</nav>
 		</div>
 	);
 }

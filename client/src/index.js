@@ -5,6 +5,6 @@ import App from './components/App';
 
 import routes from "./routes";
 
-render(<Router history={BrowserRouter} routes={routes} />, document.getElementById('root'));
+// render(<Router routes={routes} />, document.getElementById('root'));
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
