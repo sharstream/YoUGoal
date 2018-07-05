@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 export default () => {
 	return (
@@ -22,7 +23,7 @@ export default () => {
 				      <span className="navbar-toggler-icon"></span>
 				    </button>
 				    <ul className="nav navbar-nav">
-				      <li className="active"><a href="#">Home</a></li>
+				      <li className="active"><Link to="/" className="navbar-brand">Home</Link></li>
 				    </ul>
 				    <form className="navbar-form navbar-left" href="/login">
 				      <div className="form-group">
@@ -33,7 +34,11 @@ export default () => {
 				  </div>
 				  <div className="collapse navbar-collapse">
 				    <ul className="nav navbar-nav navbar-right">
-				      <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				      <li>
+				      	<Link to="/signup" className="navbar-brand">
+				      		<span className="glyphicon glyphicon-user"></span> Sign Up
+		      			</Link>
+		      		  </li>
 				      <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
 				    </ul>
 				  </div>

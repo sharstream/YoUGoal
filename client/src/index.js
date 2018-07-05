@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
-import { Router, browserHistory } from "react-router";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import App from './components/App';
 
 import routes from "./routes";
 
-// render(<Router history={browserHistory} routes={routes} />, document.getElementById('root'));
+render(<Router history={BrowserRouter} routes={routes} />, document.getElementById('root'));
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
