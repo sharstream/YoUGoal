@@ -15,7 +15,7 @@ export default () => {
 			<nav className="navbar navbar-default">
 				<div className="container-fluid">
 				  <div className="navbar-header">
-				    <a className="navbar-brand" href="#">YuOGoal Sport Try</a>
+				    <a className="navbar-brand" href="#">YoUGoal Sport Try</a>
 				  </div>
 				  <div className="navbar-brand">
 				  	
