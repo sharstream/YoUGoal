@@ -39,6 +39,6 @@ export default {
     ]
   },
   resolve: {
-    extensions: ["*", ".js", ".json", ".jsx", ".css", ".svg"]
+    extensions: ["*", ".js", ".json", ".jsx", ".css", ".svg", ".html"]
   }
 }
