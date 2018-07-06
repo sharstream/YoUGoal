@@ -6,11 +6,9 @@ import SignupPage from "../components/SignupPage";
 import ErrorBoundary from "../components/ErrorBoundary";
 
 export default (
-	<Router>
-		<ErrorBoundary>
-			<Route exact path="/" component={App}>
-				<Route exact path="/signup" component={SignupPage} />
-			</Route>
-		</ErrorBoundary>
-  </Router>
+	<ErrorBoundary>
+		<Route exact path="/" component={App}>
+			<Route exact path="/signup" component={SignupPage} />
+		</Route>
+	</ErrorBoundary>
 )

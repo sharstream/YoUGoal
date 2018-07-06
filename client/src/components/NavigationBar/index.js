@@ -1,2 +1,2 @@
-export * from "./NavigationBar";
-export * from "./NavInstance";
+export { default } from "./NavigationBar";
+// export * from "./NavInstance";

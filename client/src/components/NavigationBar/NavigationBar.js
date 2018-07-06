@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-export default () => {
+const NavigationBar = () => {
 	return (
 		<div className="pos-f-t">
 			<div className="collapse" id="navbarToggleExternalContent">
@@ -47,3 +47,5 @@ export default () => {
 		</div>
 	);
 }
+
+export default NavigationBar;
