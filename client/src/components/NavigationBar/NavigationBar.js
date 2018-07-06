@@ -7,9 +7,9 @@ export default () => {
 			<div className="collapse" id="navbarToggleExternalContent">
 		    <div className="bg-dark p-4">
 		      <h4 className="text-white">Collapsed content</h4>
-		      <span className="text-muted">Display Players Table</span>
-		      <span className="text-muted">Filter by Player</span>
-		      <span className="text-muted">Filter by Rankings</span>
+		      <span className="text-muted">Most Popular Players</span>
+		      <span className="text-muted">Most Popular Teams</span>
+		      <span className="text-muted"></span>
 		    </div>
 		  </div>
 			<nav className="navbar navbar-default">
