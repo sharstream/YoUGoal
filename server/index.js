@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 import bodyParser from "body-parser";
-// import mongoose from "mongoose";
+import mongoose from "mongoose";
 
 import webpack from "webpack";
 import webpackMiddleware from "webpack-dev-middleware";
@@ -25,6 +25,9 @@ app.use(bodyParser.json());
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 }
+
+//mongoConnector
+mongoose.connect(`mongodb://localhost/youGoal`);
 
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, "../client/public/index.html"));
