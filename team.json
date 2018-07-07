@@ -10,7 +10,7 @@
         "email": "auf@auf.org.uy",
         "founded": "1900",
         "clubColors": "Sky Blue / White / Black",
-        "venue": "Guangxi Sports Centre Stadium",
+        "venue": "Estadio Centenario",
         "lastUpdated": "2018-06-07T12:17:29Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"
     },
@@ -25,7 +25,7 @@
         "email": "info@dfb.de",
         "founded": "1900",
         "clubColors": "White / Black",
-        "venue": "",
+        "venue": "Olympiastadion Berlin",
         "lastUpdated": "2018-06-02T13:49:58Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"
     },
@@ -40,7 +40,7 @@
         "email": "rfef@rfef.es",
         "founded": "1909",
         "clubColors": "Red / Blue / Yellow",
-        "venue": "",
+        "venue": "Estadio Santiago Bernabéu",
         "lastUpdated": "2018-06-02T13:50:05Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
     },
@@ -55,7 +55,7 @@
         "email": "gerencia@afa.org.ar",
         "founded": "1893",
         "clubColors": "Sky Blue / White / Black",
-        "venue": "Estadio Alberto José Armando",
+        "venue": "Estadio Antonio Vespucio Libertia",
         "lastUpdated": "2018-06-07T12:17:30Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
     },
@@ -70,7 +70,7 @@
         "email": "cbf@cbf.com.br",
         "founded": "1914",
         "clubColors": "Yellow / Green / Blue",
-        "venue": "Anfield",
+        "venue": "Maracanã",
         "lastUpdated": "2018-06-07T12:17:31Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
     },
@@ -85,7 +85,7 @@
         "email": "info@fpf.pt",
         "founded": "1914",
         "clubColors": "Red / Green",
-        "venue": "",
+        "venue": "Estádio Nacional",
         "lastUpdated": "2018-06-02T13:50:11Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"
     },
@@ -100,7 +100,7 @@
         "email": "mary@jfa.or.jp",
         "founded": "1921",
         "clubColors": "Blue / White",
-        "venue": "Stade Maurice Dufrasne",
+        "venue": "New National Stadium",
         "lastUpdated": "2018-06-07T12:17:32Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"
     },
@@ -115,7 +115,7 @@
         "email": "femexfut@mpsnet.com.mx",
         "founded": "1927",
         "clubColors": "Green / White / Red",
-        "venue": "Levi's Stadium",
+        "venue": "Estadio Azteca",
         "lastUpdated": "2018-06-07T12:17:33Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
     },
@@ -130,7 +130,7 @@
         "email": "info@thefa.com",
         "founded": "1863",
         "clubColors": "White / Red / Navy Blue",
-        "venue": "",
+        "venue": "Wembley Stadium",
         "lastUpdated": "2018-06-02T13:50:18Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg"
     },
@@ -160,7 +160,7 @@
         "email": "webmaster@fff.fr",
         "founded": "1919",
         "clubColors": "Blue / White / Red",
-        "venue": "",
+        "venue": "Stade de France",
         "lastUpdated": "2018-06-02T13:50:24Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
     },
@@ -175,7 +175,7 @@
         "email": "",
         "founded": "1945",
         "clubColors": "Green / White",
-        "venue": "Rudolf-Tonn-Stadion",
+        "venue": "Abuja National Stadium",
         "lastUpdated": "2018-06-07T12:17:35Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
     },
@@ -190,7 +190,7 @@
         "email": "info@footballaustralia.com.au",
         "founded": "1961",
         "clubColors": "Gold / Green",
-        "venue": "NV Arena",
+        "venue": "nib Stadium",
         "lastUpdated": "2018-06-07T12:17:36Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"
     },
@@ -205,7 +205,7 @@
         "email": "office@fss.rs",
         "founded": "1919",
         "clubColors": "Red / Blue / White",
-        "venue": "Merkur Arena",
+        "venue": "Partizan Stadium",
         "lastUpdated": "2018-06-07T12:17:37Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg"
     },
@@ -220,7 +220,7 @@
         "email": "dbu@dbu.dk",
         "founded": "1889",
         "clubColors": "Red / White",
-        "venue": "",
+        "venue": "Parken Stadium",
         "lastUpdated": "2018-06-02T13:50:29Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"
     },
@@ -235,7 +235,7 @@
         "email": "svff@svenskfotboll.se",
         "founded": "1904",
         "clubColors": "Yellow / Blue",
-        "venue": "",
+        "venue": "Friends Arena",
         "lastUpdated": "2018-06-02T13:50:47Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg"
     },
@@ -265,7 +265,7 @@
         "email": "pzpn@pzpn.pl",
         "founded": "1919",
         "clubColors": "White / Red",
-        "venue": "Stadion Śląski",
+        "venue": "National Stadium Warsaw",
         "lastUpdated": "2018-06-07T12:17:39Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg"
     },
@@ -280,7 +280,7 @@
         "email": "info@hns-cff.hr",
         "founded": "1912",
         "clubColors": "Red / White / Blue",
-        "venue": "",
+        "venue": "Stadion Gradski vrt",
         "lastUpdated": "2018-06-07T12:17:40Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"
     },
@@ -295,7 +295,7 @@
         "email": "info@football-saudi.com",
         "founded": "1956",
         "clubColors": "White / Green",
-        "venue": "Kybunpark",
+        "venue": "King Abdullah Sports City",
         "lastUpdated": "2018-06-07T12:17:41Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
     },
@@ -325,7 +325,7 @@
         "email": "fsf@senegalfoot.sn",
         "founded": "1960",
         "clubColors": "White / Green",
-        "venue": "Stade Océane",
+        "venue": "Stade Léopold Sédar Senghor",
         "lastUpdated": "2018-06-07T12:17:43Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg"
     },
@@ -340,7 +340,7 @@
         "email": "urbsfa.kbvb@footbel.com",
         "founded": "1895",
         "clubColors": "Red / Black / Yellow",
-        "venue": "",
+        "venue": "King Baudouin Stadium",
         "lastUpdated": "2018-06-02T13:50:53Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_(civil).svg"
     },
@@ -355,7 +355,7 @@
         "email": "info@rfs.ru",
         "founded": "1912",
         "clubColors": "Red / White / Blue",
-        "venue": "",
+        "venue": "Luzhniki Stadium",
         "lastUpdated": "2018-06-02T13:50:58Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
     },
@@ -370,7 +370,7 @@
         "email": "contact@frmf.ma",
         "founded": "1955",
         "clubColors": "Red / Green",
-        "venue": "Stade de Genève",
+        "venue": "Grand Stade de Marrakech",
         "lastUpdated": "2018-06-07T12:17:44Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg"
     },
@@ -385,7 +385,7 @@
         "email": "info@colfutbol.org",
         "founded": "1924",
         "clubColors": "Yellow / Red / Blue",
-        "venue": "Craven Cottage",
+        "venue": "Estadio Metropolitano Roberto Meléndez",
         "lastUpdated": "2018-06-07T12:17:45Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
     },
@@ -400,7 +400,7 @@
         "email": "efa_football@hotmail.com",
         "founded": "1921",
         "clubColors": "Red / White / Black",
-        "venue": "Stadio Atleti Azzurri d'Italia",
+        "venue": "Cairo International Stadium",
         "lastUpdated": "2018-06-07T12:17:46Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg"
     },
@@ -415,7 +415,7 @@
         "email": "fepefutbol@fpf.org.pe",
         "founded": "1922",
         "clubColors": "White / Red",
-        "venue": "Estadio Nacional",
+        "venue": "Estadio Nacional del Perú",
         "lastUpdated": "2018-06-07T12:17:47Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
     },
@@ -445,7 +445,7 @@
         "email": "ksi@ksi.is",
         "founded": "1947",
         "clubColors": "Blue / White",
-        "venue": "",
+        "venue": "Laugardalsvöllur",
         "lastUpdated": "2018-06-02T13:51:21Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"
     },
@@ -475,7 +475,7 @@
         "email": "sfv.asf@football.ch",
         "founded": "1895",
         "clubColors": "Red / White",
-        "venue": "swissporarena",
+        "venue": "Stade de Suisse Wankdorf",
         "lastUpdated": "2018-06-07T12:17:58Z",
         "Flags": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Civil_Ensign_of_Switzerland_%28Pantone%29.svg/158px-Civil_Ensign_of_Switzerland_%28Pantone%29.svg.png"
     }
