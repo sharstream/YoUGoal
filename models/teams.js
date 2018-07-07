@@ -5,8 +5,12 @@ const Schema = mongoose.Schema;
 const teamSchema = new Schema({
   name: { type: String, required: true },
   players: [{ 
-    type: Schema.ObjectId,
-    ref: "Player" }],
+    name: name, 
+    position: position,
+    jerseyNumber: jerseyNumber,
+    dateOfBirth: dateOfBirth,
+    nationality: nationality,
+  }],
   tla: { type: String },
   venue: { type: String },
   address: { type: String },

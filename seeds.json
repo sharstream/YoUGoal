@@ -167,7 +167,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1986-06-16",
-                    "nationality": null,
+                    "nationality": "Uruguay",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -176,7 +176,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1989-05-29",
-                    "nationality": null,
+                    "nationality": "Uruguay",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -185,7 +185,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1983-03-25",
-                    "nationality": null,
+                    "nationality": "Uruguay",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -194,7 +194,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1995-12-28",
-                    "nationality": null,
+                    "nationality": "Uruguay",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -203,7 +203,7 @@
                     "position": "Left Midfield",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1985-09-30",
-                    "nationality": null,
+                    "nationality": "Uruguay",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -212,19 +212,10 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 10,
                     "dateOfBirth": "1994-06-01",
-                    "nationality": null,
+                    "nationality": "Uruguay",
                     "contractUntil": null,
                     "marketValue": null
-                },
-                {
-                    "name": "Jonathan Urretaviscaya",
-                    "position": "Right Wing",
-                    "jerseyNumber": null,
-                    "dateOfBirth": "1990-03-19",
-                    "nationality": null,
-                    "contractUntil": null,
-                    "marketValue": null
-            }],
+                }],
             
             "tla": "URY",
             "address": "Guayaybo 1531 Montevideo 11200",
@@ -876,7 +867,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1986-10-16",
-                    "nationality": null,
+                    "nationality": "Argentina",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -885,7 +876,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1986-02-10",
-                    "nationality": null,
+                    "nationality": "Argentina",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -894,7 +885,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1992-01-15",
-                    "nationality": null,
+                    "nationality": "Argentina",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -903,7 +894,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1996-01-21",
-                    "nationality": null,
+                    "nationality": "Argentina",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -1064,9 +1055,9 @@
                     "marketValue": null
                 },
                 {
-                    "name": "Cássio",
+                    "name": "Cássio Ramos",
                     "position": "Keeper",
-                    "jerseyNumber": 1,
+                    "jerseyNumber": 16,
                     "dateOfBirth": "1987-06-06",
                     "nationality": "Brazil",
                     "contractUntil": "2018-06-30",
@@ -1113,7 +1104,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1985-09-21",
-                    "nationality": null,
+                    "nationality": "Brazil",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1122,7 +1113,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1989-06-11",
-                    "nationality": null,
+                    "nationality": "Brazil",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1131,7 +1122,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1988-02-08",
-                    "nationality": null,
+                    "nationality": "Brazil",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -1341,7 +1332,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1981-11-27",
-                    "nationality": null,
+                    "nationality": "Portugal",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1350,7 +1341,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1986-02-05",
-                    "nationality": null,
+                    "nationality": "Portugal",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1359,7 +1350,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1983-09-26",
-                    "nationality": null,
+                    "nationality": "Portugal",
                     "contractUntil": null,
                     "marketValue": null
                 }  
@@ -1524,7 +1515,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1995-02-27",
-                    "nationality": null,
+                    "nationality": "Japan",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1533,7 +1524,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1986-05-12",
-                    "nationality": null,
+                    "nationality": "Japan",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1542,7 +1533,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1992-12-11",
-                    "nationality": null,
+                    "nationality": "Japan",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1551,7 +1542,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1987-05-11",
-                    "nationality": null,
+                    "nationality": "Japan",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1560,7 +1551,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1993-02-09",
-                    "nationality": null,
+                    "nationality": "Japan",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1569,7 +1560,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1994-10-24",
-                    "nationality": null,
+                    "nationality": "Japan",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1578,7 +1569,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1990-10-06",
-                    "nationality": null,
+                    "nationality": "Japan",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1587,7 +1578,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1993-01-23",
-                    "nationality": null,
+                    "nationality": "Japan",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -1741,36 +1732,27 @@
                 {
                     "name": "Alfredo Talavera",
                     "position": "Keeper",
-                    "jerseyNumber": 31,
+                    "jerseyNumber": 12,
                     "dateOfBirth": "1982-09-18",
-                    "nationality": null,
-                    "contractUntil": null,
-                    "marketValue": null
-                },
-                {
-                    "name": "Néstor Araujo",
-                    "position": "Centre-Back",
-                    "jerseyNumber": 2,
-                    "dateOfBirth": "1991-08-29",
-                    "nationality": null,
+                    "nationality": "Mexico",
                     "contractUntil": null,
                     "marketValue": null
                 },
                 {
                     "name": "Hugo Ayala",
                     "position": "Centre-Back",
-                    "jerseyNumber": 27,
+                    "jerseyNumber": 2,
                     "dateOfBirth": "1987-03-31",
-                    "nationality": null,
+                    "nationality": "Mexico",
                     "contractUntil": null,
                     "marketValue": null
                 },
                 {
                     "name": "Edson Álvarez",
                     "position": "Centre-Back",
-                    "jerseyNumber": 24,
+                    "jerseyNumber": 21,
                     "dateOfBirth": "1997-10-24",
-                    "nationality": null,
+                    "nationality": "Mexico",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1779,16 +1761,16 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1979-02-13",
-                    "nationality": null,
+                    "nationality": "Mexico",
                     "contractUntil": null,
                     "marketValue": null
                 },
                 {
                     "name": "Érick Gutiérrez",
                     "position": "Central Midfield",
-                    "jerseyNumber": 25,
+                    "jerseyNumber": 5,
                     "dateOfBirth": "1995-06-15",
-                    "nationality": null,
+                    "nationality": "Mexico",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1797,7 +1779,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1990-02-11",
-                    "nationality": null,
+                    "nationality": "Mexico",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1806,7 +1788,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1994-08-15",
-                    "nationality": null,
+                    "nationality": "Mexico",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1815,7 +1797,7 @@
                     "position": "Secondary Striker",
                     "jerseyNumber": 10,
                     "dateOfBirth": "1989-05-11",
-                    "nationality": null,
+                    "nationality": "Mexico",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -1824,7 +1806,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1984-01-12",
-                    "nationality": null,
+                    "nationality": "Mexico",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -2118,7 +2100,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1990-09-30",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2127,7 +2109,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1987-07-06",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2136,7 +2118,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1991-09-25",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2145,7 +2127,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1988-05-20",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2154,7 +2136,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1990-02-27",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2163,7 +2145,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1991-09-28",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2172,7 +2154,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1994-04-03",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2181,7 +2163,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1988-10-04",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2190,7 +2172,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1990-09-17",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2199,7 +2181,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1987-01-16",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2208,7 +2190,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1986-12-24",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2217,7 +2199,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1990-10-30",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2226,7 +2208,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1989-12-14",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2235,7 +2217,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1988-03-10",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2244,7 +2226,7 @@
                     "position": "Right Midfield",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1992-06-09",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2253,7 +2235,7 @@
                     "position": "Left Midfield",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1990-02-25",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2262,7 +2244,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1992-08-10",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2271,7 +2253,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1996-01-26",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2280,7 +2262,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1988-04-14",
-                    "nationality": null,
+                    "nationality": "Korea, South",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -2508,7 +2490,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1988-12-15",
-                    "nationality": null,
+                    "nationality": "France",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -2628,7 +2610,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1986-08-03",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2637,7 +2619,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1998-10-28",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2646,7 +2628,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1988-10-16",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2655,7 +2637,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1993-09-01",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2664,7 +2646,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1995-12-16",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2673,7 +2655,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1992-05-18",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2682,7 +2664,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 10,
                     "dateOfBirth": "1987-04-22",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2691,7 +2673,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1992-12-25",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2700,7 +2682,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1993-03-12",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2709,7 +2691,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1988-04-20",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2718,7 +2700,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1989-06-16",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2727,7 +2709,7 @@
                     "position": "Midfielder",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1989-12-10",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2736,7 +2718,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1993-08-23",
-                    "nationality": null,
+                    "nationality": "Nigeria",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -2838,7 +2820,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1985-03-27",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2847,7 +2829,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1989-12-08",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2856,7 +2838,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1994-04-28",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2865,7 +2847,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1990-12-16",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2874,7 +2856,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1988-04-04",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2883,7 +2865,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1992-07-27",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2892,7 +2874,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1993-03-07",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2901,7 +2883,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1985-08-04",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2910,7 +2892,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1992-09-25",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2919,7 +2901,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1979-12-06",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2928,7 +2910,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1999-01-04",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2937,7 +2919,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1991-07-22",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2946,7 +2928,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1993-07-29",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -2955,7 +2937,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1992-12-17",
-                    "nationality": null,
+                    "nationality": "Australia",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -3129,7 +3111,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1995-10-31",
-                    "nationality": null,
+                    "nationality": "Serbia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3138,7 +3120,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1983-07-28",
-                    "nationality": null,
+                    "nationality": "Serbia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3147,7 +3129,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1984-02-22",
-                    "nationality": null,
+                    "nationality": "Serbia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3156,7 +3138,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1985-01-19",
-                    "nationality": null,
+                    "nationality": "Serbia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3165,7 +3147,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1991-04-02",
-                    "nationality": null,
+                    "nationality": "Serbia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3174,7 +3156,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1996-02-15",
-                    "nationality": null,
+                    "nationality": "Serbia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3183,7 +3165,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1990-04-21",
-                    "nationality": null,
+                    "nationality": "Serbia",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -3375,7 +3357,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1992-08-04",
-                    "nationality": null,
+                    "nationality": "Denmark",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3384,7 +3366,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1989-03-26",
-                    "nationality": null,
+                    "nationality": "Denmark",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3393,7 +3375,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1992-09-16",
-                    "nationality": null,
+                    "nationality": "Denmark",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3402,7 +3384,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1989-07-27",
-                    "nationality": null,
+                    "nationality": "Denmark",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3411,7 +3393,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1985-02-24",
-                    "nationality": null,
+                    "nationality": "Denmark",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -3585,7 +3567,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1990-01-08",
-                    "nationality": null,
+                    "nationality": "Sweden",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3594,7 +3576,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1991-02-13",
-                    "nationality": null,
+                    "nationality": "Sweden",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3603,7 +3585,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1985-04-16",
-                    "nationality": null,
+                    "nationality": "Sweden",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3612,7 +3594,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1987-02-07",
-                    "nationality": null,
+                    "nationality": "Sweden",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3621,7 +3603,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1992-01-02",
-                    "nationality": null,
+                    "nationality": "Sweden",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3630,7 +3612,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1986-08-17",
-                    "nationality": null,
+                    "nationality": "Sweden",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3639,7 +3621,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1992-06-24",
-                    "nationality": null,
+                    "nationality": "Sweden",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -3741,7 +3723,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1990-04-02",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3750,7 +3732,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1982-04-24",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3759,7 +3741,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1988-01-01",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3768,7 +3750,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1992-07-08",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3777,7 +3759,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1983-07-21",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3786,7 +3768,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1989-06-09",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3795,7 +3777,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1998-03-06",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3804,7 +3786,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1990-02-18",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3813,7 +3795,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1992-03-17",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3822,7 +3804,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1984-12-30",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3831,7 +3813,7 @@
                     "position": "Right Midfield",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1988-11-27",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3840,7 +3822,7 @@
                     "position": "Left Midfield",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1988-06-17",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3849,7 +3831,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1985-01-10",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3858,7 +3840,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1984-05-17",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -3867,7 +3849,7 @@
                     "position": "Secondary Striker",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1990-03-05",
-                    "nationality": null,
+                    "nationality": "Costa Rica",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -4041,7 +4023,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1987-07-06",
-                    "nationality": null,
+                    "nationality": "Poland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4050,7 +4032,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1987-09-21",
-                    "nationality": null,
+                    "nationality": "Poland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4059,7 +4041,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1987-11-04",
-                    "nationality": null,
+                    "nationality": "Poland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4068,7 +4050,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1992-09-21",
-                    "nationality": null,
+                    "nationality": "Poland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4077,7 +4059,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1993-01-29",
-                    "nationality": null,
+                    "nationality": "Poland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4086,7 +4068,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1985-02-19",
-                    "nationality": null,
+                    "nationality": "Poland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4095,7 +4077,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1988-06-08",
-                    "nationality": null,
+                    "nationality": "Poland",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -4269,7 +4251,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1990-04-03",
-                    "nationality": null,
+                    "nationality": "Croatia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4278,7 +4260,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1995-01-09",
-                    "nationality": null,
+                    "nationality": "Croatia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4287,16 +4269,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1989-04-29",
-                    "nationality": null,
-                    "contractUntil": null,
-                    "marketValue": null
-                },
-                {
-                    "name": "Duje Caleta–Car",
-                    "position": "Centre-Back",
-                    "jerseyNumber": 24,
-                    "dateOfBirth": "1996-09-17",
-                    "nationality": null,
+                    "nationality": "Croatia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4305,7 +4278,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1986-02-05",
-                    "nationality": null,
+                    "nationality": "Croatia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4314,7 +4287,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1993-11-10",
-                    "nationality": null,
+                    "nationality": "Croatia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4323,7 +4296,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1989-01-30",
-                    "nationality": null,
+                    "nationality": "Croatia",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -4380,7 +4353,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1991-10-10",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4389,7 +4362,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1984-02-27",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4398,7 +4371,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1987-01-23",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4407,7 +4380,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1992-02-17",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4416,7 +4389,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1985-09-27",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4425,7 +4398,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1984-03-31",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4434,7 +4407,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1989-11-21",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4443,7 +4416,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1992-05-25",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4452,7 +4425,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1987-10-19",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4461,7 +4434,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1992-09-15",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4470,7 +4443,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1986-03-13",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4479,7 +4452,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1996-08-16",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4488,7 +4461,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1989-08-01",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4497,7 +4470,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1988-03-24",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4506,7 +4479,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1984-07-25",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4515,7 +4488,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1994-09-02",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4524,7 +4497,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1992-07-16",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4533,7 +4506,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1986-10-14",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4542,7 +4515,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 10,
                     "dateOfBirth": "1987-01-10",
-                    "nationality": null,
+                    "nationality": "Saudi Arabia",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -4581,7 +4554,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1995-03-05",
-                    "nationality": "France",
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4662,7 +4635,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1989-07-01",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4671,7 +4644,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1984-09-14",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4680,7 +4653,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1993-07-02",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4689,7 +4662,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1990-01-19",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4698,7 +4671,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1990-01-01",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4707,7 +4680,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1992-10-28",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4716,7 +4689,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1992-05-03",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4725,7 +4698,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1994-12-21",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4734,7 +4707,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1992-03-18",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4743,7 +4716,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1994-02-28",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4752,7 +4725,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1991-06-23",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4761,7 +4734,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1990-09-18",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4770,7 +4743,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1986-10-14",
-                    "nationality": null,
+                    "nationality": "Tunisia",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -4953,7 +4926,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1985-04-05",
-                    "nationality": null,
+                    "nationality": "Senegal",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4962,7 +4935,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1989-10-20",
-                    "nationality": null,
+                    "nationality": "Senegal",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4971,7 +4944,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1998-10-04",
-                    "nationality": null,
+                    "nationality": "Senegal",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4980,7 +4953,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1990-03-06",
-                    "nationality": null,
+                    "nationality": "Senegal",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4989,7 +4962,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1986-03-29",
-                    "nationality": null,
+                    "nationality": "Senegal",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -4998,7 +4971,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1986-01-19",
-                    "nationality": null,
+                    "nationality": "Senegal",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -5226,7 +5199,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1989-01-12",
-                    "nationality": null,
+                    "nationality": "Belgium",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -5337,7 +5310,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1991-11-13",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5346,7 +5319,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1983-10-19",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5355,7 +5328,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1989-03-24",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5364,7 +5337,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1987-05-22",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5373,7 +5346,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1987-04-05",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5382,7 +5355,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1988-08-08",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5391,7 +5364,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1993-01-15",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5400,7 +5373,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1989-07-20",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5409,7 +5382,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1995-10-17",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5418,7 +5391,7 @@
                     "position": "Left Midfield",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1983-08-20",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5427,7 +5400,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1995-10-17",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5436,7 +5409,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1989-10-13",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5445,7 +5418,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1990-02-09",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5454,7 +5427,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1988-08-22",
-                    "nationality": null,
+                    "nationality": "Russia",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -5628,7 +5601,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1996-04-05",
-                    "nationality": null,
+                    "nationality": "Morocco",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5637,7 +5610,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1989-05-10",
-                    "nationality": null,
+                    "nationality": "Morocco",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5646,7 +5619,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1986-05-06",
-                    "nationality": null,
+                    "nationality": "Morocco",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5655,7 +5628,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1990-03-26",
-                    "nationality": null,
+                    "nationality": "Morocco",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5664,7 +5637,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1984-08-15",
-                    "nationality": null,
+                    "nationality": "Morocco",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5673,7 +5646,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1987-04-24",
-                    "nationality": null,
+                    "nationality": "Morocco",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5682,7 +5655,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1993-06-26",
-                    "nationality": null,
+                    "nationality": "Morocco",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -5838,7 +5811,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1989-03-09",
-                    "nationality": null,
+                    "nationality": "Colombia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5847,7 +5820,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1985-06-01",
-                    "nationality": null,
+                    "nationality": "Colombia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5856,7 +5829,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1988-04-18",
-                    "nationality": null,
+                    "nationality": "Colombia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5865,7 +5838,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1983-07-20",
-                    "nationality": null,
+                    "nationality": "Colombia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5874,7 +5847,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1993-10-16",
-                    "nationality": null,
+                    "nationality": "Colombia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5883,7 +5856,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1985-01-06",
-                    "nationality": null,
+                    "nationality": "Colombia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5892,7 +5865,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1991-03-21",
-                    "nationality": null,
+                    "nationality": "Colombia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5901,7 +5874,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1993-01-18",
-                    "nationality": null,
+                    "nationality": "Colombia",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -5910,7 +5883,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1993-01-26",
-                    "nationality": null,
+                    "nationality": "Colombia",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -5994,7 +5967,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1988-12-18",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6003,7 +5976,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1983-07-10",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6012,7 +5985,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1973-01-15",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6021,7 +5994,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1989-04-01",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6030,7 +6003,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1991-04-09",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6039,7 +6012,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1985-07-01",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6048,7 +6021,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1984-11-10",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6057,7 +6030,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1992-01-30",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6066,7 +6039,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1988-10-24",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6075,7 +6048,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1991-09-10",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6084,7 +6057,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1985-07-13",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6093,7 +6066,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1994-10-01",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6102,7 +6075,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1993-09-17",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6111,7 +6084,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1994-04-13",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6120,7 +6093,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1986-03-05",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6129,7 +6102,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1989-02-26",
-                    "nationality": null,
+                    "nationality": "Egypt",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -6187,7 +6160,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1990-04-23",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6196,7 +6169,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1991-09-27",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6205,7 +6178,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1986-03-01",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6214,7 +6187,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1988-11-04",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6223,7 +6196,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1992-01-10",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6232,7 +6205,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1994-10-24",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6241,7 +6214,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1984-03-31",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6250,7 +6223,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1992-07-03",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6259,7 +6232,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1994-10-26",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6268,7 +6241,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1990-03-02",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6277,7 +6250,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1989-05-20",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6286,7 +6259,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1995-04-13",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6295,7 +6268,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1994-09-23",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6304,7 +6277,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1990-04-07",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6313,7 +6286,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1991-11-23",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6322,7 +6295,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1994-05-14",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6331,7 +6304,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 10,
                     "dateOfBirth": "1984-10-26",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6340,7 +6313,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1994-09-29",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6349,7 +6322,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1990-07-25",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6358,7 +6331,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1984-01-01",
-                    "nationality": null,
+                    "nationality": "Peru",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -6406,7 +6379,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1992-09-21",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6415,7 +6388,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1989-05-18",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6424,7 +6397,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1992-04-19",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6433,7 +6406,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1993-06-24",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6442,7 +6415,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1996-06-20",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6451,7 +6424,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1992-01-20",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6460,7 +6433,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1983-09-06",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6469,7 +6442,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1993-09-29",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6478,7 +6451,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1990-02-25",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6487,7 +6460,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1990-03-21",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6496,7 +6469,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1987-09-16",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6505,7 +6478,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1996-10-01",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6514,7 +6487,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1984-06-09",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6523,7 +6496,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1988-04-02",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6532,7 +6505,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1994-09-10",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6541,7 +6514,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1993-08-11",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6550,7 +6523,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1996-03-10",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6559,7 +6532,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1995-01-01",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6568,7 +6541,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1992-07-18",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6577,7 +6550,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1993-09-06",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6586,7 +6559,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1987-09-20",
-                    "nationality": null,
+                    "nationality": "Iran",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -6697,7 +6670,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1995-02-18",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6706,7 +6679,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1984-04-27",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6715,7 +6688,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1995-01-19",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6724,7 +6697,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1986-06-19",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6733,7 +6706,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1990-08-06",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6742,7 +6715,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1982-10-13",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6751,7 +6724,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1987-05-14",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6760,7 +6733,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1984-11-11",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6769,7 +6742,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1996-02-22",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6778,7 +6751,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1989-04-22",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6787,7 +6760,7 @@
                     "position": "Left Midfield",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1993-04-30",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6796,7 +6769,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1992-05-25",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6805,7 +6778,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1991-02-26",
-                    "nationality": null,
+                    "nationality": "Iceland",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -6835,7 +6808,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1981-09-26",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6844,7 +6817,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1985-08-14",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6853,7 +6826,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1990-08-05",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6862,7 +6835,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1981-02-24",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6871,7 +6844,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1986-03-20",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6880,7 +6853,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1985-02-14",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6889,7 +6862,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1992-03-01",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6898,7 +6871,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1995-01-09",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6907,7 +6880,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1988-09-07",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6916,7 +6889,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1991-03-31",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6925,7 +6898,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1996-02-11",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6934,7 +6907,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1990-02-10",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6943,7 +6916,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1984-05-29",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6952,7 +6925,7 @@
                     "position": "Central Midfield",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1987-11-26",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6961,7 +6934,7 @@
                     "position": "Right Midfield",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1998-06-19",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6970,7 +6943,7 @@
                     "position": "Left Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1993-10-23",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6979,7 +6952,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 10,
                     "dateOfBirth": "1997-05-12",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6988,7 +6961,7 @@
                     "position": "Right Wing",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1991-05-30",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -6997,7 +6970,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1981-03-13",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7006,7 +6979,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1988-10-31",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7015,7 +6988,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1993-12-13",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7024,7 +6997,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1982-03-28",
-                    "nationality": null,
+                    "nationality": "Panama",
                     "contractUntil": null,
                     "marketValue": null
                 }
@@ -7054,7 +7027,7 @@
                     "position": "Keeper",
                     "jerseyNumber": 1,
                     "dateOfBirth": "1988-12-17",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7063,7 +7036,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 2,
                     "dateOfBirth": "1984-01-16",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7072,7 +7045,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 3,
                     "dateOfBirth": "1990-06-21",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7081,7 +7054,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 4,
                     "dateOfBirth": "1996-11-30",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7090,7 +7063,7 @@
                     "position": "Centre-Back",
                     "jerseyNumber": 5,
                     "dateOfBirth": "1995-07-19",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7099,7 +7072,7 @@
                     "position": "Right-Back",
                     "jerseyNumber": 6,
                     "dateOfBirth": "1991-02-08",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7108,7 +7081,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 7,
                     "dateOfBirth": "1997-02-14",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7117,7 +7090,7 @@
                     "position": "Centre-Midfield",
                     "jerseyNumber": 8,
                     "dateOfBirth": "1992-10-15",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7126,7 +7099,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 9,
                     "dateOfBirth": "1992-02-22",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7135,7 +7108,7 @@
                     "position": "Centre-Midfield",
                     "jerseyNumber": 10,
                     "dateOfBirth": "1992-09-27",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7144,7 +7117,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 11,
                     "dateOfBirth": "1985-04-19",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7153,7 +7126,7 @@
                     "position": "Goalkeeper",
                     "jerseyNumber": 12,
                     "dateOfBirth": "1994-06-06",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7162,7 +7135,7 @@
                     "position": "Left-Back",
                     "jerseyNumber": 13,
                     "dateOfBirth": "1992-08-25",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7171,7 +7144,7 @@
                     "position": "Right Midfield",
                     "jerseyNumber": 14,
                     "dateOfBirth": "1991-08-17",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7180,7 +7153,7 @@
                     "position": "Attacking Midfield",
                     "jerseyNumber": 15,
                     "dateOfBirth": "1986-04-12",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7189,7 +7162,7 @@
                     "position": "Defensive Midfield",
                     "jerseyNumber": 16,
                     "dateOfBirth": "1986-09-02",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7198,7 +7171,7 @@
                     "position": "Centre-Midfield",
                     "jerseyNumber": 17,
                     "dateOfBirth": "1996-11-20",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7207,7 +7180,7 @@
                     "position": "Left Wing",
                     "jerseyNumber": 18,
                     "dateOfBirth": "1989-11-24",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7216,7 +7189,7 @@
                     "position": "Centre-Forward",
                     "jerseyNumber": 19,
                     "dateOfBirth": "1992-08-08",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7225,7 +7198,7 @@
                     "position": "Centre-Half",
                     "jerseyNumber": 20,
                     "dateOfBirth": "1987-01-18",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7234,7 +7207,7 @@
                     "position": "Goalkeeper",
                     "jerseyNumber": 21,
                     "dateOfBirth": "1990-11-14",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7243,7 +7216,7 @@
                     "position": "Centre-Half",
                     "jerseyNumber": 22,
                     "dateOfBirth": "1991-12-20",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 },
@@ -7252,7 +7225,7 @@
                     "position": "Right Midfield",
                     "jerseyNumber": 23,
                     "dateOfBirth": "1991-10-10",
-                    "nationality": null,
+                    "nationality": "Switzerland",
                     "contractUntil": null,
                     "marketValue": null
                 }
