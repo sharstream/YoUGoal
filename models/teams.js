@@ -4,19 +4,16 @@ const Schema = mongoose.Schema;
 
 const teamSchema = new Schema({
   name: { type: String, required: true },
-  players: [],
-  shortName: { type: String },
-  venue: { type: String },
+  players: [{ 
+    type: Schema.ObjectId,
+    ref: "Player" }],
   tla: { type: String },
+  venue: { type: String },
   address: { type: String },
   website: { type: String },
-  email: { type: String },
   founded: { type: String, required: true },
   clubColors: { type: String },
-  url: {
-    imgTeam: mongoose.SchemaTypes.Url,
-    required: true
-  },
+  imgTeam: { type: String },
   date: { type: Date, default: Date.now }
 });
 
