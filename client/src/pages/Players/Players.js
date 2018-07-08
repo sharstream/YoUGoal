@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import SaveBtn from "../../components/SaveBtn";
 import API from "../../utils/API";
-import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
-import { Input, FormBtn } from "../../components/Form";
-import teams from "../../../../team.json";
-import players from "../../../../players.json";
+import { Grid, Row, Col, Thumbnail, Panel } from "react-bootstrap";
+import players from "../../players.json";
 
 export default class Players extends Component {
   state = {
@@ -31,36 +28,29 @@ export default class Players extends Component {
   render() {
     return (
       <div>
-        <Container fluid>
-          <Row>
-            <div className="col" />
-            <Col size="md-6">
-              <div className="panel panel-default">
-                <div className="panel-heading">Players by Team</div>
-                <div className="panel-body">
-                  {!this.state.players.length ? (
-                    <h3 className="text-center">No Players to Display</h3>
-                  ) : (
-                    <List>
-                      {this.state.players.map(player => {
-                        return (
-                          <ListItem
-                            key={player.name}
-                            name={player.name}
-                            nationality={player.nationality}
-                            name1={player.France}
-                          >
-                          </ListItem>
-                        );
-                      })}
-                    </List>
-                  )}
-                </div>
-              </div>
-            </Col>
-            <div className="col" />
-          </Row>
-        </Container>
+        <Panel bsStyle="success">
+          <Panel.Heading>
+            <Panel.Title componentClass="h3">Players</Panel.Title>
+          </Panel.Heading>
+          <Panel.Body>Select each player</Panel.Body>
+            {!this.state.players.length ? (
+              <h3 className="text-center">No Players to Display</h3>
+            ) : (
+              <List>
+                {this.state.players.map(player => {
+                  return (
+                    <ListItem
+                      key={player.name}
+                      name={player.name}
+                      nationality={player.nationality}
+                      name1={player.France}
+                    >
+                    </ListItem>
+                  );
+                })}
+              </List>
+            )}
+        </Panel>
       </div>
     );
   }
