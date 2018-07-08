@@ -1,5 +1,5 @@
 import React from "react";
-import NavItem from "./NavItem";
+import { default as NavItem} from "./NavItem";
 import Nav from "./Nav";
 
 function handleSelect(selectedKey) {
