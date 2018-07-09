@@ -24,7 +24,7 @@ export default {
     if (query !== "") {
       return axios.get("/api/players", {params: {q: query} });
     }
-    return "";
+    return axios.get("/api/players", {params: {q: ""} });
   },
   // gets the player with given id
   getPlayer: function(id) {

@@ -6,22 +6,19 @@ import { SignupPage as Signup, SigninPage as Signin } from "./SignPage";
 import Teams from "../pages/Teams";
 import Players from "../pages/Players";
 import "./App.css";
-// import { CustomMenu as Menu } from "../components/Menu";
+import { DropDownPlayer, DropDownTeam } from "./MenuDropDown";
+import { ParentMenu as Menu } from "./Menu";
+// import { pushRotate as Menu } from "react-burger-menu";
 
 export default class App extends Component {
-
-  state = {
-    isOpen: false
-  };
-
-  componentDidMount = () => {
-    this.setState({ isOpen: true });
-  };
 
   render() {
     return (
       <div className="container">
-        <NavigationBar />
+        <div className="row">
+	        <NavigationBar />
+	        <Menu />
+        </div>
         <div className="row">
           <Carousel>
             <Carousel.Item>
@@ -46,8 +43,10 @@ export default class App extends Component {
         <div className="row">
           <Players />
         </div>
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/signin" component={Signin} />
+        <Route exact={true} path="/signup" component={Signup} />
+        <Route exact={true} path="/signin" component={Signin} />
+        <Route exact={true} path="/dropdownplayer" component={DropDownPlayer} />
+        <Route exact={true} path="/dropdownteam" component={DropDownTeam} />
       </div>
     );
   }
