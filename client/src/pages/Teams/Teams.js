@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactDOM, { render } from 'react-dom';
-import API from "../../utils/API";
 import teams from "../../team.json";
 import players from "../../players.json";
 import { Grid, Row, Col, Thumbnail, Panel } from "react-bootstrap";
