@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM, { render } from "react-dom";
 import { Route, Link } from "react-router-dom";
 import { pushRotate as Menu } from "react-burger-menu";
+import "./Menu.css";
 // import { CustomIcon } from "./CustomIcon";
+
 export default class ParentMenu extends React.Component {
 
   state = {
@@ -24,6 +26,16 @@ export default class ParentMenu extends React.Component {
     this.setState({ menuOpen: false})
   };
 
+  // because we can only set one window.onkeydown handle, the last menu you include will override any handlers set by previous ones.
+  // for that reason, it's recommend that you pass the same function to all menus to avoid unexpected behavior.
+  closeAllMenusOnEsc = e => {
+    e = e || window.event;
+
+    if (e.key === "Escape" || e.keyCode === 27) {
+      this.setState({areMenusOpen: false});
+    }
+  };
+
   // this can be used to toggle the menu, e.g. when using a custom icon
   // tip: you probably want to hide either/both default icons if using a custom icon
   // see https://github.com/negomi/react-burger-menu#custom-icons
@@ -37,10 +49,8 @@ export default class ParentMenu extends React.Component {
         <Menu 
           isOpen={this.state.menuOpen}
           onStateChange={(state) => this.handleStateChange(state)}
-          pageWrapId={"page-wrap"}
+          className={"page-wrap"}
           outerContainerId={"outer-container"}
-          height={"100%"}
-          width={"20%"}
           right 
         >
           <Link onClick={() => this.closeMenu()} className="menu-item" to="/">Home</Link>

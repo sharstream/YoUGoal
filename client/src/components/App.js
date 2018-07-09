@@ -5,9 +5,9 @@ import { Route } from "react-router-dom";
 import { SignupPage as Signup, SigninPage as Signin } from "./SignPage";
 import Teams from "../pages/Teams";
 import Players from "../pages/Players";
-import "./App.css";
 import { DropDownPlayer, DropDownTeam } from "./MenuDropDown";
 import { ParentMenu as Menu } from "./Menu";
+import "./App.css";
 // import { pushRotate as Menu } from "react-burger-menu";
 
 export default class App extends Component {
