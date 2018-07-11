@@ -4,7 +4,7 @@
   "homepage": "https://sharstream.github.io/YoUGoal/",
   "scripts": {
     "client": "cd client && yarn start",
-    "server": "nodemon --watch server --exec babel-node -- server/index.js",
+    "start": "nodemon --watch server --exec babel-node -- server/index.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "postinstall": "cd client && yarn install && yarn run build"
   },
