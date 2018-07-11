@@ -43,7 +43,7 @@ export default class Teams extends Component {
     return (
 			<div>
 				<Panel bsStyle="primary">
-					<Panel.Heading>Teams</Panel.Heading>
+					<Panel.Heading>Select a Team</Panel.Heading>
 					{!this.state.teams.length ? (
 					<h3 className="text-center">No Team to Display</h3>
 					) : (
@@ -56,7 +56,7 @@ export default class Teams extends Component {
 											teamName={team.name}
 											founded={team.founded}
 											url={team.Flags}
-											handleClick={this.handleClick}
+											handleClick={ id => this.handleClick(id)}
 										>
 											<Thumbnail alt={team.name} src={team.Flags} />
 										</Col>

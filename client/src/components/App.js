@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import NavigationBar from "./NavigationBar";
-import { Carousel } from "react-bootstrap"
+import { Carousel, PageHeader } from "react-bootstrap"
 import { Route } from "react-router-dom";
 import { SignupPage as Signup, SigninPage as Signin } from "./SignPage";
 import Teams from "../pages/Teams";
 import Players from "../pages/Players";
 import { DropDownPlayer, DropDownTeam } from "./MenuDropDown";
-import { ParentMenu as Menu } from "./Menu";
+// import { ParentMenu as Menu } from "./Menu";
 import "./App.css";
 // import { pushRotate as Menu } from "react-burger-menu";
 
@@ -17,12 +17,11 @@ export default class App extends Component {
       <div className="container">
         <div className="row">
 	        <NavigationBar />
-	        <Menu />
         </div>
         <div className="row">
           <Carousel>
             <Carousel.Item>
-              <img width={800} height={600} className="img-fluid" alt="Responsive image" src="http://www.tnhglobal.com/wp-content/uploads/2018/06/Russia.jpg" />
+              <img width={800} height={600} className="img-fluid" alt="Responsive image" src="http://www.gameoftrendz.com/wp-content/uploads/2018/06/irish-times-world-cup-bkg.jpg" />
               <Carousel.Caption>
                 <h3>FIFA World Cup 2018</h3>
                 <p>Final Games</p>
@@ -38,6 +37,9 @@ export default class App extends Component {
           </Carousel>
         </div>
         <div className="row">
+          <PageHeader>
+            FIFA Teams <small>2018</small>
+          </PageHeader>
           <Teams />
         </div>
         <div className="row">
