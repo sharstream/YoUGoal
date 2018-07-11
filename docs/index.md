@@ -22,3 +22,7 @@
 
     ![image alternative text](https://i.imgur.com/zsXGJAt.png)
 
+- Deliverable 2 heroku
+    - https://yougoal.herokuapp.com/
+
+    That above is the app running in heroku.
