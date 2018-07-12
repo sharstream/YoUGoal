@@ -10,7 +10,7 @@ import mongoose from "mongoose";
 
 const app = express();
 // const compiler = webpack(webpackConfig);
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 // Define middleware here
 // app.use(webpackMiddleware(compiler, {
 //     hot: true,

@@ -1,5 +1,5 @@
 import React from "react";
-import NavItem from "./NavItem";
+import { default as NavItem} from "./NavItem";
 import Nav from "./Nav";
 
 function handleSelect(selectedKey) {
@@ -10,10 +10,10 @@ const NavInstance = () => {
   return (
     <Nav bsStyle="pills" stacked activeKey={1} onSelect={handleSelect}>
       <NavItem eventKey={1} href="/team">
-        Display Soccer Team
+        Display by Team
       </NavItem>
       <NavItem eventKey={2} href="/popular">
-        Display Most Popular Team
+        Display by Player
       </NavItem>
       <NavItem eventKey={3} href="/player">
         Display Most Popular Player

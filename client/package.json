@@ -2,9 +2,17 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
+    "react-burger-menu": "^1.12.0",
+    "react-cardstack": "^1.1.0",
     "react-dom": "^16.4.1",
+    "react-modal": "^3.5.1",
+    "react-native": "^0.56.0",
+    "react-native-cardstack": "^1.0.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4"
