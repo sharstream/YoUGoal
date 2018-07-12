@@ -63,7 +63,7 @@ class Detail extends Component {
               <List>
                 {this.state.players.map(player => (
                   <ListItem key={player._id}>
-                    <Link to={"/players/" + player._id}>
+                    <Link to={"/player/" + player._id}>
                       <strong>
                         Player: {player.name}
                         <br />

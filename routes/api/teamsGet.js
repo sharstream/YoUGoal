@@ -8,6 +8,10 @@ router
   .route("/:teamID")
   .get(GoalController.findPlayersByTeamID);
 
+  router
+  .route("/player/:_id")
+  .get(GoalController.findPlayersByPlayerID);
+
 router
   .route("/team/:teamID")
   .get(GoalController.findTeamByID);

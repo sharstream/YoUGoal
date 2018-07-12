@@ -14,6 +14,12 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  findPlayersByPlayerID: function (req, res) {
+    db.players
+      .findby({ _id: req.params._id })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
   findTeamByID: function (req, res) {
     db.teams
       .find({ _id: req.params.teamID })
