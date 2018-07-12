@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { render } from "react-dom";
 import API from "../../utils/API";
 import { Grid, Row, Col, Thumbnail, Panel } from "react-bootstrap";
 import players from "../../players.json";
@@ -6,9 +7,9 @@ import { stringify } from "querystring";
 
 export default class Players extends Component {
   state = {
+    players: [],
     teamName: "",
-    flagUrl: "",
-    players: []
+    flagUrl: ""
   };
 
   handlePlayers = () => {

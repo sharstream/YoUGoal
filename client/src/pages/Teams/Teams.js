@@ -9,6 +9,7 @@ import Players from "../Players/Players";
 export default class Teams extends Component {
   state = {
 		teams: teams,
+		players: [],
 		clicked: []
 	};
 
@@ -19,7 +20,8 @@ export default class Teams extends Component {
 
   reloadPage() {
     this.setState({
-      teams: []
+			teams: [],
+			players: []
     })
 
     this.handleTeams();
