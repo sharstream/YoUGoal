@@ -15,8 +15,11 @@ class Player extends Component {
   }
 
   loadBooks = () => {
-    API.findPlayersByPlayerID()
-      .then(res => this.setState({ player: res.data }))
+    API.findPlayersByPlayerID(this.props.match.params._id)
+      .then(res => {
+        this.setState({ player: res.data });
+    console.log(this.state.player);
+      })
       .catch(err => console.log(err));
   };
 

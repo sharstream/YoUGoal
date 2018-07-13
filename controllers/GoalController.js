@@ -16,7 +16,7 @@ module.exports = {
   },
   findPlayersByPlayerID: function (req, res) {
     db.players
-      .findby({ _id: req.params._id })
+      .find({ _id: req.params._id })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

@@ -11,5 +11,8 @@ export default {
   },
   findTeamByID: function(teamID) {
     return axios.get("/api/teamsGet/team/" + teamID);
+  },
+  findPlayersByPlayerID: function(_id) {
+    return axios.get("/api/teamsGet/player/" + _id);
   }
 };
