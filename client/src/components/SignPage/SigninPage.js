@@ -32,7 +32,7 @@ export default class SigninPage extends React.Component {
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.handleClose}>Close</Button>
-            <Button bsStyle="primary">Log In</Button>
+            <Button bsStyle="primary">Login</Button>
           </Modal.Footer>
         </Modal>
       </div>
