@@ -5,7 +5,11 @@ import { Modal, Button } from "react-bootstrap";
 export default class SigninPage extends React.Component {
 
   state = {
-    showModal: true
+    showModal: false
+  };
+
+  componentDidMount = () => {
+    this.setState({ showModal: true });
   };
 
   handleClose = () => {

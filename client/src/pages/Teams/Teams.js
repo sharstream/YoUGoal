@@ -1,49 +1,35 @@
 import React, { Component } from "react";
 import ReactDOM, { render } from 'react-dom';
-import teams from "../../team.json";
-import players from "../../players.json";
-import { Grid, Row, Col, Thumbnail, Panel } from "react-bootstrap";
+// import teams from "../../team.json";
+// import players from "../../players.json";
+import API from "../../utils/API";
+import { Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
 import { stringify } from "querystring";
 import Players from "../Players/Players";
 
 export default class Teams extends Component {
   state = {
-		teams: teams,
-		players: [],
-		clicked: []
+		teams: []
 	};
 
-	handleTeams = () => {
-		console.log("teams: " + JSON.stringify(teams));
-    this.setState({ teams: teams });
-  };
-
-  reloadPage() {
-    this.setState({
-			teams: [],
-			players: []
-    })
-
-    this.handleTeams();
+	componentDidMount() {
+		this.handleTeams();
+		console.log(this.state.teams);
 	}
 
-	 handleClick = id => {
-    // e.preventDefault();
-    if (this.state.clicked.indexOf(id) === -1) {
-      this.displayPlayers();
-      this.setState({ clicked: this.state.clicked.concat(id) });
-    }
-	};
-
-	displayPlayers = ({ match, children }) => {
-		children.map(player => {
-			<Players />
-		})
-	};
+	handleTeams = () => {
+		API.getTeams()
+      .then(res => this.setState({teams : res.data}))
+      .catch(err => console.log(err));
+      console.log("teams" + this.state.teams);
+  };
 
   render() {
     return (
 			<div>
+				<PageHeader>
+					FIFA Teams <small>2018</small>
+				</PageHeader>
 				<Panel bsStyle="primary">
 					<Panel.Heading>Select a Team</Panel.Heading>
 					{!this.state.teams.length ? (
@@ -53,7 +39,7 @@ export default class Teams extends Component {
 							<Row>
 								{this.state.teams.map(team => {
 									return (
-										<Col md={1}
+										<Col md={3}
 											key={team.id}
 											teamName={team.name}
 											founded={team.founded}

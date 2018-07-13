@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import NavigationBar from "./NavigationBar";
 import { Carousel, PageHeader } from "react-bootstrap"
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { SignupPage as Signup, SigninPage as Signin } from "./SignPage";
 import Teams from "../pages/Teams";
 import Players from "../pages/Players";
+import Player from "../pages/Player";
 import { DropDownPlayer, DropDownTeam } from "./MenuDropDown";
+import NoMatch from "../pages/NoMatch";
 // import { ParentMenu as Menu } from "./Menu";
 import "./App.css";
 // import { pushRotate as Menu } from "react-burger-menu";
@@ -36,19 +38,16 @@ export default class App extends Component {
             </Carousel.Item>
           </Carousel>
         </div>
-        <div className="row">
-          <PageHeader>
-            FIFA Teams <small>2018</small>
-          </PageHeader>
-          <Teams />
-        </div>
-        <div className="row">
-          <Players />
-        </div>
-        <Route exact={true} path="/signup" component={Signup} />
-        <Route exact={true} path="/signin" component={Signin} />
-        <Route exact={true} path="/dropdownplayer" component={DropDownPlayer} />
-        <Route exact={true} path="/dropdownteam" component={DropDownTeam} />
+        <Switch>
+          <Route exact={true} path="/signup" component={Signup} />
+          <Route exact={true} path="/signin" component={Signin} />
+          <Route exact={true} path="/dropdownplayer" component={DropDownPlayer} />
+          <Route exact={true} path="/dropdownteam" component={DropDownTeam} />
+          <Route exact path="/" component={Teams} />
+          <Route exact path="/teamsGet/:teamID" component={Players} />
+          <Route exact path="/player/:_id" component={Player} />
+          <Route component={NoMatch} />
+        </Switch>
       </div>
     );
   }
