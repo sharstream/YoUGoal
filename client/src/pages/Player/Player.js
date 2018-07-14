@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
-import ReactDOM from 'react-dom';
 import { Col, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import StarRatingComponent from '../../components/StarRatingComponent';
@@ -9,10 +8,10 @@ class Player extends Component {
   state = {
     player: [],
     manName: "",
-    rating: 1,
-    rating_custom_icon: 6,
-    rating_half_star: 3.5,
-    rating_empty_initial: 0
+    overallRating: 0,
+    athletic: 0,
+    offence: 0,
+    defence: 0,
   };
 
   componentDidMount() {
@@ -35,31 +34,26 @@ class Player extends Component {
     });
   };
 
-  onStarClick(nextValue, prevValue, name) {
+  onOverallStarClick(nextValue, prevValue, name) {
     console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
-    this.setState({ rating: nextValue });
+    this.setState({ overallRating: nextValue });
+  }
+  onAthleticStarClick(nextValue, prevValue, name) {
+    console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
+    this.setState({ athletic: nextValue });
+  }
+  onOffenceStarClick(nextValue, prevValue, name) {
+    console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
+    this.setState({ offence: nextValue });
+  }
+  onDefenceStarClick(nextValue, prevValue, name) {
+    console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
+    this.setState({ defence: nextValue });
   }
 
   onStarClickCustomIcon(nextValue, prevValue, name) {
     console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
     this.setState({ rating_custom_icon: nextValue });
-  }
-
-  onStarClickHalfStar(nextValue, prevValue, name, e) {
-    const xPos = (e.pageX - e.currentTarget.getBoundingClientRect().left) / e.currentTarget.offsetWidth;
-
-    if (xPos <= 0.5) {
-      nextValue -= 0.5;
-    }
-
-    console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
-    // console.log(e);
-    this.setState({ rating_half_star: nextValue });
-  }
-
-  onStarClickEmptyInitial(nextValue, prevValue, name) {
-    console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
-    this.setState({ rating_empty_initial: nextValue });
   }
 
   handleFormSubmit = event => {
@@ -88,10 +82,37 @@ class Player extends Component {
                 <ListItem key={man._id}>
                   <strong>
                     Name: {man.name}
+                    <br/>
+                    Number: {man.jerseyNumber}
                     <br />
                     Position: {man.postion}
                     <br />
                     Nationality: {man.nationality}
+                    {/* <h3>Editable with handlers (Rating from state is {this.state.rating}):</h3> */}
+                    <br />
+                      Overall: <StarRatingComponent
+                        name="overall"
+                        starCount={5}
+                        value={this.state.overallRating}
+                        onStarClick={this.onOverallStarClick.bind(this)} />
+                    <br />
+                      Athletic: <StarRatingComponent
+                        name="Athletic"
+                        starCount={5}
+                        value={this.state.athletic}
+                        onStarClick={this.onAthleticStarClick.bind(this)} />
+                    <br />
+                      Offence: <StarRatingComponent
+                        name="Offence"
+                        starCount={5}
+                        value={this.state.offence}
+                        onStarClick={this.onOffenceStarClick.bind(this)} />
+                    <br />
+                      Defence: <StarRatingComponent
+                        name="Defence"
+                        starCount={5}
+                        value={this.state.defence}
+                        onStarClick={this.onDefenceStarClick.bind(this)} />
                   </strong>
                 </ListItem>
               ))}
@@ -99,39 +120,10 @@ class Player extends Component {
           ) : (
               <h3>No Results to Display</h3>
             )}
-
-            <h3>Editable with handlers (Rating from state is {this.state.rating}):</h3>
-            <div style={{ fontSize: 26 }}>
-              <StarRatingComponent
-                name="app2"
-                starCount={8}
-                value={this.state.rating}
-                onStarClick={this.onStarClick.bind(this)} />
-            </div>
-
-            <h3>Editable (with custom icons):</h3>
-            <div style={{ fontSize: 20 }}>
-              <StarRatingComponent
-                name="app3"
-                starCount={10}
-                value={this.state.rating_custom_icon}
-                onStarClick={this.onStarClickCustomIcon.bind(this)}
-                starColor="#f00"
-                renderStarIcon={() => <span></span>} />
-            </div>
-
-            <h3>Non-Editable:</h3>
-            <div style={{ fontSize: 18 }}>
-              <StarRatingComponent
-                name="app4"
-                editing={false}
-                starCount={10}
-                value={8} />
-            </div>
-
         </Col>
       </Container>
-    
-);
-}}
+
+    );
+  }
+}
 export default Player;
