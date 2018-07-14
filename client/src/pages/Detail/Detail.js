@@ -26,27 +26,27 @@ class Detail extends Component {
 
   componentDidMount() {
     API.findPlayersByTeamID(this.props.match.params.teamID)
-    .then(res => this.setState({ players: res.data }))
-    // .then(res => console.log(res.data))
-    .then(() => {
-      API.findTeamByID(this.props.match.params.teamID)
-      .then(resp => { 
-        this.setState({ team: resp.data[0] });
-        console.log(JSON.stringify(this.state.team.name));
-      })
+      .then(res => this.setState({ players: res.data }))
       // .then(res => console.log(res.data))
-      .catch(err => console.log(err));
-    }).catch(err => console.log(err));
+      .then(() => {
+        API.findTeamByID(this.props.match.params.teamID)
+          .then(resp => {
+            this.setState({ team: resp.data[0] });
+            console.log(JSON.stringify(this.state.team.name));
+          })
+          // .then(res => console.log(res.data))
+          .catch(err => console.log(err));
+      }).catch(err => console.log(err));
   }
 
-  
+
 
   render() {
     return (
       <Container fluid>
         <Row>
           <Col size="md-12">
-          {/* const { rating } = this.state;         
+            {/* const { rating } = this.state;         
       <div>
         <h2>Rating from state: {rating}</h2>
         <StarRatingComponent 
