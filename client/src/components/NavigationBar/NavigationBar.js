@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
 	return (
-		<nav className="navbar navbar-default">
+		<nav className="navbar navbar-default navbar-dark bg-dark mb-4">
 			<div className="container-fluid">
 			  <div className="navbar-header">
 			    <Link className="navbar-brand" to="/">YuOGoal Sport Try</Link>
