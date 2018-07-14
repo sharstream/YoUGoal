@@ -22,7 +22,8 @@ const playerSchema = new Schema({
     clubColors: String,
     venue: String,
     lastUpdated: String,
-    Flags: String
+    Flags: String,
+    plyrImg: String
 });
 
 const players = mongoose.model("players", playerSchema);
