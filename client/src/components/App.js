@@ -54,7 +54,7 @@ export default class App extends Component {
             <Route exact path="/signin" render={() =>
               <Signin baseUrl="https://dev-590113.oktapreview.com" />}
             />
-            <Route exact path="/implicit/callbacl" component={ImplicitCallback} />
+            <Route exact path="/implicit/callback" component={ImplicitCallback} />
             <SecureRoute exact={true} path="/dropdownplayer" component={DropDownPlayer} />
             <SecureRoute exact={true} path="/dropdownteam" component={DropDownTeam} />
             <SecureRoute exact path="/teamsGet/:teamID" component={Players} />
