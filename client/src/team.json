@@ -12,7 +12,8 @@
         "clubColors": "Sky Blue / White / Black",
         "venue": "Estadio Centenario",
         "lastUpdated": "2018-06-07T12:17:29Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg",
+        "teamImg": "https://i0.wp.com/static.pulse.ng/img/incoming/crop8489931/7195297422-chorizontal-w1600/Uruguay-National-team.jpg?w=640&ssl=1"
     },
     {
         "id": "759",
@@ -27,7 +28,8 @@
         "clubColors": "White / Black",
         "venue": "Olympiastadion Berlin",
         "lastUpdated": "2018-06-02T13:49:58Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg",
+        "teamImg": "https://3.bp.blogspot.com/-L-dcvTv2p0o/WyYYnrgcPaI/AAAAAAAAGY0/46ynFllqdZsC3C8TNlg3KPpd5xavfO49ACLcBGAs/s1600/timnas%2BJerman%2Bdi%2BPiala%2BDunia%2B2018.jpg"
     },
     {
         "id": "760",
@@ -42,7 +44,8 @@
         "clubColors": "Red / Blue / Yellow",
         "venue": "Estadio Santiago Bernabéu",
         "lastUpdated": "2018-06-02T13:50:05Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg",
+        "teamImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyHiRBbI3zN7Vk5AyoB3TxjgN8-BvkKKcULyzqL5SS0wl5tDkddg"
     },
     {
         "id": "762",
@@ -57,7 +60,8 @@
         "clubColors": "Sky Blue / White / Black",
         "venue": "Estadio Antonio Vespucio Libertia",
         "lastUpdated": "2018-06-07T12:17:30Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+        "teamImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk6U_eMPV-XAPGRJoimAFEejPhknD2E9TZJ_bgKoXvtefWTY4E"
     },
     {
         "id": "764",
@@ -72,7 +76,8 @@
         "clubColors": "Yellow / Green / Blue",
         "venue": "Maracanã",
         "lastUpdated": "2018-06-07T12:17:31Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg",
+        "teamImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6JG02LDOEhGiF3FbuU_OoU0Q0wIvoaiegtt-Uf-kF_UobLPMx"
     },
     {
         "id": "765",
@@ -87,7 +92,8 @@
         "clubColors": "Red / Green",
         "venue": "Estádio Nacional",
         "lastUpdated": "2018-06-02T13:50:11Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
+        "teamImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvWXFEfq5zUJOAgIjrdtErXasxH8P2P_lZ9P6dv7O_CNHX1b461w"
     },
     {
         "id": "766",
@@ -102,7 +108,8 @@
         "clubColors": "Blue / White",
         "venue": "New National Stadium",
         "lastUpdated": "2018-06-07T12:17:32Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg",
+        "teamImg": "https://images.indianexpress.com/2017/11/japan-7591.jpg"
     },
     {
         "id": "769",
@@ -117,7 +124,8 @@
         "clubColors": "Green / White / Red",
         "venue": "Estadio Azteca",
         "lastUpdated": "2018-06-07T12:17:33Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
+        "teamImg": "https://cdni.rt.com/files/2018.06/article/5b18118ddda4c847238b45e4.jpg"
     },
     {
         "id": "770",
@@ -132,7 +140,8 @@
         "clubColors": "White / Red / Navy Blue",
         "venue": "Wembley Stadium",
         "lastUpdated": "2018-06-02T13:50:18Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg",
+        "teamImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdk1R3xpgdDytycaWtc0H9LeIlatC9zLtD7cxJA2e_mZ9S7BqG"
     },
     {
         "id": "772",
@@ -147,7 +156,8 @@
         "clubColors": "Red / White / Blue",
         "venue": "Jeonju World Cup Stadium",
         "lastUpdated": "2018-06-07T12:17:34Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
+        "teamImg": "https://files.prokerala.com/news/photos/imgs/800/seoul-march-28-2017-starting-players-of-south-521137.jpg"
     },
     {
         "id": "773",
@@ -162,7 +172,8 @@
         "clubColors": "Blue / White / Red",
         "venue": "Stade de France",
         "lastUpdated": "2018-06-02T13:50:24Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg",
+        "teamImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbYmpQTZeWJaI_N1asygejG3TS8CU5MrBoCnjMc1Gfu7Bk9cxGSQ"
     },
     {
         "id": "776",
@@ -177,7 +188,8 @@
         "clubColors": "Green / White",
         "venue": "Abuja National Stadium",
         "lastUpdated": "2018-06-07T12:17:35Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
+        "teamImg": "https://www.brila.net/wp-content/uploads/2017/09/Super-Eagles-1-1062x598.jpg"
     },
     {
         "id": "779",
@@ -192,7 +204,8 @@
         "clubColors": "Gold / Green",
         "venue": "nib Stadium",
         "lastUpdated": "2018-06-07T12:17:36Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg",
+        "teamImg": "https://images.perthnow.com.au/publication/F92252A5FAFFBE7C0E3F153CFA6506D4/f81a623eb85ace361cb5183ac92b8660.jpeg?imwidth=668&impolicy=pn_v1"
     },
     {
         "id": "780",
@@ -207,7 +220,8 @@
         "clubColors": "Red / Blue / White",
         "venue": "Partizan Stadium",
         "lastUpdated": "2018-06-07T12:17:37Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg",
+        "teamImg": "https://i2-prod.irishmirror.ie/incoming/article6604673.ece/ALTERNATES/s615/Albania-v-Serbia-UEFA-EURO-2016-Qualifier.jpg"
     },
     {
         "id": "782",
@@ -222,7 +236,8 @@
         "clubColors": "Red / White",
         "venue": "Parken Stadium",
         "lastUpdated": "2018-06-02T13:50:29Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg",
+        "teamImg": "https://talksport.com/wp-content/uploads/sites/5/2018/06/denmark.jpg"
     },
     {
         "id": "792",
@@ -237,7 +252,8 @@
         "clubColors": "Yellow / Blue",
         "venue": "Friends Arena",
         "lastUpdated": "2018-06-02T13:50:47Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg",
+        "teamImg": "https://as01.epimg.net/futbol/imagenes/2017/11/20/reportajes/1511210231_580244_1511780509_noticiareportajes_grande.jpg"
     },
     {
         "id": "793",
@@ -252,7 +268,8 @@
         "clubColors": "Red / Blue / White",
         "venue": "Estadio Nacional de Costa Rica",
         "lastUpdated": "2018-06-07T12:17:38Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_(state).svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_(state).svg",
+        "teamImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-cTcIx57HlorR9b3NGhMI8flCg9eELtzmoojPROMsCVLsirL"
     },
     {
         "id": "794",
@@ -267,7 +284,8 @@
         "clubColors": "White / Red",
         "venue": "National Stadium Warsaw",
         "lastUpdated": "2018-06-07T12:17:39Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg",
+        "teamImg": "https://as01.epimg.net/futbol/imagenes/2017/11/20/reportajes/1511209696_976630_1511210006_noticiareportajes_grande.jpg"
     },
     {
         "id": "799",
@@ -282,7 +300,8 @@
         "clubColors": "Red / White / Blue",
         "venue": "Stadion Gradski vrt",
         "lastUpdated": "2018-06-07T12:17:40Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg",
+        "teamImg": "https://sportshub.cbsistatic.com/i/r/2018/05/20/4eb70e21-0b35-4765-b0be-f737869eb601/thumbnail/1200x675/5161f6839561bf71ed29f53880e30bf6/croatia.jpg"
     },
     {
         "id": "801",
@@ -297,7 +316,8 @@
         "clubColors": "White / Green",
         "venue": "King Abdullah Sports City",
         "lastUpdated": "2018-06-07T12:17:41Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg",
+        "teamImg": "http://gulf-insider-i35ch33zpu3sxik.stackpathdns.com/wp-content/uploads/2018/05/mm.jpg"
     },
     {
         "id": "802",
@@ -312,7 +332,8 @@
         "clubColors": "White / Red",
         "venue": "Stade Olympique de Radès",
         "lastUpdated": "2018-06-07T12:17:42Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg",
+        "teamImg": "https://albawabacdn-albawabamiddleea.netdna-ssl.com/sites/default/files/imagecache/article_headline_node_big//sites/default/files/im/Sport/tunisia_squad_2016.jpg"
     },
     {
         "id": "804",
@@ -327,7 +348,8 @@
         "clubColors": "White / Green",
         "venue": "Stade Léopold Sédar Senghor",
         "lastUpdated": "2018-06-07T12:17:43Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg",
+        "teamImg": "https://cdn2.img.sputniknews.com/images/106561/61/1065616143.jpg"
     },
     {
         "id": "805",
@@ -342,7 +364,8 @@
         "clubColors": "Red / Black / Yellow",
         "venue": "King Baudouin Stadium",
         "lastUpdated": "2018-06-02T13:50:53Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_(civil).svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_(civil).svg",
+        "teamImg": "https://talksport.com/wp-content/uploads/sites/5/2018/06/belgium.jpg"
     },
     {
         "id": "808",
@@ -357,9 +380,11 @@
         "clubColors": "Red / White / Blue",
         "venue": "Luzhniki Stadium",
         "lastUpdated": "2018-06-02T13:50:58Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg",
+        "teamImg": "https://albawabacdn-albawabamiddleea.netdna-ssl.com/sites/default/files/imagecache/article_headline_node_big//sites/default/files/im/Sport/russia_squad_2017.jpg"
     },
     {
+
         "id": "815",
         "name": "Morocco",
         "shortName": "Morocco",
@@ -372,7 +397,8 @@
         "clubColors": "Red / Green",
         "venue": "Grand Stade de Marrakech",
         "lastUpdated": "2018-06-07T12:17:44Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg",
+        "teamImg": "https://i2.wp.com/www.teammelli.com/wp-content/uploads/2018/04/Morocco-2018.jpg"
     },
     {
         "id": "818",
@@ -387,7 +413,8 @@
         "clubColors": "Yellow / Red / Blue",
         "venue": "Estadio Metropolitano Roberto Meléndez",
         "lastUpdated": "2018-06-07T12:17:45Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
+        "teamImg": "https://sportshub.cbsistatic.com/i/r/2018/05/28/da892e64-5f6b-4dee-8e2f-df31c31a8da9/thumbnail/770x433/b253eb8787965031da975f08b346621f/colombia.jpg"
     },
     {
         "id": "825",
@@ -402,7 +429,8 @@
         "clubColors": "Red / White / Black",
         "venue": "Cairo International Stadium",
         "lastUpdated": "2018-06-07T12:17:46Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+        "teamImg": "http://www.egypttoday.com/images/larg/25960.jpg"
     },
     {
         "id": "832",
@@ -417,7 +445,8 @@
         "clubColors": "White / Red",
         "venue": "Estadio Nacional del Perú",
         "lastUpdated": "2018-06-07T12:17:47Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg",
+        "teamImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzMdHs_pwD-otlTvEYcgN08Br7r6zblDpZe6SLq3aLcYAfIr_6"
     },
     {
         "id": "840",
@@ -432,7 +461,8 @@
         "clubColors": "White / Green / Red",
         "venue": "Azadi Stadium",
         "lastUpdated": "2018-06-07T12:17:48Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg",
+        "teamImg": "https://i1.wp.com/football2018worldcup.com/wp-content/uploads/2018/04/gg.jpg"
     },
     {
         "id": "1066",
@@ -447,7 +477,8 @@
         "clubColors": "Blue / White",
         "venue": "Laugardalsvöllur",
         "lastUpdated": "2018-06-02T13:51:21Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg",
+        "teamImg": "https://hailtoyou.files.wordpress.com/2018/06/iceland-national-team-2018.jpg"
     },
     {
         "id": "1836",
@@ -462,7 +493,8 @@
         "clubColors": "Red / White / Navy Blue",
         "venue": "Estadio Rommel Fernández Gutiérrez",
         "lastUpdated": "2018-06-07T12:17:49Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
+        "teamImg": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/4/2018/06/GettyImages-977813524-533x400.jpg"
     },
     {
         "id": "6679",
@@ -477,6 +509,7 @@
         "clubColors": "Red / White",
         "venue": "Stade de Suisse Wankdorf",
         "lastUpdated": "2018-06-07T12:17:58Z",
-        "Flags": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Civil_Ensign_of_Switzerland_%28Pantone%29.svg/158px-Civil_Ensign_of_Switzerland_%28Pantone%29.svg.png"
+        "Flags": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Civil_Ensign_of_Switzerland_%28Pantone%29.svg/158px-Civil_Ensign_of_Switzerland_%28Pantone%29.svg.png",
+        "teamImg": "https://i.ytimg.com/vi/pAfeIW2T344/maxresdefault.jpg"
     }
 ]

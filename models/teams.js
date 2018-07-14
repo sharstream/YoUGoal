@@ -13,7 +13,8 @@ const teamSchema = new Schema({
   clubColors: String,
   venue: String,
   lastUpdated: String,
-  Flags: String
+  Flags: String,
+  TeamImg: String
 });
 
 const teams = mongoose.model("teams", teamSchema);
