@@ -1,18 +1,20 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
 import { Link } from "react-router-dom";
 
 import API from "../../utils/API";
 import { Grid, Row, Col, Thumbnail, Panel } from "react-bootstrap";
-// import players from "../../players.json";
-import { stringify } from "querystring";
+import StarRatingComponent from '../../components/StarRatingComponent';
 
 export default class Players extends Component {
   state = {
     players: [],
     team: {},
     teamName: "",
-    flagUrl: ""
+    flagUrl: "",
+    overallRating: 0,
+    athletic: 0,
+    offence: 0,
+    defence: 0,
   };
 
   componentDidMount() {
@@ -42,17 +44,58 @@ export default class Players extends Component {
             ) : (
               <Grid>
                 <Row>
-                  {this.state.players.map(player => {
+                  {this.state.players.map(man => {
                     return (
                       <Col md={2}
-                        key={player.name}
-                        teamName={player.name}
-                        position={player.position}
-                        img={player.plyrImg}
-                        handleClick={this.handleClick}
+                        key={man.name}
+                        name={man.name}
+                        position={man.position}
+                        img={man.plyrImg}
                       >
-                        <Link to={"/player/" + player._id}>
-                          <Thumbnail alt={player.name} src={player.plyrImg} />
+                        <Link to={"/player/" + man._id}>
+                          <div className="card text-white bg-primary mb-2" style={{maxWidth: "20rem"}}>
+                            <div className="card-header">
+                              <h4>
+                                {man.name}
+                              </h4>
+                            </div>
+                            <div className="card-body">
+                              <Thumbnail alt={man.name} src={man.plyrImg} />
+                              <h6 className="card-title">Number: {man.jerseyNumber}</h6>
+                              <p className="card-text">
+                                Position: {man.postion}
+                                <br />
+                                Nationality: {man.nationality}
+                              </p>
+                              <strong>
+                                {/* <h3>Editable with handlers (Rating from state is {this.state.rating}):</h3> */}
+                                <br />
+                                  Overall: <StarRatingComponent
+                                    name="overall"
+                                    starCount={5}
+                                    value={this.state.overallRating}
+                                  />
+                                <br />
+                                  Athletic: <StarRatingComponent
+                                    name="Athletic"
+                                    starCount={5}
+                                    value={this.state.athletic}
+                                  />
+                                <br />
+                                  Offence: <StarRatingComponent
+                                    name="Offence"
+                                    starCount={5}
+                                    value={this.state.offence}
+                                  />
+                                <br />
+                                  Defence: <StarRatingComponent
+                                    name="Defence"
+                                    starCount={5}
+                                    value={this.state.defence}
+                                  />
+                              </strong>
+                            </div>
+                          </div>
                         </Link>
                       </Col>
                     );

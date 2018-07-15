@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+
+import  { Thumbnail } from "react-bootstrap";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Col, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import StarRatingComponent from '../../components/StarRatingComponent';
+
 class Player extends Component {
   state = {
     player: [],
@@ -80,40 +83,49 @@ class Player extends Component {
             <List>
               {this.state.player.map(man => (
                 <ListItem key={man._id}>
-                  <strong>
-                    Name: {man.name}
-                    <br/>
-                    Number: {man.jerseyNumber}
-                    <br />
-                    Position: {man.postion}
-                    <br />
-                    Nationality: {man.nationality}
-                    {/* <h3>Editable with handlers (Rating from state is {this.state.rating}):</h3> */}
-                    <br />
-                      Overall: <StarRatingComponent
-                        name="overall"
-                        starCount={5}
-                        value={this.state.overallRating}
-                        onStarClick={this.onOverallStarClick.bind(this)} />
-                    <br />
-                      Athletic: <StarRatingComponent
-                        name="Athletic"
-                        starCount={5}
-                        value={this.state.athletic}
-                        onStarClick={this.onAthleticStarClick.bind(this)} />
-                    <br />
-                      Offence: <StarRatingComponent
-                        name="Offence"
-                        starCount={5}
-                        value={this.state.offence}
-                        onStarClick={this.onOffenceStarClick.bind(this)} />
-                    <br />
-                      Defence: <StarRatingComponent
-                        name="Defence"
-                        starCount={5}
-                        value={this.state.defence}
-                        onStarClick={this.onDefenceStarClick.bind(this)} />
-                  </strong>
+                  <div className="card text-white bg-primary mb-2" style={{maxWidth: "20rem"}}>
+                    <div className="card-header">
+                      <h4>
+                        Name: {man.name}
+                      </h4>
+                    </div>
+                    <div className="card-body">
+                      <Thumbnail alt={man.name} src={man.plyrImg} />
+                      <h6 className="card-title">Number: {man.jerseyNumber}</h6>
+                      <p className="card-text">
+                        Position: {man.postion}
+                        <br />
+                        Nationality: {man.nationality}
+                      </p>
+                      <strong>
+                        {/* <h3>Editable with handlers (Rating from state is {this.state.rating}):</h3> */}
+                        <br />
+                          Overall: <StarRatingComponent
+                            name="overall"
+                            starCount={5}
+                            value={this.state.overallRating}
+                            onStarClick={this.onOverallStarClick.bind(this)} />
+                        <br />
+                          Athletic: <StarRatingComponent
+                            name="Athletic"
+                            starCount={5}
+                            value={this.state.athletic}
+                            onStarClick={this.onAthleticStarClick.bind(this)} />
+                        <br />
+                          Offence: <StarRatingComponent
+                            name="Offence"
+                            starCount={5}
+                            value={this.state.offence}
+                            onStarClick={this.onOffenceStarClick.bind(this)} />
+                        <br />
+                          Defence: <StarRatingComponent
+                            name="Defence"
+                            starCount={5}
+                            value={this.state.defence}
+                            onStarClick={this.onDefenceStarClick.bind(this)} />
+                      </strong>
+                    </div>
+                  </div>
                 </ListItem>
               ))}
             </List>

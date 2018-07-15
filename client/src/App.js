@@ -1,13 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
-import Player from "./pages/Player";
-import NoMatch from "./pages/NoMatch";
 import Teams from "./pages/Teams";
 import Players from "./pages/Players";
+import Player from "./pages/Player";
+import NoMatch from "./pages/NoMatch";
 
 import NavigationBar from "./components/NavigationBar";
 import Carousel from "./components/Carousel";
@@ -43,9 +42,9 @@ const App = () => (
             <Route exact path="/implicit/callback" component={ImplicitCallback} />
             <SecureRoute exact path="/dropdownplayer" component={DropDownPlayer} />
             <SecureRoute exact path="/dropdownteam" component={DropDownTeam} />
-            <Route exact path="/" component={Teams} />
-            <Route exact path="/teamsGet/:teamID" component={Players} />
-            <Route exact path="/player/:_id" component={Player} />
+            <SecureRoute exact path="/" component={Teams} />
+            <SecureRoute exact path="/teamsGet/:teamID" component={Players} />
+            <SecureRoute exact path="/player/:_id" component={Player} />
             <Route component={NoMatch} />
           </Switch>
         </Security>

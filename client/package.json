@@ -9,13 +9,16 @@
     "axios": "^0.18.0",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
+    "react-bootstrap4-modal": "^1.4.0",
     "react-dom": "^16.4.1",
     "react-modal": "^3.5.1",
+    "react-responsive-carousel": "^3.1.41",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-script": "^2.0.5",
     "react-scripts": "1.0.14",
-    "react-star-rating-component": "^1.4.1"
+    "react-star-rating-component": "^1.4.1",
+    "reactstrap": "^6.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
