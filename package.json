@@ -16,15 +16,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.18.2"
   },
   "dependencies": {
-    "axios": "^0.16.2",
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "mongoose": "^5.0.17",
+    "mongoose": "^5.2.3",
     "react-star-rating-component": "^1.4.1",
     "yarn": "^1.7.0"
   }
