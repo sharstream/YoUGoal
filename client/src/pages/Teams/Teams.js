@@ -3,6 +3,7 @@ import ReactDOM, { render } from 'react-dom';
 // import teams from "../../team.json";
 // import players from "../../players.json";
 import API from "../../utils/API";
+import { Link } from "react-router-dom";
 import { Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
 import { stringify } from "querystring";
 import Players from "../Players/Players";
@@ -39,14 +40,16 @@ export default class Teams extends Component {
 							<Row>
 								{this.state.teams.map(team => {
 									return (
-										<Col md={3}
+										<Col md={2}
 											key={team.id}
 											teamName={team.name}
 											founded={team.founded}
 											url={team.Flags}
 											handleClick={ id => this.handleClick(id)}
 										>
-											<Thumbnail alt={team.name} src={team.Flags} />
+											<Link to={"/teamsGet/" + team._id}>
+												<Thumbnail alt={team.name} src={team.Flags} />
+											</Link>
 										</Col>
 									);
 								})}

@@ -1,30 +1,33 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import { Link } from "react-router-dom";
+
 import API from "../../utils/API";
 import { Grid, Row, Col, Thumbnail, Panel } from "react-bootstrap";
-import players from "../../players.json";
+// import players from "../../players.json";
 import { stringify } from "querystring";
 
 export default class Players extends Component {
   state = {
     players: [],
+    team: {},
     teamName: "",
     flagUrl: ""
   };
 
-  handlePlayers = () => {
-    console.log("players: " + JSON.stringify(players));
-    this.setState({ players: players });
-  };
-
-  reloadPage() {
-    this.setState({
-      teamName: "",
-      flagUrl: "",
-      players: []
-    })
-
-    this.handlePlayers();
+  componentDidMount() {
+    API.findPlayersByTeamID(this.props.match.params.teamID)
+      .then(res => this.setState({ players: res.data }))
+      // .then(res => console.log(res.data))
+      .then(() => {
+        API.findTeamByID(this.props.match.params.teamID)
+          .then(resp => {
+            this.setState({ team: resp.data[0] });
+            console.log(JSON.stringify(this.state.team.name));
+          })
+          // .then(res => console.log(res.data))
+          .catch(err => console.log(err));
+      }).catch(err => console.log(err));
   }
 
   render() {
@@ -41,14 +44,16 @@ export default class Players extends Component {
                 <Row>
                   {this.state.players.map(player => {
                     return (
-                      <Col md={1}
+                      <Col md={2}
                         key={player.name}
                         teamName={player.name}
                         position={player.position}
                         img={player.plyrImg}
                         handleClick={this.handleClick}
                       >
-                        <Thumbnail alt={player.name} src={player.plyrImg} />
+                        <Link to={"/player/" + player._id}>
+                          <Thumbnail alt={player.name} src={player.plyrImg} />
+                        </Link>
                       </Col>
                     );
                   })}
