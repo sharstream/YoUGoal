@@ -58,7 +58,7 @@ export default withAuth(class SigninPage extends Component {
         <Redirect to={{ pathname: "/" }}/>
       ) : (
         <div className="static-modal">
-          <Modal show={this.state.showModal} onHide={this.handleClose}>
+          <Modal show={this.state.showModal} animation={false} onHide={this.handleClose}>
             <Modal.Header>
               <Modal.Title>Login Page</Modal.Title>
             </Modal.Header>

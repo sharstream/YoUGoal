@@ -19,7 +19,7 @@ export default class SignupPage extends React.Component {
 	render() {
 		return (
 			<div className="static-modal">
-        <Modal show={this.state.showModal} onHide={this.handleClose}>
+        <Modal show={this.state.showModal} animation={false} onHide={this.handleClose}>
           <Modal.Header>
             <Modal.Title>Join our community!</Modal.Title>
           </Modal.Header>
@@ -28,7 +28,7 @@ export default class SignupPage extends React.Component {
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.handleClose}>Close</Button>
-            <Button bsStyle="primary">Sign Up</Button>
+            <Button bsStyle="primary">Sign up</Button>
           </Modal.Footer>
         </Modal>
       </div>
