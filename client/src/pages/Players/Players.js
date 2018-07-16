@@ -4,6 +4,16 @@ import { Link } from "react-router-dom";
 import API from "../../utils/API";
 import { Grid, Row, Col, Thumbnail, Panel } from "react-bootstrap";
 import StarRatingComponent from '../../components/StarRatingComponent';
+import {
+  Card,
+  Collapse,
+  Button,
+  CardHeader,
+  CardFooter,
+  CardBody,
+  CardTitle,
+  CardText
+} from 'reactstrap';
 
 export default class Players extends Component {
   state = {
@@ -53,49 +63,23 @@ export default class Players extends Component {
                         img={man.plyrImg}
                       >
                         <Link to={"/player/" + man._id}>
-                          <div className="card text-white bg-primary mb-2" style={{maxWidth: "20rem"}}>
-                            <div className="card-header">
-                              <h4>
-                                {man.name}
-                              </h4>
-                            </div>
-                            <div className="card-body">
-                              <Thumbnail alt={man.name} src={man.plyrImg} />
+                          <Card body inverse color="primary">
+                            <CardBody>
+                              <CardTitle>{man.name}</CardTitle>
+                            </CardBody>
+                            <Thumbnail alt={man.name} src={man.plyrImg} />
+                            <CardBody>
                               <h6 className="card-title">Number: {man.jerseyNumber}</h6>
                               <p className="card-text">
                                 Position: {man.postion}
                                 <br />
                                 Nationality: {man.nationality}
                               </p>
-                              <strong>
-                                {/* <h3>Editable with handlers (Rating from state is {this.state.rating}):</h3> */}
-                                <br />
-                                  Overall: <StarRatingComponent
-                                    name="overall"
-                                    starCount={5}
-                                    value={this.state.overallRating}
-                                  />
-                                <br />
-                                  Athletic: <StarRatingComponent
-                                    name="Athletic"
-                                    starCount={5}
-                                    value={this.state.athletic}
-                                  />
-                                <br />
-                                  Offence: <StarRatingComponent
-                                    name="Offence"
-                                    starCount={5}
-                                    value={this.state.offence}
-                                  />
-                                <br />
-                                  Defence: <StarRatingComponent
-                                    name="Defence"
-                                    starCount={5}
-                                    value={this.state.defence}
-                                  />
-                              </strong>
-                            </div>
-                          </div>
+                            </CardBody>
+                            <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>
+                              Display
+                            </Button>
+                          </Card>
                         </Link>
                       </Col>
                     );
