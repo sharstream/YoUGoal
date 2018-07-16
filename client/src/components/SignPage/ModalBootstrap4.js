@@ -1,70 +1,91 @@
 import React from "react";
-import { default as SignupForm } from "./SignupForm";
-// import { Modal, Button } from "react-bootstrap";
-import Modal from 'react-bootstrap4-modal';
+import { Redirect } from "react-router-dom";
+import SigninWidget from "./SigninWidget";
+import { withAuth } from "@okta/okta-react";
 
-export default class SignupPage extends React.Component {
+import {
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter
+} from 'reactstrap';
 
-  state = {
-    showModal: true
-  };
+export default withAuth(class ModalBootstrap4 extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false,
+      backdrop: true,
+      authenticated: null
+    };
+    this.checkAuthentication();
+  }
+
+  toggle = () => {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
 
   handleClose = () => {
-    this.setState({ showModal: false });
+    this.setState({ modal: true });
   }
 
-  handleShow = () => {
-    this.setState({ showModal: true });
+
+  changeBackdrop = e => {
+    let value = e.target.value;
+    if (value !== 'static') {
+      value = JSON.parse(value);
+    }
+    this.setState({ backdrop: value });
   }
 
-	render() {
-		return (
-			<div className="static-modal">
-        <Modal visible={this.state.showModal} onClickBackdrop={this.handleClose}>
-          <div className="modal-header">
-            <h5 className="modal-title">Join our community!</h5>
-          </div>
-          <div className="modal-body">
-            <form>
-              <div className="form-group">
-                <label className="control-label">Username</label>
-                <input
-                  placeholder = "Enter your username"
-                  type="text"
-                  name="username"
-                  className="form-control"
-                />
-              </div>
-              <div>
-              <label className="control-label">Password</label>
-                <input
-                  placeholder = "Enter your password"
-                  type="password"
-                  name="password"
-                  className="form-control"
-                />
-              </div>
-              <div>
-                <label className="control-label">Email Address</label>
-                <input
-                  placeholder = "Enter your email address"
-                  type="text"
-                  name="email"
-                  className="form-control"
-                />
-              </div>
-            </form>
-          </div>
-          <div className="modal-footer">
-            <button type="button" className="btn btn-default" onClick={this.handleClose}>
-              Close
-            </button>
-            <button type="button" className="btn btn-primary" onClick={this.handleClose}>
-              SignUp
-            </button>
-          </div>
-        </Modal>
-      </div>
-		);
-	}
-}
+  async checkAuthentication() {
+    //use a promise in sync operation
+    const authenticated = await this.props.auth.isAuthenticated();
+    if (authenticated !== this.state.authenticated) {
+      this.setState({ authenticated });
+    }
+  }
+
+  componentDidUpdate() {
+    this.checkAuthentication();
+  }
+
+  onSuccess = res => {
+    return this.props.auth.redirect({
+      sessionToken: res.session.token
+    });
+  }
+
+  onError = err => {
+    console.log('error logging in', err);
+  }
+
+	 render() {
+    if (this.state.authenticated === null) return null;
+    return (
+      this.state.authenticated ? (
+        <Redirect to={{ pathname: "/" }}/>
+      ) : (
+        <div>
+          <Modal isOpen={this.toggle} fade={false} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
+            <ModalHeader toggle={this.toggle}>Login Form</ModalHeader>
+            <ModalBody>
+              <SigninWidget
+                baseUrl={this.props.baseUrl}
+                onSuccess={this.onSuccess}
+                onError={this.onError}
+              />
+            </ModalBody>
+            <ModalFooter>
+              <Button color="secondary" onClick={this.handleClose}>Cancel</Button>
+            </ModalFooter>
+          </Modal>
+        </div>
+      )
+    );
+  }
+});

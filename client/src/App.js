@@ -12,6 +12,7 @@ import NavigationBar from "./components/NavigationBar";
 import Carousel from "./components/Carousel";
 import { DropDownPlayer, DropDownTeam } from "./components/MenuDropDown";
 import { SignupPage as Signup, SigninPage as Signin } from "./components/SignPage";
+import GetSupport from "./components/Manager/GetSupport";
 
 // import { ParentMenu as Menu } from "./Menu";
 // import { pushRotate as Menu } from "react-burger-menu";
@@ -35,10 +36,11 @@ const App = () => (
                   redirect_uri={window.location.origin + "/implicit/callback"}
                   onAuthRequired={onAuthRequired}>
           <Switch>
-            <Route exact={true} path="/signup" component={Signup} />
+            <Route exact path="/signup" component={Signup} />
             <Route exact path="/signin"
               render={() => <Signin baseUrl="https://dev-590113.oktapreview.com" />}
             />
+            <Route exact path="/getsupport" component={GetSupport} />
             <Route exact path="/implicit/callback" component={ImplicitCallback} />
             <SecureRoute exact path="/dropdownplayer" component={DropDownPlayer} />
             <SecureRoute exact path="/dropdownteam" component={DropDownTeam} />
