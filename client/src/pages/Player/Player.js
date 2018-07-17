@@ -95,7 +95,10 @@ class Player extends Component {
             <List>
               {this.state.player.map(man => (
                 <ListItem key={man._id}>
-                  <Card body inverse color="success">
+                  <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <Card>
                     <CardBody>
                       <CardTitle>{man.name}</CardTitle>
                     </CardBody>
@@ -141,7 +144,7 @@ class Player extends Component {
                               onStarClick={this.onDefenceStarClick.bind(this)} />
                         </strong>
                       </CardBody>
-                      <CardFooter className="text-muted">Footer</CardFooter>
+                      <CardFooter className="text-muted"></CardFooter>
                     </Collapse>
                   </Card>
 
@@ -153,7 +156,6 @@ class Player extends Component {
             )}
         </Col>
       </Container>
-
     );
   }
 }

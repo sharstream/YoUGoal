@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import API from "../../utils/API";
-import { Grid, Row, Col, Thumbnail, Panel } from "react-bootstrap";
-import StarRatingComponent from '../../components/StarRatingComponent';
+import { Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
 import {
   Card,
   Collapse,
@@ -45,6 +44,9 @@ export default class Players extends Component {
   render() {
     return (
       <div>
+        <PageHeader>
+					FIFA Players <small>2018</small>
+				</PageHeader>
         <Panel bsStyle="primary">
           <Panel.Heading>
             <Panel.Title componentClass="h3">Players</Panel.Title>
@@ -70,14 +72,11 @@ export default class Players extends Component {
                             <Thumbnail alt={man.name} src={man.plyrImg} />
                             <CardBody>
                               <h6 className="card-title">Number: {man.jerseyNumber}</h6>
-                              <p className="card-text">
-                                Position: {man.postion}
-                                <br />
-                                Nationality: {man.nationality}
-                              </p>
+                              <h6 class="card-title">Position: {man.postion}</h6>
+                              <h6 class="card-title">Nationality: {man.nationality}</h6>
                             </CardBody>
                             <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>
-                              Display
+                              Ranking
                             </Button>
                           </Card>
                         </Link>

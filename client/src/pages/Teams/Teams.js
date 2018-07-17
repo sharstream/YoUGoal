@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
+import {
+  Card,
+  CardImg,
+  CardBody,
+	CardTitle,
+	CardSubtitle,
+	Button
+} from 'reactstrap';
 
 export default class Teams extends Component {
   state = {
@@ -39,10 +47,17 @@ export default class Teams extends Component {
 											key={team.name}
 											name={team.name}
 											founded={team.founded}
-											url={team.Flags}
+											url={team.teamImg}
 										>
 											<Link to={"/teamsGet/" + team._id}>
-												<Thumbnail alt={team.name} src={team.Flags} />
+												<Card>
+													<CardImg top width="100%" src={team.teamImg} alt={team.name} />
+													<CardBody>
+														<CardTitle>{team.shortName}</CardTitle>
+														<CardSubtitle>{team.website}</CardSubtitle>
+														<Button color="primary">Display Team</Button>
+													</CardBody>
+												</Card>
 											</Link>
 										</Col>
 									);

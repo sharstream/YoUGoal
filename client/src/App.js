@@ -25,10 +25,10 @@ function onAuthRequired ({history}) {
 const App = () => (
   <Router>
     <div className="container">
-      <div className="row">
+      <div>
         <NavigationBar />
       </div>
-      <div className="row">
+      <div>
         <Carousel />
       </div>
       <div className="row">
