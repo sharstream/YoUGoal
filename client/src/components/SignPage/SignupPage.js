@@ -1,15 +1,17 @@
 import React from "react";
 import { default as SignupForm } from "./SignupForm";
 import { Modal, Button } from "react-bootstrap";
+import { Redirect } from "react-router-dom";
 
 export default class SignupPage extends React.Component {
 
   state = {
-    showModal: true
+    showModal: true,
+    redirect: ""
   };
 
   handleClose = () => {
-    this.setState({ showModal: false });
+    this.setState({ showModal: false, redirect: "/" });
   }
 
   handleShow = () => {
@@ -27,7 +29,9 @@ export default class SignupPage extends React.Component {
             <SignupForm />
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
+            <Button onClick={this.handleClose}>
+              Close
+            </Button>
             <Button bsStyle="primary">Sign up</Button>
           </Modal.Footer>
         </Modal>

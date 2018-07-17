@@ -45,7 +45,7 @@ export default class Players extends Component {
   render() {
     return (
       <div>
-        <Panel bsStyle="success">
+        <Panel bsStyle="primary">
           <Panel.Heading>
             <Panel.Title componentClass="h3">Players</Panel.Title>
           </Panel.Heading>
