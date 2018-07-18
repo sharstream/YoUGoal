@@ -26,6 +26,7 @@
     "express": "^4.16.3",
     "if-env": "^1.0.4",
     "mongoose": "^5.2.3",
+    "react": "^16.2.0",
     "react-bootstrap4-modal": "^1.4.0",
     "react-responsive-carousel": "^3.1.41",
     "react-star-rating-component": "^1.4.1",

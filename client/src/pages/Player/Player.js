@@ -117,13 +117,9 @@ class Player extends Component {
       <Container fluid>
         <Col size="md-12 sm-12">
           {this.state.player.length ? (
-            <List>
-              {this.state.player.map(man => (
-                <ListItem key={man._id}>
-                  <button type="button" className="close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <Card>
+            <div>
+                  {this.state.player.map(man => (
+            <Card key={man._id}>
                     <CardBody>
                       <CardTitle>{man.name}</CardTitle>
                     </CardBody>
@@ -143,19 +139,24 @@ class Player extends Component {
                       <CardBody>
                         <strong>
                           <br />
-                          Overall: <StarRatingComponent
+                          Overall: 
+                          <br />
+                          <StarRatingComponent
                             name="overall"
                             starCount={5}
                             value={this.state.overallRating}
                             onStarClick={this.onOverallStarClick.bind(this)} />
                           <br />
-                          pace: <StarRatingComponent
+                          pace:
+                          <br />
+                           <StarRatingComponent
                             name="pace"
                             starCount={5}
                             value={this.state.pace}
                             onStarClick={this.onPaceStarClick.bind(this)} />
                           <br />
                           dribbling:
+                          <br />
                         <StarRatingComponent
                             name="dribbling"
                             starCount={5}
@@ -163,6 +164,7 @@ class Player extends Component {
                             onStarClick={this.onDribblingStarClick.bind(this)} />
                           <br />
                           passing:
+                          <br />
                       <StarRatingComponent
                             name="passing"
                             starCount={5}
@@ -171,6 +173,7 @@ class Player extends Component {
                           <br />
 
                           shooting:
+                          <br />
                       <StarRatingComponent
                             name="shooting"
                             starCount={5}
@@ -179,6 +182,7 @@ class Player extends Component {
                           <br />
 
                           defense:
+                          <br />
                       <StarRatingComponent
                             name="defense"
                             starCount={5}
@@ -186,6 +190,7 @@ class Player extends Component {
                             onStarClick={this.onDefenseStarClick.bind(this)} />
                           <br />
                           physicality:
+                          <br />
                       <StarRatingComponent
                             name="physicality"
                             starCount={5}
@@ -203,13 +208,12 @@ class Player extends Component {
                       </CardBody>
                       <CardFooter className="text-muted"></CardFooter>
                     </Collapse>
-                  </Card>
-                </ListItem>
-              ))}
-            </List>
+                    </Card>
+                    ))}
+                    </div>
           ) : (
-              <h3>No Results to Display</h3>
-            )}
+            <h3>No Results to Display</h3>
+          )}
         </Col>
       </Container>
     );
