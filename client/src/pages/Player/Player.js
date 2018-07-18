@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import  { Thumbnail } from "react-bootstrap";
+import { Thumbnail } from "react-bootstrap";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Col, Container } from "../../components/Grid";
@@ -25,7 +25,13 @@ class Player extends Component {
     athletic: 0,
     offence: 0,
     defence: 0,
-    collapse: false
+    collapse: false,
+    pace: 0,
+    dribbling: 0,
+    passing: 0,
+    shooting: 0,
+    defense: 0,
+    physicality: 0
   };
 
   componentDidMount() {
@@ -56,17 +62,29 @@ class Player extends Component {
     console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
     this.setState({ overallRating: nextValue });
   }
-  onAthleticStarClick(nextValue, prevValue, name) {
+  onPaceStarClick(nextValue, prevValue, name) {
     console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
-    this.setState({ athletic: nextValue });
+    this.setState({ pace: nextValue });
   }
-  onOffenceStarClick(nextValue, prevValue, name) {
+  onDribblingStarClick(nextValue, prevValue, name) {
     console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
-    this.setState({ offence: nextValue });
+    this.setState({ dribbling: nextValue });
   }
-  onDefenceStarClick(nextValue, prevValue, name) {
+  onShootingStarClick(nextValue, prevValue, name) {
     console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
-    this.setState({ defence: nextValue });
+    this.setState({ shooting: nextValue });
+  }
+  onDefenseStarClick(nextValue, prevValue, name) {
+    console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
+    this.setState({ defense: nextValue });
+  }
+  onPhysicalityStarClick(nextValue, prevValue, name) {
+    console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
+    this.setState({ physicality: nextValue });
+  }
+  onPassingStarClick(nextValue, prevValue, name) {
+    console.log('name: %s, nextValue: %s, prevValue: %s', name, nextValue, prevValue);
+    this.setState({ passing: nextValue });
   }
 
   onStarClickCustomIcon(nextValue, prevValue, name) {
@@ -74,17 +92,21 @@ class Player extends Component {
     this.setState({ rating_custom_icon: nextValue });
   }
 
-  handleFormSubmit = event => {
+  saveRanking = event => {
     event.preventDefault();
-    if (this.state.title && this.state.author) {
-      API.saveBook({
-        title: this.state.title,
-        author: this.state.author,
-        synopsis: this.state.synopsis
-      })
-        .then(res => this.loadBooks())
-        .catch(err => console.log(err));
-    }
+    console.log(event)
+    API.saveRanking({
+      playerID: this.props.match.params._id,
+      ClientID: "0oafq5xga3MOGlArd0h7",
+      overall: this.state.overallRating,
+      pace: this.state.pace,
+      dribbling: this.state.dribbling,
+      passing: this.state.passing,
+      shooting: this.state.shooting,
+      defense: this.state.defence,
+      physicality: this.state.physicality
+    })
+      .catch(err => console.log(err));
   };
 
   render() {
@@ -108,7 +130,7 @@ class Player extends Component {
                       <p className="card-text">
                         Position: {man.postion}
                         <br />
-                        Nationality: {man.nationality}
+                        Nationality: {man.name1}
                       </p>
                     </CardBody>
                     <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>
@@ -117,37 +139,68 @@ class Player extends Component {
                     <Collapse isOpen={this.state.collapse}>
                       <CardBody>
                         <strong>
-                          {/* <h3>Editable with handlers (Rating from state is {this.state.rating}):</h3> */}
                           <br />
-                            Overall: <StarRatingComponent
-                              name="overall"
-                              starCount={5}
-                              value={this.state.overallRating}
-                              onStarClick={this.onOverallStarClick.bind(this)} />
+                          Overall: <StarRatingComponent
+                            name="overall"
+                            starCount={5}
+                            value={this.state.overallRating}
+                            onStarClick={this.onOverallStarClick.bind(this)} />
                           <br />
-                            Athletic: <StarRatingComponent
-                              name="Athletic"
-                              starCount={5}
-                              value={this.state.athletic}
-                              onStarClick={this.onAthleticStarClick.bind(this)} />
+                          pace: <StarRatingComponent
+                            name="pace"
+                            starCount={5}
+                            value={this.state.pace}
+                            onStarClick={this.onPaceStarClick.bind(this)} />
                           <br />
-                            Offence: <StarRatingComponent
-                              name="Offence"
-                              starCount={5}
-                              value={this.state.offence}
-                              onStarClick={this.onOffenceStarClick.bind(this)} />
+                          dribbling:
+                        <StarRatingComponent
+                            name="dribbling"
+                            starCount={5}
+                            value={this.state.dribbling}
+                            onStarClick={this.onDribblingStarClick.bind(this)} />
                           <br />
-                            Defence: <StarRatingComponent
-                              name="Defence"
-                              starCount={5}
-                              value={this.state.defence}
-                              onStarClick={this.onDefenceStarClick.bind(this)} />
+                          passing:
+                      <StarRatingComponent
+                            name="passing"
+                            starCount={5}
+                            value={this.state.passing}
+                            onStarClick={this.onPassingStarClick.bind(this)} />
+                          <br />
+
+                          shooting:
+                      <StarRatingComponent
+                            name="shooting"
+                            starCount={5}
+                            value={this.state.shooting}
+                            onStarClick={this.onShootingStarClick.bind(this)} />
+                          <br />
+
+                          defense:
+                      <StarRatingComponent
+                            name="defense"
+                            starCount={5}
+                            value={this.state.defense}
+                            onStarClick={this.onDefenseStarClick.bind(this)} />
+                          <br />
+                          physicality:
+                      <StarRatingComponent
+                            name="physicality"
+                            starCount={5}
+                            value={this.state.physicality}
+                            onStarClick={this.onPhysicalityStarClick.bind(this)} />
+                          <br />
+
                         </strong>
+                        <br />
+                        <button
+                          onClick={(event) => {
+                            this.saveRanking(event);
+                          }}
+                          className="btn btn-primary"> Submit Ranking </button>
                       </CardBody>
                       <CardFooter className="text-muted"></CardFooter>
                     </Collapse>
                   </Card>
-
                 </ListItem>
               ))}
             </List>
