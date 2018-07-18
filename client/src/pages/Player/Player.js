@@ -207,7 +207,7 @@ export default withAuth(
                         <Thumbnail alt={man.name} src={man.plyrImg} />
                         <CardBody>
                           <h6 className="card-title">
-                            Number: {man.jerseyNumber}
+                            Kit #: {man.jerseyNumber}
                           </h6>
                           <p className="card-text">
                             Position: {man.postion}
@@ -235,7 +235,7 @@ export default withAuth(
                                 onStarClick={this.onOverallStarClick.bind(this)}
                               />
                               <br />
-                              pace:
+                              Pace:
                               <br />
                               <StarRatingComponent
                                 name="pace"
@@ -244,7 +244,7 @@ export default withAuth(
                                 onStarClick={this.onPaceStarClick.bind(this)}
                               />
                               <br />
-                              dribbling:
+                              Dribbling:
                               <br />
                               <StarRatingComponent
                                 name="dribbling"
@@ -255,7 +255,7 @@ export default withAuth(
                                 )}
                               />
                               <br />
-                              passing:
+                              Passing:
                               <br />
                               <StarRatingComponent
                                 name="passing"
@@ -264,7 +264,7 @@ export default withAuth(
                                 onStarClick={this.onPassingStarClick.bind(this)}
                               />
                               <br />
-                              shooting:
+                              Shooting:
                               <br />
                               <StarRatingComponent
                                 name="shooting"
@@ -275,7 +275,7 @@ export default withAuth(
                                 )}
                               />
                               <br />
-                              defense:
+                              Defense:
                               <br />
                               <StarRatingComponent
                                 name="defense"
@@ -284,7 +284,7 @@ export default withAuth(
                                 onStarClick={this.onDefenseStarClick.bind(this)}
                               />
                               <br />
-                              physicality:
+                              Physical:
                               <br />
                               <StarRatingComponent
                                 name="physicality"
@@ -314,7 +314,7 @@ export default withAuth(
               Close
             </Button>
             <Button bsStyle="success" onClick={e => this.saveRanking(e)}>
-              Submit Rating
+              Submit Ratings
             </Button>
           </ModalFooter>
         </Modal>

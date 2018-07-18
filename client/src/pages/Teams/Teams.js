@@ -64,10 +64,10 @@ export default class Teams extends Component {
     return (
       <div>
         <PageHeader>
-          FIFA Teams <small>2018</small>
+          FIFA World Cup Teams <small>2018</small>
         </PageHeader>
         <Panel bsStyle="primary">
-          <Panel.Heading>Select a Team</Panel.Heading>
+          <Panel.Heading>Select a National Team</Panel.Heading>
           {!this.state.teams.length ? (
             <h3 className="text-center">No Team to Display</h3>
           ) : (

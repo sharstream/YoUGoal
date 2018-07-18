@@ -67,7 +67,7 @@ export default class Players extends Component {
                             </CardBody>
                             <Thumbnail alt={man.name} src={man.plyrImg} />
                             <CardBody>
-                              <h6 className="card-title">Number: {man.jerseyNumber}</h6>
+                              <h6 className="card-title">Kit #: {man.jerseyNumber}</h6>
                               <h6 className="card-title">Position: {man.postion}</h6>
                               <h6 className="card-title">Nationality: {man.name1}</h6>
                             </CardBody>
@@ -76,7 +76,7 @@ export default class Players extends Component {
                               onClick={() => this.setState({modal: true})}
                               style={{ marginBottom: '1rem' }}
                             >
-                              Ranking
+                              Ratings
                             </Button>
                           </Card>
                         </Link>

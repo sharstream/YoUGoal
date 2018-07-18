@@ -36,14 +36,14 @@ export default withAuth(class Home extends Component {
 
     const mainContent = this.state.authenticated ? (
       <div>
-        <p className="lead">You have entered the YoUGoal portal,
+        <p className="lead">You have entered the YouGoal portal,
           <Link to="/">click here</Link>
         </p>
         <button className="btn btn-light btn-lg" onClick={this.logout}>Logout</button>
       </div>
     ) : (
       <div>
-        <p className="lead">If you are a yougoal member, please contact your administrator</p>
+        <p className="lead">If you are a YouGoal member, please contact your administrator</p>
         <button className="btn btn-dark btn-lg" onClick={this.login}>Login</button>
       </div>
     );
