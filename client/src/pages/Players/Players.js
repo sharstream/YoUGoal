@@ -53,7 +53,8 @@ export default class Players extends Component {
                 <Row>
                   {this.state.players.map(man => {
                     return (
-                      <Col md={2}
+                      <Col style={{ margin: '15px' }}
+                        md={2}
                         key={man.name}
                         name={man.name}
                         position={man.position}
@@ -68,7 +69,7 @@ export default class Players extends Component {
                             <CardBody>
                               <h6 className="card-title">Number: {man.jerseyNumber}</h6>
                               <h6 className="card-title">Position: {man.postion}</h6>
-                              <h6 className="card-title">Nationality: {man.nationality}</h6>
+                              <h6 className="card-title">Nationality: {man.name1}</h6>
                             </CardBody>
                             <Button
                               color="primary"
