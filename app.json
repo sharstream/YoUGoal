@@ -1,0 +1,13 @@
+{
+    "name": "You Goal",
+    "description": "You goal rotten ranking soccer teams and players.",
+    "repository": "https://github.com/sharstream/YoUGoal",
+    "logo": "https://i.imgur.com/bYSmFD6.png",
+    "keywords": [
+        "node",
+        "express",
+        "heroku"
+    ],
+    "images": "heroku/nodejs",
+    "addons": "mlab"
+}

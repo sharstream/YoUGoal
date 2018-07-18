@@ -30,6 +30,12 @@ const NavigationBar = () => {
 								Login
 						</Link>
 					</li>
+          <li className="nav-item">
+						<Link className="nav-link" to="/logout">
+							<span className="glyphicon glyphicon-log-out"></span>
+								Logout
+						</Link>
+					</li>
 					<li className="nav-item">
 						<Link className="nav-link" to="/about">
 							<span className="glyphicon glyphicon-sunglasses"></span>

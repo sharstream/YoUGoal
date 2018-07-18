@@ -5,13 +5,9 @@ import API from "../../utils/API";
 import { Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
 import {
   Card,
-  Collapse,
   Button,
-  CardHeader,
-  CardFooter,
   CardBody,
   CardTitle,
-  CardText
 } from 'reactstrap';
 
 export default class Players extends Component {
@@ -72,8 +68,8 @@ export default class Players extends Component {
                             <Thumbnail alt={man.name} src={man.plyrImg} />
                             <CardBody>
                               <h6 className="card-title">Number: {man.jerseyNumber}</h6>
-                              <h6 class="card-title">Position: {man.postion}</h6>
-                              <h6 class="card-title">Nationality: {man.nationality}</h6>
+                              <h6 className="card-title">Position: {man.postion}</h6>
+                              <h6 className="card-title">Nationality: {man.nationality}</h6>
                             </CardBody>
                             <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>
                               Ranking

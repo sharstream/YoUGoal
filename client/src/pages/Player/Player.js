@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-
 import  { Thumbnail } from "react-bootstrap";
-import Jumbotron from "../../components/Jumbotron";
+
 import API from "../../utils/API";
 import { Col, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
@@ -10,16 +9,17 @@ import {
   Card,
   Collapse,
   Button,
-  CardHeader,
   CardFooter,
   CardBody,
-  CardTitle,
-  CardText
+  CardTitle
 } from 'reactstrap';
 
 class Player extends Component {
   state = {
     player: [],
+    currentUserEmail: "",
+    currentUserName: "",
+    clientID: "",
     manName: "",
     overallRating: 0,
     athletic: 0,
@@ -29,14 +29,23 @@ class Player extends Component {
   };
 
   componentDidMount() {
-    this.loadBooks();
+    const client = JSON.parse(localStorage.getItem("okta-token-storage"));
+    this.setState({
+      currentUserEmail: client.idToken.claims.email,
+      currentUserName: client.idToken.claims.name,
+      clientID: client.idToken.clientId
+    });
+    console.log(`current user: ` + this.state.currentUserName);
+    console.log(`current email: ` + this.state.currentUserEmail);
+    console.log(`client_id: ` + this.state.clientID);
+    this.loadTeams();
   }
 
   toggle = () => {
     this.setState({ collapse: !this.state.collapse });
   }
 
-  loadBooks = () => {
+  loadTeams = () => {
     API.findPlayersByPlayerID(this.props.match.params._id)
       .then(res => this.setState({ player: res.data }))
       .then(() => {
@@ -74,15 +83,21 @@ class Player extends Component {
     this.setState({ rating_custom_icon: nextValue });
   }
 
-  handleFormSubmit = event => {
+  handleRankingSubmit = event => {
     event.preventDefault();
-    if (this.state.title && this.state.author) {
-      API.saveBook({
-        title: this.state.title,
-        author: this.state.author,
-        synopsis: this.state.synopsis
+    if (this.state.playerID) {
+      API.saveRanking({
+        playerID: this.state.playerID,
+        ClientID: this.state.clientID,
+        overall: 4,
+        pace: 4,
+        dribbling: 4,
+        passing: 4,
+        shooting: 4,
+        defense: 4,
+        physicality: 4
       })
-        .then(res => this.loadBooks())
+        .then(res => this.loadTeams())
         .catch(err => console.log(err));
     }
   };
@@ -95,7 +110,7 @@ class Player extends Component {
             <List>
               {this.state.player.map(man => (
                 <ListItem key={man._id}>
-                  <button type="button" class="close" aria-label="Close">
+                  <button type="button" className="close" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                   <Card>
