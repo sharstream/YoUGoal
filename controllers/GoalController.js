@@ -32,6 +32,19 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  findAvgRatingByTeamID: function (req, res) {
+    db.ratings.aggregate( [
+      { $match: { playerTeamID: req.body._id } },
+      {
+        $group: {
+           _id: "$playerTeamID",
+           avgOverall: { $avg: "$overall" }
+        }
+      }
+   ] )
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
   saveRanking: function (req, res) {
     db.ratings
     .create(req.body)

@@ -28,6 +28,7 @@ export default withAuth(
       currentUserName: "",
       clientId: "",
       manName: "",
+      manTeamID: "",
       overallRating: 0,
       pace: 0,
       dribbling: 0,
@@ -57,8 +58,12 @@ export default withAuth(
     loadPlayer = _id => {
       API.findPlayersByPlayerID(_id)
         .then(res => this.setState({ player: res.data }))
+        // .then(this.setState({ manTeamID: res.data[0].teamID }))
         .then(() => {
           this.setState({ manName: this.state.player[0].name });
+        })
+        .then(() => {
+          this.setState({ manTeamID:  this.state.player[0].teamID });
         })
         .catch(err => console.log(err));
     };
@@ -149,6 +154,7 @@ export default withAuth(
       console.log(event);
       API.saveRanking({
         playerID: this.props.match.params._id,
+        playerTeamID: this.state.manTeamID,
         clientId: this.state.clientId,
         overall: this.state.overallRating,
         pace: this.state.pace,

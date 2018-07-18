@@ -52,6 +52,7 @@ export default class Teams extends Component {
     this.setState({
 			[name]: nextValue
     });
+    console.log({[name] : nextValue});
   }
 
   loadTeams = () => {
