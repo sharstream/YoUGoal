@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-import SigninWidget from "./SigninWidget";
 import { withAuth } from "@okta/okta-react";
+import { Link } from "react-router-dom";
+import Player from "../../pages/Player";
 
 import {
   Button,
@@ -11,7 +12,7 @@ import {
   ModalFooter
 } from 'reactstrap';
 
-export default withAuth(class ModalBootstrap4 extends React.Component {
+export default withAuth(class ModalBootstrap4 extends Component {
 
   constructor(props) {
     super(props);
@@ -68,23 +69,22 @@ export default withAuth(class ModalBootstrap4 extends React.Component {
     if (this.state.authenticated === null) return null;
     return (
       this.state.authenticated ? (
-        <Redirect to={{ pathname: "/" }}/>
-      ) : (
         <div>
           <Modal isOpen={this.toggle} fade={false} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
-            <ModalHeader toggle={this.toggle}>Login Form</ModalHeader>
+            <ModalHeader toggle={this.toggle}>Player Rating Form</ModalHeader>
             <ModalBody>
-              <SigninWidget
-                baseUrl={this.props.baseUrl}
-                onSuccess={this.onSuccess}
-                onError={this.onError}
-              />
+              <Link to={"/player/" + this.props.match.params._id}>
+                <Player />
+              </Link>
             </ModalBody>
             <ModalFooter>
-              <Button color="secondary" onClick={this.handleClose}>Cancel</Button>
+              <Button bsStyle="primary" onClick={this.handleClose}>Close</Button>
+              <Button bsStyle="primary" onClick={ e => this.props.saveRanking(e)}>Save changes</Button>
             </ModalFooter>
           </Modal>
         </div>
+      ) : (
+        <Redirect to={{ pathname: "/" }}/>
       )
     );
   }

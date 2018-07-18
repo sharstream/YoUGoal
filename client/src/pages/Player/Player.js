@@ -6,15 +6,13 @@ import { Col, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import StarRatingComponent from '../../components/StarRatingComponent';
 import {
-  Card,
-  Collapse,
-  Button,
-  CardFooter,
-  CardBody,
-  CardTitle
+  Card, Collapse, Button, CardFooter, CardBody, CardTitle,
+  Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
+import { Redirect } from "react-router-dom";
+import { withAuth } from "@okta/okta-react";
 
-class Player extends Component {
+export default withAuth(class Player extends Component {
   state = {
     player: [],
     currentUserEmail: "",
@@ -28,7 +26,9 @@ class Player extends Component {
     shooting: 0,
     defense: 0,
     physicality: 0,
-    collapse: false
+    collapse: false,
+    modal: false,
+    backdrop: true
   };
 
   componentDidMount() {
@@ -38,15 +38,15 @@ class Player extends Component {
       currentUserName: client.idToken.claims.name,
       clientId: client.idToken.clientId
     });
-    this.loadTeams();
+    this.loadPlayer(this.props.match.params._id);
   }
 
   toggle = () => {
     this.setState({ collapse: !this.state.collapse });
   }
 
-  loadTeams = () => {
-    API.findPlayersByPlayerID(this.props.match.params._id)
+  loadPlayer = (_id) => {
+    API.findPlayersByPlayerID(_id)
       .then(res => this.setState({ player: res.data }))
       .then(() => {
         this.setState({ manName: this.state.player[0].name });
@@ -110,109 +110,129 @@ class Player extends Component {
       physicality: this.state.physicality
     })
       .catch(err => console.log(err));
+      console.log(this.state);
   };
+
+  toggleModal = () => {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
+
+  handleClose = () => {
+    this.setState({ modal: false });
+  }
+
+
+  changeBackdrop = e => {
+    let value = e.target.value;
+    if (value !== 'static') {
+      value = JSON.parse(value);
+    }
+    this.setState({ backdrop: value });
+  }
+
 
   render() {
     return (
-      <Container fluid>
-        <Col size="md-12 sm-12">
-          {this.state.player.length ? (
-            <List>
-              {this.state.player.map(man => (
-                <ListItem key={man._id}>
-                  <button type="button" className="close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <Card>
-                    <CardBody>
-                      <CardTitle>{man.name}</CardTitle>
-                    </CardBody>
-                    <Thumbnail alt={man.name} src={man.plyrImg} />
-                    <CardBody>
-                      <h6 className="card-title">Number: {man.jerseyNumber}</h6>
-                      <p className="card-text">
-                        Position: {man.postion}
-                        <br />
-                        Nationality: {man.name1}
-                      </p>
-                    </CardBody>
-                    <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>
-                      Display
-                    </Button>
-                    <Collapse isOpen={this.state.collapse}>
-                      <CardBody>
-                        <strong>
-                          <br />
-                          Overall: <StarRatingComponent
-                            name="overall"
-                            starCount={5}
-                            value={this.state.overallRating}
-                            onStarClick={this.onOverallStarClick.bind(this)} />
-                          <br />
-                          pace: <StarRatingComponent
-                            name="pace"
-                            starCount={5}
-                            value={this.state.pace}
-                            onStarClick={this.onPaceStarClick.bind(this)} />
-                          <br />
-                          dribbling:
-                        <StarRatingComponent
-                            name="dribbling"
-                            starCount={5}
-                            value={this.state.dribbling}
-                            onStarClick={this.onDribblingStarClick.bind(this)} />
-                          <br />
-                          passing:
-                      <StarRatingComponent
-                            name="passing"
-                            starCount={5}
-                            value={this.state.passing}
-                            onStarClick={this.onPassingStarClick.bind(this)} />
-                          <br />
+      <Modal isOpen={this.toggleModal} fade={false} toggle={this.toggleModal} className={this.props.className} backdrop={this.state.backdrop}>
+        <ModalHeader toggle={this.toggleModal}>Player Rating Form</ModalHeader>
+          <ModalBody>
+          <Container fluid>
+            <Col size="md-12 sm-12">
+              {this.state.player.length ? (
+                <List>
+                  {this.state.player.map(man => (
+                    <ListItem key={man._id}>
+                      <Card>
+                        <CardBody>
+                          <CardTitle>{man.name}</CardTitle>
+                        </CardBody>
+                        <Thumbnail alt={man.name} src={man.plyrImg} />
+                        <CardBody>
+                          <h6 className="card-title">Number: {man.jerseyNumber}</h6>
+                          <p className="card-text">
+                            Position: {man.postion}
+                            <br />
+                            Nationality: {man.name1}
+                          </p>
+                        </CardBody>
+                        <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>
+                          ----
+                        </Button>
+                        <Collapse isOpen={this.state.collapse}>
+                          <CardBody>
+                            <strong>
+                              <br />
+                              Overall: <StarRatingComponent
+                                name="overall"
+                                starCount={5}
+                                value={this.state.overallRating}
+                                onStarClick={this.onOverallStarClick.bind(this)} />
+                              <br />
+                              pace: <StarRatingComponent
+                                name="pace"
+                                starCount={5}
+                                value={this.state.pace}
+                                onStarClick={this.onPaceStarClick.bind(this)} />
+                              <br />
+                              dribbling:
+                            <StarRatingComponent
+                                name="dribbling"
+                                starCount={5}
+                                value={this.state.dribbling}
+                                onStarClick={this.onDribblingStarClick.bind(this)} />
+                              <br />
+                              passing:
+                          <StarRatingComponent
+                                name="passing"
+                                starCount={5}
+                                value={this.state.passing}
+                                onStarClick={this.onPassingStarClick.bind(this)} />
+                              <br />
 
-                          shooting:
-                      <StarRatingComponent
-                            name="shooting"
-                            starCount={5}
-                            value={this.state.shooting}
-                            onStarClick={this.onShootingStarClick.bind(this)} />
-                          <br />
+                              shooting:
+                          <StarRatingComponent
+                                name="shooting"
+                                starCount={5}
+                                value={this.state.shooting}
+                                onStarClick={this.onShootingStarClick.bind(this)} />
+                              <br />
 
-                          defense:
-                      <StarRatingComponent
-                            name="defense"
-                            starCount={5}
-                            value={this.state.defense}
-                            onStarClick={this.onDefenseStarClick.bind(this)} />
-                          <br />
-                          physicality:
-                      <StarRatingComponent
-                            name="physicality"
-                            starCount={5}
-                            value={this.state.physicality}
-                            onStarClick={this.onPhysicalityStarClick.bind(this)} />
-                          <br />
+                              defense:
+                          <StarRatingComponent
+                                name="defense"
+                                starCount={5}
+                                value={this.state.defense}
+                                onStarClick={this.onDefenseStarClick.bind(this)} />
+                              <br />
+                              physicality:
+                          <StarRatingComponent
+                                name="physicality"
+                                starCount={5}
+                                value={this.state.physicality}
+                                onStarClick={this.onPhysicalityStarClick.bind(this)} />
+                              <br />
 
-                        </strong>
-                        <br />
-                        <button
-                          onClick={(event) => {
-                            this.saveRanking(event);
-                          }}
-                          className="btn btn-primary"> Submit Ranking </button>
-                      </CardBody>
-                      <CardFooter className="text-muted"></CardFooter>
-                    </Collapse>
-                  </Card>
-                </ListItem>
-              ))}
-            </List>
-          ) : (
-              <h3>No Results to Display</h3>
-            )}
-        </Col>
-      </Container>
+                            </strong>
+                          </CardBody>
+                          <CardFooter className="text-muted"></CardFooter>
+                        </Collapse>
+                      </Card>
+                    </ListItem>
+                  ))}
+                </List>
+              ) : (
+                  <h3>No Results to Display</h3>
+                )}
+            </Col>
+          </Container>
+        </ModalBody>
+        <ModalFooter>
+          <Button bsStyle="success" onClick={() => this.handleClose}>Close</Button>
+          <Button bsStyle="success" onClick={ e => this.saveRanking(e)}>Save changes</Button>
+        </ModalFooter>
+      </Modal>
     );
   }
-}
-export default Player;
+});

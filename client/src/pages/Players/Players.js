@@ -19,7 +19,7 @@ export default class Players extends Component {
     overallRating: 0,
     athletic: 0,
     offence: 0,
-    defence: 0,
+    defence: 0
   };
 
   componentDidMount() {
@@ -70,7 +70,11 @@ export default class Players extends Component {
                               <h6 className="card-title">Position: {man.postion}</h6>
                               <h6 className="card-title">Nationality: {man.nationality}</h6>
                             </CardBody>
-                            <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>
+                            <Button
+                              color="primary"
+                              onClick={() => this.setState({modal: true})}
+                              style={{ marginBottom: '1rem' }}
+                            >
                               Ranking
                             </Button>
                           </Card>
