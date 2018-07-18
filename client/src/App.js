@@ -38,7 +38,7 @@ const App = () => (
                   onAuthRequired={onAuthRequired}>
           <Switch>
             <Route exact path="/signup" component={Signup} />
-            <Route exact path="/signin"
+            <Route exact path="/login"
               render={() => <Signin baseUrl="https://dev-590113.oktapreview.com" />}
             />
             <Route exact path="/getsupport" component={GetSupport} />

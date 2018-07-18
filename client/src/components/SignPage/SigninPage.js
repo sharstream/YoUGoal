@@ -42,13 +42,17 @@ export default withAuth(class SigninPage extends Component {
   }
 
   onSuccess = res => {
-    return this.props.auth.redirect({
-      sessionToken: res.session.token
-    });
+    if(res.status === "SUCCESS") {
+      // res.session.setCookieAndRedirect(redirectUrl);
+      return this.props.auth.redirect({
+        sessionToken: res.session.token
+      });
+    }
   }
 
   onError = err => {
     console.log('error logging in', err);
+    // If a recoverable error occurs, this error will be lost
   }
 
 	render() {
