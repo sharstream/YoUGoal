@@ -14,7 +14,6 @@ import Carousel from "./components/Carousel";
 import { SignupPage as Signup, SigninPage as Signin } from "./components/SignPage";
 import GetSupport from "./components/Manager/GetSupport";
 import { StickyFooter } from "./components/StickyFooter";
-
 // import { ParentMenu as Menu } from "./Menu";
 // import { pushRotate as Menu } from "react-burger-menu";
 

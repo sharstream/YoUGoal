@@ -33,7 +33,6 @@ export default withAuth(class Home extends Component {
   }
 
   render() {
-    if (this.state.authenticated === null) return null;
 
     const mainContent = this.state.authenticated ? (
       <div>
@@ -51,7 +50,7 @@ export default withAuth(class Home extends Component {
 
     return (
       <div className="jumbotron">
-        <h1 className="display-4"></h1>
+        <h1 className="display-4">YouGoal Staff Portal</h1>
         {mainContent}
       </div>
     );

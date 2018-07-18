@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { Thumbnail } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import API from "../../utils/API";
 import { Col, Container } from "../../components/Grid";
-import { List, ListItem } from "../../components/List";
 import StarRatingComponent from "../../components/StarRatingComponent";
 import {
   Card,
@@ -17,7 +15,6 @@ import {
   ModalBody,
   ModalFooter
 } from "reactstrap";
-import { Redirect } from "react-router-dom";
 import { withAuth } from "@okta/okta-react";
 
 export default withAuth(
