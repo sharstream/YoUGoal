@@ -10,9 +10,14 @@ router
 
   router
   .route("/player/:_id")
-  .get(GoalController.findPlayersByPlayerID);
+  .get(GoalController.findPlayersByPlayerID)
+  .post(GoalController.saveRanking);
 
 router
   .route("/team/:teamID")
   .get(GoalController.findTeamByID);
+
+router
+  .route("/rating/")
+  .get(GoalController.findRatingByPlayerID);
 module.exports = router;

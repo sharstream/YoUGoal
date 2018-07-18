@@ -25,5 +25,18 @@ module.exports = {
       .find({ _id: req.params.teamID })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+  findRatingByPlayerID: function (req, res) {
+    db.ratings
+      .find({ playerID: req.params._id })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+  saveRanking: function (req, res) {
+    db.ratings
+    .create(req.body)
+    .then(dbModel => res.json(dbModel))
+    .then(console.log(req.body))
+      .catch(err => res.status(422).json(err));
   }
 };

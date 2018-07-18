@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
+import StarRatingComponent from '../../components/StarRatingComponent';
 import {
   Card,
   CardImg,
@@ -13,21 +14,60 @@ import {
 
 export default class Teams extends Component {
   state = {
-		teams: []
+		teams: [],
+		players: [],
+		teamName: "",
+		overallRating: 0,
+		athletic: 0,
+		offence: 0,
+		defence: 0,
+		renderTeams: true,
+		renderRoster: false
 	};
 
+	componentDidMount() {
+		this.loadTeams();
+		console.log(this.state.teams);
+	};
 
-	handleTeams = () => {
+	loadRoster = _id => {
+    API.findPlayersByTeamID(_id)
+      .then(res => this.setState({ players: res.data }))
+      // .then(res => console.log(res.data))
+      .then(() => {
+        API.findTeamByID(_id)
+          .then(resp => {
+            this.setState({ team: resp.data[0] });
+            this.setState({ renderTeams: false });
+            this.setState({ renderRoster: true });
+
+            console.log(JSON.stringify(this.state.team.name));
+          })
+          // .then(res => console.log(res.data))
+          .catch(err => console.log(err));
+      })
+      .catch(err => console.log(err));
+  };
+
+	onOverallStarClick(nextValue, prevValue, name) {
+		console.log(
+			"name: %s, nextValue: %s, prevValue: %s",
+			name,
+			nextValue,
+			prevValue
+		);
+		this.setState({
+			overallRating: nextValue
+		});
+	};
+
+	loadTeams = () => {
     API.getTeams()
     .then(res => this.setState({teams : res.data}))
     .catch(err => console.log(err));
     console.log("teams" + this.state.teams);
   };
 
-  componentDidMount() {
-    this.handleTeams();
-    console.log(this.state.teams);
-  }
   render() {
     return (
 			<div>
@@ -55,6 +95,12 @@ export default class Teams extends Component {
 													<CardBody>
 														<CardTitle>{team.shortName}</CardTitle>
 														<CardSubtitle>{team.website}</CardSubtitle>
+														<StarRatingComponent
+															name="overall"
+															starCount={5}
+															value={this.state.overallRating}
+															onStarClick={this.onOverallStarClick.bind(this)}
+														/>
 														<Button color="primary">Display Team</Button>
 													</CardBody>
 												</Card>
