@@ -10,7 +10,7 @@ import NoMatch from "./pages/NoMatch";
 
 import NavigationBar from "./components/NavigationBar";
 import Carousel from "./components/Carousel";
-import { DropDownPlayer, DropDownTeam } from "./components/MenuDropDown";
+// import { DropDownPlayer, DropDownTeam } from "./components/MenuDropDown";
 import { SignupPage as Signup, SigninPage as Signin } from "./components/SignPage";
 import GetSupport from "./components/Manager/GetSupport";
 import { StickyFooter } from "./components/StickyFooter";
@@ -43,8 +43,6 @@ const App = () => (
             />
             <Route exact path="/getsupport" component={GetSupport} />
             <Route exact path="/implicit/callback" component={ImplicitCallback} />
-            <SecureRoute exact path="/dropdownplayer" component={DropDownPlayer} />
-            <SecureRoute exact path="/dropdownteam" component={DropDownTeam} />
             <SecureRoute exact path="/" component={Teams} />
             <SecureRoute exact path="/teamsGet/:teamID" component={Players} />
             <SecureRoute exact path="/player/:_id" component={Player} />

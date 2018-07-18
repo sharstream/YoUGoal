@@ -22,16 +22,13 @@ class Player extends Component {
     clientId: "",
     manName: "",
     overallRating: 0,
-    athletic: 0,
-    offence: 0,
-    defence: 0,
-    collapse: false,
     pace: 0,
     dribbling: 0,
     passing: 0,
     shooting: 0,
     defense: 0,
-    physicality: 0
+    physicality: 0,
+    collapse: false
   };
 
   componentDidMount() {
@@ -41,9 +38,6 @@ class Player extends Component {
       currentUserName: client.idToken.claims.name,
       clientId: client.idToken.clientId
     });
-    console.log(`current user: ` + this.state.currentUserName);
-    console.log(`current email: ` + this.state.currentUserEmail);
-    console.log(`client_id: ` + this.state.clientId);
     this.loadTeams();
   }
 

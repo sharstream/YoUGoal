@@ -30,7 +30,6 @@ export default class Players extends Component {
         API.findTeamByID(this.props.match.params.teamID)
           .then(resp => {
             this.setState({ team: resp.data[0] });
-            console.log(JSON.stringify(this.state.team.name));
           })
           // .then(res => console.log(res.data))
           .catch(err => console.log(err));

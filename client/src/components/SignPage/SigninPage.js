@@ -70,7 +70,7 @@ export default withAuth(class SigninPage extends Component {
               />
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsStyle="primary" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
         </div>

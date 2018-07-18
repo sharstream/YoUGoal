@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Modal, Button } from "react-bootstrap";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 
 export default class GetSupport extends Component {
   state = {
@@ -10,10 +10,12 @@ export default class GetSupport extends Component {
 
   componentDidMount() {
     const client = JSON.parse(localStorage.getItem("okta-token-storage"));
-    this.setState({
-      currentUserEmail: client.idToken.claims.email,
-      currentUserName: client.idToken.claims.name
-    });
+    if (client !== null) {
+      this.setState({
+        currentUserEmail: client.idToken.claims.email,
+        currentUserName: client.idToken.claims.name
+      });
+    }
   }
 
   handleClose = () => {
@@ -44,7 +46,7 @@ export default class GetSupport extends Component {
             </form>
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.handleClose}>Close
+            <Button bsStyle="primary" onClick={this.handleClose}>Close
             </Button>
             <Button bsStyle="primary">Send message
             </Button>

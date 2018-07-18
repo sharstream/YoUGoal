@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
-import { Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
+import { Grid, Row, Col, Panel, PageHeader } from "react-bootstrap";
 import StarRatingComponent from '../../components/StarRatingComponent';
 import {
   Card,
@@ -27,7 +27,6 @@ export default class Teams extends Component {
 
 	componentDidMount() {
 		this.loadTeams();
-		console.log(this.state.teams);
 	};
 
 	loadRoster = _id => {
@@ -40,8 +39,6 @@ export default class Teams extends Component {
             this.setState({ team: resp.data[0] });
             this.setState({ renderTeams: false });
             this.setState({ renderRoster: true });
-
-            console.log(JSON.stringify(this.state.team.name));
           })
           // .then(res => console.log(res.data))
           .catch(err => console.log(err));
@@ -65,7 +62,6 @@ export default class Teams extends Component {
     API.getTeams()
     .then(res => this.setState({teams : res.data}))
     .catch(err => console.log(err));
-    console.log("teams" + this.state.teams);
   };
 
   render() {

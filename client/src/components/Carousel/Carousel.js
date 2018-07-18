@@ -7,15 +7,15 @@ export default class ParentCarousel extends Component {
     return (
       <Carousel>
         <div>
-          <img src="http://www.gameoftrendz.com/wp-content/uploads/2018/06/irish-times-world-cup-bkg.jpg" />
+          <img src="http://www.gameoftrendz.com/wp-content/uploads/2018/06/irish-times-world-cup-bkg.jpg" alt="carousel" />
           <p className="legend">FIFA World Cup 2018</p>
         </div>
         <div>
-          <img src="http://www.gameoftrendz.com/wp-content/uploads/2018/06/irish-times-world-cup-bkg.jpg" />
+          <img src="http://www.gameoftrendz.com/wp-content/uploads/2018/06/irish-times-world-cup-bkg.jpg" alt="carousel" />
           <p className="legend">Legendary Rankings</p>
         </div>
         <div>
-          <img src="http://www.gameoftrendz.com/wp-content/uploads/2018/06/irish-times-world-cup-bkg.jpg" />
+          <img src="http://www.gameoftrendz.com/wp-content/uploads/2018/06/irish-times-world-cup-bkg.jpg" alt="carousel" />
           <p className="legend">Georgia Tech Bootcamp</p>
         </div>
       </Carousel>
