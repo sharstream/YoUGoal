@@ -14,7 +14,8 @@ class SigninWidget extends Component {
       baseUrl: this.props.baseUrl,
       logo: 'yougoal.png'
     });
-    this.widget.renderEl({el}, this.props.onSuccess, this.props.onError);
+    this.widget.renderEl({ el },
+      this.props.onSuccess, this.props.onError);
   }
 
   componentWillUnmount() {
