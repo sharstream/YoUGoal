@@ -46,11 +46,17 @@ export default withAuth(
         clientId: client.idToken.clientId
       });
       this.loadPlayer(this.props.match.params._id);
+      this.LoadRatingByPlayerID(this.props.match.params._id);
     }
 
     toggle = () => {
       this.setState({ collapse: !this.state.collapse });
     };
+
+    LoadRatingByPlayerID = _id => {
+      API.findRatingByPlayerID(_id)
+      .then(res => console.log(res.data));
+    }
 
     loadPlayer = _id => {
       API.findPlayersByPlayerID(_id)
