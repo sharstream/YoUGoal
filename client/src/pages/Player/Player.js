@@ -310,8 +310,8 @@ export default withAuth(
           </Modal>
         ) : (
           <Redirect
-            from={`/teamsGet/${this.state.manTeamID}`}
-            to={`/teamsGet/`+'769'}
+            from={`/player/${this.state.player._id}`}
+            to={`/teamsGet/`+this.state.manTeamID}
           />
         )
       );
