@@ -159,7 +159,8 @@ export default withAuth(
       console.log(this.state);
     };
 
-    handleClose = () => {
+    handleClose = (e) => {
+      e.preventDefault();
       this.setState({ modal: true });
     };
 
@@ -289,7 +290,7 @@ export default withAuth(
             </Container>
           </Modal.Body>
           <Modal.Footer>
-            <button className="btn btn-primary" onClick={this.handleClose}>
+            <button className="btn btn-primary" onClick={e => this.handleClose(e)}>
               Close
             </button>
             <button className="btn btn-primary" onClick={e => this.saveRanking(e)}>
