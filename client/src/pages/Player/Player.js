@@ -155,7 +155,7 @@ export default withAuth(
       API.saveRanking({
         playerID: this.props.match.params._id,
         playerTeamID: this.state.manTeamID,
-        clientId: this.state.clientId,
+        clientID: this.state.clientId,
         overall: this.state.overallRating,
         pace: this.state.pace,
         dribbling: this.state.dribbling,
