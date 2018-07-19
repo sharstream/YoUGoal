@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
-import { Grid, Row, Col, Panel, PageHeader } from "react-bootstrap";
+import { Breadcrumb, Grid, Row, Col, Panel, PageHeader } from "react-bootstrap";
 import StarRatingComponent from "../../components/StarRatingComponent";
 import {
   Card,
@@ -55,10 +55,18 @@ export default class Teams extends Component {
     return (
       <div>
         <PageHeader>
-          FIFA Teams <small>2018</small>
+          FIFA World Cup Teams <small>2018</small>
         </PageHeader>
+        <Breadcrumb>
+          <Breadcrumb.Item href="/">
+            Home
+          </Breadcrumb.Item>
+          <Breadcrumb.Item active>
+            Teams
+          </Breadcrumb.Item>
+        </Breadcrumb>
         <Panel bsStyle="primary">
-          <Panel.Heading>Select a Team</Panel.Heading>
+          <Panel.Heading>Select a National Team</Panel.Heading>
           {!this.state.teams.length ? (
             <h3 className="text-center">No Team to Display</h3>
           ) : (
@@ -98,7 +106,17 @@ export default class Teams extends Component {
               </Row>
             </Grid>
           )}
-          <Panel.Footer>Click to display a team</Panel.Footer>
+          <Panel.Footer>
+            <Breadcrumb>
+              <Breadcrumb.Item href="/">
+                Home
+              </Breadcrumb.Item>
+              <Breadcrumb.Item active>
+                Teams
+              </Breadcrumb.Item>
+            </Breadcrumb>
+          </Panel.Footer>
+
         </Panel>
       </div>
     );

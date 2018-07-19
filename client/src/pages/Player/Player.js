@@ -6,15 +6,11 @@ import StarRatingComponent from "../../components/StarRatingComponent";
 import {
   Card,
   Collapse,
-  Button,
   CardFooter,
   CardBody,
   CardTitle,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter
 } from "reactstrap";
+import { Modal } from "react-bootstrap";
 import { withAuth } from "@okta/okta-react";
 
 export default withAuth(
@@ -34,8 +30,7 @@ export default withAuth(
       defense: 0,
       physicality: 0,
       collapse: false,
-      modal: false,
-      backdrop: true
+      modal: false
     };
 
     componentDidMount() {
@@ -170,37 +165,21 @@ export default withAuth(
       console.log(this.state);
     };
 
-    toggleModal = () => {
-      this.setState({
-        modal: !this.state.modal
-      });
-    };
-
     handleClose = () => {
-      this.setState({ modal: false });
-    };
-
-    changeBackdrop = e => {
-      let value = e.target.value;
-      if (value !== "static") {
-        value = JSON.parse(value);
-      }
-      this.setState({ backdrop: value });
+      this.setState({ modal: true });
     };
 
     render() {
       return (
         <Modal
-          isOpen={this.toggleModal}
-          fade={false}
-          toggle={this.toggleModal}
-          className={this.props.className}
-          backdrop={this.state.backdrop}
+          show={!this.state.modal}
+          animation={this.state.modal}
+          backdrop={!this.state.modal}
         >
-          <ModalHeader toggle={this.toggleModal}>
+          <Modal.Header>
             Player Rating Form
-          </ModalHeader>
-          <ModalBody>
+          </Modal.Header>
+          <Modal.Body>
             <Container fluid>
               <Col size="md-12 sm-12">
                 {this.state.player.length ? (
@@ -213,7 +192,7 @@ export default withAuth(
                         <Thumbnail alt={man.name} src={man.plyrImg} />
                         <CardBody>
                           <h6 className="card-title">
-                            Number: {man.jerseyNumber}
+                            Kit #: {man.jerseyNumber}
                           </h6>
                           <p className="card-text">
                             Position: {man.postion}
@@ -221,13 +200,13 @@ export default withAuth(
                             Nationality: {man.name1}
                           </p>
                         </CardBody>
-                        <Button
-                          color="primary"
+                        <button
+                          className = "btn btn-info btn-lg"
                           onClick={this.toggle}
                           style={{ marginBottom: "1rem" }}
                         >
                           Display
-                        </Button>
+                        </button>
                         <Collapse isOpen={this.state.collapse}>
                           <CardBody>
                             <strong>
@@ -241,7 +220,7 @@ export default withAuth(
                                 onStarClick={this.onOverallStarClick.bind(this)}
                               />
                               <br />
-                              pace:
+                              Pace:
                               <br />
                               <StarRatingComponent
                                 name="pace"
@@ -250,7 +229,7 @@ export default withAuth(
                                 onStarClick={this.onPaceStarClick.bind(this)}
                               />
                               <br />
-                              dribbling:
+                              Dribbling:
                               <br />
                               <StarRatingComponent
                                 name="dribbling"
@@ -261,7 +240,7 @@ export default withAuth(
                                 )}
                               />
                               <br />
-                              passing:
+                              Passing:
                               <br />
                               <StarRatingComponent
                                 name="passing"
@@ -270,7 +249,7 @@ export default withAuth(
                                 onStarClick={this.onPassingStarClick.bind(this)}
                               />
                               <br />
-                              shooting:
+                              Shooting:
                               <br />
                               <StarRatingComponent
                                 name="shooting"
@@ -281,7 +260,7 @@ export default withAuth(
                                 )}
                               />
                               <br />
-                              defense:
+                              Defense:
                               <br />
                               <StarRatingComponent
                                 name="defense"
@@ -290,7 +269,7 @@ export default withAuth(
                                 onStarClick={this.onDefenseStarClick.bind(this)}
                               />
                               <br />
-                              physicality:
+                              Physical:
                               <br />
                               <StarRatingComponent
                                 name="physicality"
@@ -314,15 +293,15 @@ export default withAuth(
                 )}
               </Col>
             </Container>
-          </ModalBody>
-          <ModalFooter>
-            <Button bsStyle="success">
+          </Modal.Body>
+          <Modal.Footer>
+            <button className="btn btn-primary" onClick={this.handleClose}>
               Close
-            </Button>
-            <Button bsStyle="success" onClick={e => this.saveRanking(e)}>
-              Submit Rating
-            </Button>
-          </ModalFooter>
+            </button>
+            <button className="btn btn-primary" onClick={e => this.saveRanking(e)}>
+              Submit Ratings
+            </button>
+          </Modal.Footer>
         </Modal>
       );
     }

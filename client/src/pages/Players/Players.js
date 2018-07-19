@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import API from "../../utils/API";
-import { Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
+import { Breadcrumb, Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
 import {
   Card,
   Button,
@@ -42,6 +42,17 @@ export default class Players extends Component {
         <PageHeader>
 					FIFA Players <small>2018</small>
 				</PageHeader>
+        <Breadcrumb>
+          <Breadcrumb.Item href="/">
+            Home
+          </Breadcrumb.Item>
+          <Breadcrumb.Item href="/">
+            Teams
+          </Breadcrumb.Item>
+          <Breadcrumb.Item active>
+            Players
+          </Breadcrumb.Item>
+        </Breadcrumb>
         <Panel bsStyle="primary">
           <Panel.Heading>
             <Panel.Title componentClass="h3">Players</Panel.Title>
@@ -67,7 +78,7 @@ export default class Players extends Component {
                             </CardBody>
                             <Thumbnail alt={man.name} src={man.plyrImg} />
                             <CardBody>
-                              <h6 className="card-title">Number: {man.jerseyNumber}</h6>
+                              <h6 className="card-title">Kit #: {man.jerseyNumber}</h6>
                               <h6 className="card-title">Position: {man.postion}</h6>
                               <h6 className="card-title">Nationality: {man.name1}</h6>
                             </CardBody>
@@ -76,7 +87,7 @@ export default class Players extends Component {
                               onClick={() => this.setState({modal: true})}
                               style={{ marginBottom: '1rem' }}
                             >
-                              Ranking
+                              Ratings
                             </Button>
                           </Card>
                         </Link>
@@ -86,7 +97,19 @@ export default class Players extends Component {
                 </Row>
 						  </Grid>
             )}
-          <Panel.Footer>Expand or collapse to see the player</Panel.Footer>
+          <Panel.Footer>
+            <Breadcrumb>
+              <Breadcrumb.Item href="/">
+                Home
+              </Breadcrumb.Item>
+              <Breadcrumb.Item href="/">
+                Teams
+              </Breadcrumb.Item>
+              <Breadcrumb.Item active>
+                Players
+              </Breadcrumb.Item>
+            </Breadcrumb>
+          </Panel.Footer>
         </Panel>
       </div>
     );
