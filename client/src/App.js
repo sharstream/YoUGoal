@@ -12,7 +12,7 @@ import NavigationBar from "./components/NavigationBar";
 import Carousel from "./components/Carousel";
 // import { DropDownPlayer, DropDownTeam } from "./components/MenuDropDown";
 import { SignupPage as Signup, SigninPage as Signin } from "./components/SignPage";
-import GetSupport from "./components/Manager/GetSupport";
+import { GetSupport, About } from "./components/Manager";
 import { StickyFooter } from "./components/StickyFooter";
 // import { ParentMenu as Menu } from "./Menu";
 // import { pushRotate as Menu } from "react-burger-menu";
@@ -41,6 +41,7 @@ const App = () => (
               render={() => <Signin baseUrl="https://dev-590113.oktapreview.com" />}
             />
             <Route exact path="/getsupport" component={GetSupport} />
+            <Route exact path="/about" component={About} />
             <Route exact path="/implicit/callback" component={ImplicitCallback} />
             <SecureRoute exact path="/" component={Teams} />
             <SecureRoute exact path="/teamsGet/:teamID" component={Players} />

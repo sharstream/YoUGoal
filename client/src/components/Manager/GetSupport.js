@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Modal, Button } from "react-bootstrap";
-// import { Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 export default class GetSupport extends Component {
   state = {
-    showModal: true,
+    showModal: false,
     currentUserEmail: ""
   };
 
@@ -19,7 +19,7 @@ export default class GetSupport extends Component {
   }
 
   handleClose = () => {
-    this.setState({ showModal: false });
+    this.setState({ showModal: true });
   }
 
   handleShow = () => {
@@ -28,31 +28,42 @@ export default class GetSupport extends Component {
 
 	render() {
 		return (
-			<div className="static-modal">
-        <Modal show={this.state.showModal} animation={false} onHide={this.handleClose}>
-          <Modal.Header>
-            <Modal.Title>New Message to @{}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <form>
-              <div className="form-group">
-                <label htmlFor="recipient-name" className="col-form-label">Recipient:</label>
-                <input type="text" className="form-control" id="recipient-name" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message-text" className="col-form-label">Message:</label>
-                <textarea className="form-control" id="message-text"></textarea>
-              </div>
-            </form>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button bsStyle="primary" onClick={this.handleClose}>Close
-            </Button>
-            <Button bsStyle="primary">Send message
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
+      !this.state.showModal ? (
+        <div className="static-modal">
+          <Modal
+            show={!this.state.showModal}
+            animation={this.state.showModal}
+            backdrop={!this.state.showModal}
+          >
+            <Modal.Header>
+              <Modal.Title>New Message to @{}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <form>
+                <div className="form-group">
+                  <label htmlFor="recipient-name" className="col-form-label">Recipient:</label>
+                  <input type="text" className="form-control" id="recipient-name" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message-text" className="col-form-label">Message:</label>
+                  <textarea className="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button bsStyle="primary" onClick={e => this.handleClose(e)}>Close
+              </Button>
+              <Button bsStyle="primary">Send message
+              </Button>
+            </Modal.Footer>
+          </Modal>
+        </div>
+      ) : (
+        <Redirect
+          from="*"
+          to="/"
+        />
+      )
 		);
 	}
 }
