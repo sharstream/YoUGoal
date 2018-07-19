@@ -195,7 +195,7 @@ export default withAuth(
                           </p>
                         </CardBody>
                         <button
-                          className="btn btn-primary"
+                          className = "btn btn-info btn-lg"
                           onClick={this.toggle}
                           style={{ marginBottom: "1rem" }}
                         >

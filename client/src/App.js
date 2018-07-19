@@ -49,7 +49,9 @@ const App = () => (
           </Switch>
         </Security>
       </div>
-      <StickyFooter />
+      <div className="row">
+       <StickyFooter />
+      </div>
     </div>
   </Router>
 );
