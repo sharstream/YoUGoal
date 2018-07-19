@@ -32,17 +32,30 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  findAvgRatingByTeamID: function (req, res) {
+  findAvgRatingByTeam: function (req, res) {
     db.ratings.aggregate( [
-      { $match: { playerTeamID: req.body._id } },
-      {
-        $group: {
-           _id: "$playerTeamID",
-           avgOverall: { $avg: "$overall" }
+         {
+           $group: {
+              _id: req.body,
+              overallAvg: { $avg: "$overall" }
+           }
+         }
+      ], function (err, res) {
+        if (err) {
+        console.log('Entry err');
+          return res.status(500).json({message: 'Error agg', error: err});
         }
-      }
-   ] )
-      .then(dbModel => res.json(dbModel))
+        //No results
+       if(!res){
+        console.log('no results ');
+        return res.status(404).json({message: 'error', error: err});
+       }   
+       console.log('Got it');
+       console.log(res);
+
+
+       return res.status(200).json(res);
+        })
       .catch(err => res.status(422).json(err));
   },
   saveRanking: function (req, res) {

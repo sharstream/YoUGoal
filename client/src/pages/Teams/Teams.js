@@ -24,22 +24,13 @@ export default class Teams extends Component {
 
   componentDidMount() {
     this.loadTeams();
+    this.LoadRatingAllTeams(null);
   }
 
-  loadRoster = _id => {
-    API.findPlayersByTeamID(_id)
-      .then(res => this.setState({ players: res.data }))
-      // .then(res => console.log(res.data))
-      .then(() => {
-        API.findTeamByID(_id)
-          .then(resp => {
-            this.setState({ team: resp.data[0] });
-          })
-          // .then(res => console.log(res.data))
-          .catch(err => console.log(err));
-      })
-      .catch(err => console.log(err));
-  };
+  LoadRatingAllTeams = (e) => {
+    API.findAvgRatingByTeam(e)
+    .then(res => console.log(res.data));
+  }
 
   onOverallStarClick(nextValue, prevValue, name) {
     console.log(
