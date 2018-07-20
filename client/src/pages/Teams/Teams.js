@@ -36,6 +36,14 @@ export default class Teams extends Component {
     })
   }
 
+  loadRatingsPerTeam = team => {
+    this.state.avgRatings.forEach(function(rating) {
+      if(team._id === rating._id){
+        this.setState({ overallRating: rating.overallAvg });
+      }
+    })
+  }
+
   onOverallStarClick(nextValue, prevValue, name) {
     console.log(
       "name: %s, nextValue: %s, prevValue: %s",
@@ -94,9 +102,9 @@ export default class Teams extends Component {
                         <CardBody>
                           <CardTitle>{team.shortName}</CardTitle>
                           <StarRatingComponent
-													 name={team._id}
-													 starCount={5}
-													 value={5}
+                            name={team._id}
+                            starCount={5}
+                            value={this.state.overallRating}
                           />
                           <Link to={"/teamsGet/" + team._id}>
                             <Button color="primary">Display Team</Button>

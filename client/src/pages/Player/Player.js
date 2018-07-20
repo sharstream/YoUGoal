@@ -200,7 +200,7 @@ export default withAuth(
           >
             <Modal.Header>
               Player Rating Form
-              <button type="button" class="close" aria-label="Close" onClick={e => this.handleClose(e)}>
+              <button type="button" className="close" aria-label="Close" onClick={e => this.handleClose(e)}>
                 <span aria-hidden="true">&times;</span>
               </button>
             </Modal.Header>
