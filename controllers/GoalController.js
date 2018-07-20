@@ -36,7 +36,7 @@ module.exports = {
     db.ratings.aggregate( [
          {
            $group: {
-              _id: req.body,
+              _id: "$playerTeamID",
               overallAvg: { $avg: "$overall" }
            }
          }
@@ -49,7 +49,7 @@ module.exports = {
        if(!res){
         console.log('no results ');
         return res.status(404).json({message: 'error', error: err});
-       }   
+       }
        console.log('Got it');
        console.log(res);
 
