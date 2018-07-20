@@ -165,6 +165,7 @@ export default withAuth(
         physicality: this.state.physicality
       }).catch(err => console.log(err));
       console.log(this.state);
+      this.setState({ modal: true });
     };
 
     handleClose = (e) => {
