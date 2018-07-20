@@ -12,10 +12,15 @@ router
   .route("/players/:teamID")
   .get(GoalController.findPlayersByTeamID);
 
-  router
+router
   .route("/player/:_id")
   .get(GoalController.findPlayersByPlayerID)
   .post(GoalController.updateRanking);
+
+router
+  .route("/player/:_id")
+  .get(GoalController.findPlayersByPlayerID)
+  .post(GoalController.saveRanking);
 
 router
   .route("/team/:teamID")
