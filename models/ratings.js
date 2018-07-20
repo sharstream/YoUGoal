@@ -5,6 +5,7 @@ const ratingSchema = new Schema({
   playerID: String,
   clientID: String,
   playerTeamID: String,
+  userID: String,
   username: String,
   currentEmail: String,
   overall: Number,

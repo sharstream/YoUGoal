@@ -19,6 +19,7 @@ export default withAuth(
   class Player extends Component {
     state = {
       player: [],
+      userId: "",
       currentUserEmail: "",
       currentUserName: "",
       clientId: "",
@@ -40,6 +41,7 @@ export default withAuth(
       this.setState({
         currentUserEmail: client.idToken.claims.email,
         currentUserName: client.idToken.claims.name,
+        userId: client.idToken.claims.sub,
         clientId: client.idToken.clientId
       });
       this.loadPlayer(this.props.match.params._id);
@@ -156,6 +158,9 @@ export default withAuth(
         playerID: this.props.match.params._id,
         playerTeamID: this.state.manTeamID,
         clientID: this.state.clientId,
+        userID: this.state.userId,
+        username: this.state.currentUserName,
+        currentEmail: this.state.currentUserEmail,
         overall: this.state.overallRating,
         pace: this.state.pace,
         dribbling: this.state.dribbling,
