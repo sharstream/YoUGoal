@@ -19,6 +19,7 @@ export default withAuth(
   class Player extends Component {
     state = {
       player: [],
+      ratings: [],
       userId: "",
       currentUserEmail: "",
       currentUserName: "",
@@ -54,7 +55,16 @@ export default withAuth(
 
     LoadRatingByPlayerID = _id => {
       API.findRatingByPlayerID(_id)
-      .then(res => console.log(res.data));
+      .then(res => this.setState({ ratings: res.data}))
+      .then(res => console.log(this.state.ratings))
+      .then(res => this.setState({overallRating: this.state.ratings[0].overall}))
+      .then(res => this.setState({pace: this.state.ratings[0].pace}))
+      .then(res => this.setState({dribbling: this.state.ratings[0].dribbling}))
+      .then(res => this.setState({passing: this.state.ratings[0].passing}))
+      .then(res => this.setState({shooting: this.state.ratings[0].shooting}))
+      .then(res => this.setState({defense: this.state.ratings[0].defense}))
+      .then(res => this.setState({physicality: this.state.ratings[0].physicality}))
+      .catch(err => console.log(err));
     }
 
     loadPlayer = _id => {
@@ -167,7 +177,7 @@ export default withAuth(
         dribbling: this.state.dribbling,
         passing: this.state.passing,
         shooting: this.state.shooting,
-        defense: this.state.defence,
+        defense: this.state.defense,
         physicality: this.state.physicality
       }).catch(err => console.log(err));
       console.log(this.state);
@@ -213,7 +223,7 @@ export default withAuth(
                             </p>
                           </CardBody>
                           <button
-                            className = "btn btn-info btn-lg"
+                            className = "btn btn-primary btn-lg"
                             onClick={this.toggle}
                             style={{ marginBottom: "1rem" }}
                           >
