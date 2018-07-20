@@ -3,11 +3,11 @@ import axios from "axios";
 export default {
   // Gets all teams
   getTeams: function() {
-    return axios.get("/api/teamsGet");
+    return axios.get("/api/teamsGet/teams/");
   },
   // Gets the player with the given teamID
   findPlayersByTeamID: function(teamID) {
-    return axios.get("/api/teamsGet/" + teamID);
+    return axios.get("/api/teamsGet/players/" + teamID);
   },
   findTeamByID: function(teamID) {
     return axios.get("/api/teamsGet/team/" + teamID);

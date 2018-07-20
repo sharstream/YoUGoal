@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const GoalController = require("../../controllers/GoalController");
 
-router.route("/")
+router.route("/teams/")
   .get(GoalController.findAllTeams);
 
 router
@@ -9,7 +9,7 @@ router
   .get(GoalController.findAvgRatingByTeam);
 
 router
-  .route("/:teamID")
+  .route("/players/:teamID")
   .get(GoalController.findPlayersByTeamID);
 
   router

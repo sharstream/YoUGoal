@@ -96,8 +96,7 @@ export default class Teams extends Component {
                           <StarRatingComponent
 													 name={team._id}
 													 starCount={5}
-													 value={this.nextValue}
-													 onStarClick={this.onOverallStarClick.bind(this)}
+													 value={5}
                           />
                           <Link to={"/teamsGet/" + team._id}>
                             <Button color="primary">Display Team</Button>
