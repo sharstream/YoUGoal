@@ -19,17 +19,21 @@ export default class Teams extends Component {
     overallRating: 0,
     athletic: 0,
     offence: 0,
-    defence: 0
+    defence: 0,
+    avgRatings: []
   };
 
   componentDidMount() {
     this.loadTeams();
-    this.LoadRatingAllTeams(null);
+    this.LoadRatingAllTeams();
   }
 
-  LoadRatingAllTeams = (e) => {
-    API.findAvgRatingByTeam(e)
-    .then(res => console.log(res.data));
+  LoadRatingAllTeams = () => {
+    API.findAvgRatingByTeam()
+    .then(res => {
+      console.log(res.data)
+      this.setState({avgRatings: res.data})
+    })
   }
 
   onOverallStarClick(nextValue, prevValue, name) {
