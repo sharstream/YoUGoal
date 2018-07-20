@@ -38,7 +38,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findAvgRatingByTeam: function (req, res) {
-    console.log('datatatatatatat')
+    console.log('find avg rating by team')
     db.ratings.aggregate([
       {
         $group: {
@@ -56,6 +56,14 @@ module.exports = {
     console.log('save ranking')
     db.ratings
       .create(req.body)
+      .then(dbModel => res.json(dbModel))
+      .then(console.log(req.body))
+      .catch(err => res.status(422).json(err));
+  },
+  updateRanking: function (req, res) {
+    console.log('update ranking')
+    db.ratings
+      .findOneAndUpdate({ _id: "5b5230f4f5536610403b42d0" }, req.body, {upsert: true})
       .then(dbModel => res.json(dbModel))
       .then(console.log(req.body))
       .catch(err => res.status(422).json(err));

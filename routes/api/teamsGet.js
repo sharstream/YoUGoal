@@ -15,7 +15,7 @@ router
   router
   .route("/player/:_id")
   .get(GoalController.findPlayersByPlayerID)
-  .post(GoalController.saveRanking);
+  .post(GoalController.updateRanking);
 
 router
   .route("/team/:teamID")

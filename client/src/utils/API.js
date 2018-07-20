@@ -12,11 +12,14 @@ export default {
   findTeamByID: function(teamID) {
     return axios.get("/api/teamsGet/team/" + teamID);
   },
-  findPlayersByPlayerID: function(_id) {
-    return axios.get("/api/teamsGet/player/" + _id);
+  updateRanking: function (RankData) {
+    return axios.post("/api/teamsGet/player/" + RankData.playerID, RankData);
   },
   saveRanking: function(RankData) {
     return axios.post("/api/teamsGet/player/" + RankData.playerID, RankData);
+  },
+  findPlayersByPlayerID: function(_id) {
+    return axios.get("/api/teamsGet/player/" + _id);
   },
   findRatingByPlayerID: function(_id) {
     return axios.get("/api/teamsGet/ratingPlayer/" + _id);
