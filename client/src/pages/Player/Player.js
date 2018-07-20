@@ -156,6 +156,7 @@ export default withAuth(
       console.log(event);
       API.saveRanking({
         playerID: this.props.match.params._id,
+        playerName: this.state.manName,
         playerTeamID: this.state.manTeamID,
         clientID: this.state.clientId,
         userID: this.state.userId,
