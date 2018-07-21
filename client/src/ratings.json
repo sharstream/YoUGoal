@@ -1,6 +1,2 @@
-{"_id":{"$oid":"5b511c424f87ce0025d46f71"},"playerID":"26","playerTeamID":"776","overall":3,"pace":4,"dribbling":2,"passing":3,"shooting":1,"physicality":4,"__v":0}
-{"_id":{"$oid":"5b511c444f87ce0025d46f72"},"playerID":"26","playerTeamID":"776","overall":3,"pace":4,"dribbling":2,"passing":3,"shooting":1,"physicality":4,"__v":0}
-{"_id":{"$oid":"5b511fb17c84c90025f47ea7"},"playerID":"231","playerTeamID":"765","clientID":"0oafq5xga3MOGlArd0h7","overall":5,"pace":5,"dribbling":5,"passing":5,"shooting":5,"physicality":5,"__v":0}
-{"_id":{"$oid":"5b511ffaf7e13e2388228772"},"playerID":"26","playerTeamID":"776","overall":3,"pace":4,"dribbling":2,"passing":3,"shooting":1,"physicality":4,"__v":0}
-{"_id":{"$oid":"5b5120627c84c90025f47ea8"},"playerID":"231","playerTeamID":"765","clientID":"0oafq5xga3MOGlArd0h7","overall":5,"pace":5,"dribbling":5,"passing":5,"shooting":5,"physicality":5,"__v":0}
-{"_id":{"$oid":"5b5120a35fb4963404dd5f49"},"playerID":"26","playerTeamID":"776","overall":3,"pace":4,"dribbling":2,"passing":3,"shooting":1,"physicality":4,"__v":0}
+{"_id":{"$oid":"5b5230f4f5536610403b42d0"},"__v":0,"clientID":"0oafq5xga3MOGlArd0h7","currentEmail":"daverioverde@gmail.com","defense":5,"dribbling":5,"overall":5,"pace":5,"passing":5,"physicality":5,"playerID":"240","playerName":"Cristiano Ronaldo","playerTeamID":"765","shooting":5,"userID":"00uf6gwj5k44ylK2M0h7","username":"Davi Perez"}
+{"_id":{"$oid":"5b537acc9727c811defb53c6"},"playerID":"398","playerName":"Gerard Piqué","playerTeamID":"760","clientID":"0oafq5xga3MOGlArd0h7","userID":"00uf6gwj5k44ylK2M0h7","username":"Davi Perez","currentEmail":"daverioverde@gmail.com","overall":4,"pace":4,"dribbling":4,"passing":4,"shooting":4,"defense":4,"physicality":4,"__v":0}
