@@ -30,4 +30,8 @@ router
   .route("/ratingPlayer/:_id")
   .get(GoalController.findRatingByPlayerID);
 
+router
+  .route("/findAllTeamsWithAverageRating")
+  .get(GoalController.findAllTeamsWithAvgRatings);
+
 module.exports = router;

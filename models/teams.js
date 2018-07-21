@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const teamSchema = new Schema({
   tla:String,
   _id:String,
+  overallAvg: String,
   shortName:String,
   address:String,
   phone:String,

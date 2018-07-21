@@ -17,7 +17,6 @@ export default class Teams extends Component {
 
     this.state = {
       teams: [],
-      newTeams: [],
       players: [],
       teamName: "",
       overallRating: 0,
@@ -33,41 +32,11 @@ export default class Teams extends Component {
     this.loadRatingAllTeams();
   }
 
-  loadRatingTeamArray = () => {
-    let array = []
-    this.state.teams.forEach(function(team){
-      console.log("team: " + team + "\n")
-      this.state.avgRatings.forEach(function(rating){
-        console.log("rating: " + rating + "\n")
-        if(rating._id === team._id){
-          team = {
-            _id: team._id,
-            shortName: team.shortName,
-            teamImg: team.teamImg,
-            name: team.name,
-            overallAvg: rating.overallAvg
-          }
-          array.push(team)
-        }
-      })
-    })
-    console.log(array)
-    this.setState({ newTeams: array })
-  }
-
-  LoadRatingAllTeams = () => {
+  loadRatingAllTeams = () => {
     API.findAvgRatingByTeam()
     .then(res => {
       console.log(res.data)
       this.setState({avgRatings: res.data})
-    })
-  }
-
-  loadRatingsPerTeam = team => {
-    this.state.avgRatings.forEach(function(rating) {
-      if(team._id === rating._id){
-        this.setState({ overallRating: rating.overallAvg });
-      }
     })
   }
 
@@ -85,7 +54,7 @@ export default class Teams extends Component {
   }
 
   loadTeams = () => {
-    API.getTeams()
+    API.findAllTeamsWithAvgRatings()
       .then(res => this.setState({ teams: res.data }))
       .catch(err => console.log(err));
   };
@@ -128,21 +97,13 @@ export default class Teams extends Component {
                         />
                         <CardBody>
                           <CardTitle>{team.shortName}</CardTitle>
-                          {(this.state.avgRatings[1]._id === team._id) ? (
                             <StarRatingComponent
                               name={team._id}
                               starCount={5}
                               value = {
-                                Math.round(this.state.avgRatings[1].overallAvg)
+                                Math.round(team.overallAvg)
                               }
                             />
-                          ) : (
-                            <StarRatingComponent
-                              name={team._id}
-                              starCount={5}
-                              value = {0}
-                            />
-                          )}
                           <Link to={"/teamsGet/" + team._id}>
                             <Button color="primary">Display Team</Button>
                           </Link>
