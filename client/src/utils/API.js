@@ -26,5 +26,8 @@ export default {
   },
   findAvgRatingByTeam: function() {
     return axios.get("/api/teamsGet/ratingTeam/");
+  },
+  findAllTeamsWithAvgRatings: function() {
+    return axios.get("/api/teamsGet/ratingAvgTeam/");
   }
 };
