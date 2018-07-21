@@ -15,7 +15,7 @@ router
 router
   .route("/player/:_id")
   .get(GoalController.findPlayersByPlayerID)
-  .post(GoalController.updateRanking);
+  .post(GoalController.saveRanking);
 
 router
   .route("/player/:_id")
@@ -31,7 +31,7 @@ router
   .get(GoalController.findRatingByPlayerID);
 
 router
-  .route("/findAllTeamsWithAverageRating")
+  .route("/ratingAvgTeam")
   .get(GoalController.findAllTeamsWithAvgRatings);
 
 module.exports = router;

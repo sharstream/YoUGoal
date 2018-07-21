@@ -96,22 +96,26 @@ export default class Teams extends Component {
                           alt={team.name}
                         />
                         <CardBody>
-                          <CardTitle>{team.shortName}</CardTitle>
+                          <CardTitle>{team.shortName}
+                          </CardTitle>
                           {(team.overallAvg !== 0) ? (
                             <StarRatingComponent
-                                name={team._id}
-                                starCount={5}
-                                value = {
-                                  Math.round(team.overallAvg)
-                                }
-                              />
+                            name={team._id}
+                            starCount={5}
+                            value = {
+                              Math.round(team.overallAvg)
+                            }
+                            />
                           ) : (
                             <StarRatingComponent
-                                name={team._id}
-                                starCount={5}
-                                value = {0}
-                              />
+                            name={team._id}
+                            starCount={5}
+                            value = {0}
+                            />
                           )}
+                          <br/>
+                          Rating:{team.overallAvg}
+                          <br/>
                           <Link to={"/teamsGet/" + team._id}>
                             <Button color="primary">Display Team</Button>
                           </Link>

@@ -12,9 +12,6 @@ export default {
   findTeamByID: function(teamID) {
     return axios.get("/api/teamsGet/team/" + teamID);
   },
-  updateRanking: function (RankData) {
-    return axios.post("/api/teamsGet/player/" + RankData.playerID, RankData);
-  },
   saveRanking: function(RankData) {
     return axios.post("/api/teamsGet/player/" + RankData.playerID, RankData);
   },
@@ -26,5 +23,8 @@ export default {
   },
   findAvgRatingByTeam: function() {
     return axios.get("/api/teamsGet/ratingTeam/");
+  },
+  findAllTeamsWithAvgRatings: function() {
+    return axios.get("/api/teamsGet/ratingAvgTeam/");
   }
 };
