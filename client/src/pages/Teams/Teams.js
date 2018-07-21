@@ -97,7 +97,7 @@ export default class Teams extends Component {
                         />
                         <CardBody>
                           <CardTitle>{team.shortName}</CardTitle>
-                          {if(team.overallAvg !== 0) ? (
+                          {(team.overallAvg !== 0) ? (
                             <StarRatingComponent
                                 name={team._id}
                                 starCount={5}
