@@ -28,7 +28,7 @@ module.exports = {
 
               return newTeamObj
             })
-            res.send(aggregatedData)
+            res.send(JSON.stringify(aggregatedData))
           })
           .catch(err => res.status(422).json(err));
       })
