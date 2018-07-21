@@ -12,20 +12,47 @@ import {
 } from "reactstrap";
 
 export default class Teams extends Component {
-  state = {
-    teams: [],
-    players: [],
-    teamName: "",
-    overallRating: 0,
-    athletic: 0,
-    offence: 0,
-    defence: 0,
-    avgRatings: []
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      teams: [],
+      newTeams: [],
+      players: [],
+      teamName: "",
+      overallRating: 0,
+      athletic: 0,
+      offence: 0,
+      defence: 0,
+      avgRatings: []
+    };
+  }
 
   componentDidMount() {
     this.loadTeams();
-    this.LoadRatingAllTeams();
+    this.loadRatingAllTeams();
+  }
+
+  loadRatingTeamArray = () => {
+    let array = []
+    this.state.teams.forEach(function(team){
+      console.log("team: " + team + "\n")
+      this.state.avgRatings.forEach(function(rating){
+        console.log("rating: " + rating + "\n")
+        if(rating._id === team._id){
+          team = {
+            _id: team._id,
+            shortName: team.shortName,
+            teamImg: team.teamImg,
+            name: team.name,
+            overallAvg: rating.overallAvg
+          }
+          array.push(team)
+        }
+      })
+    })
+    console.log(array)
+    this.setState({ newTeams: array })
   }
 
   LoadRatingAllTeams = () => {
@@ -85,12 +112,12 @@ export default class Teams extends Component {
             <Grid >
               <Row>
                 {this.state.teams.map(team => {
+                  console.log(team._id)
                   return (
                     <Col style={{ margin: '15px' }}
 										md={2}
 										key={team.name}
 										name={team.name}
-										founded={team.founded}
 										url={team.teamImg}
                     >
                       <Card>
@@ -101,11 +128,21 @@ export default class Teams extends Component {
                         />
                         <CardBody>
                           <CardTitle>{team.shortName}</CardTitle>
-                          <StarRatingComponent
-                            name={team._id}
-                            starCount={5}
-                            value={this.state.overallRating}
-                          />
+                          {(this.state.avgRatings[1]._id === team._id) ? (
+                            <StarRatingComponent
+                              name={team._id}
+                              starCount={5}
+                              value = {
+                                Math.round(this.state.avgRatings[1].overallAvg)
+                              }
+                            />
+                          ) : (
+                            <StarRatingComponent
+                              name={team._id}
+                              starCount={5}
+                              value = {0}
+                            />
+                          )}
                           <Link to={"/teamsGet/" + team._id}>
                             <Button color="primary">Display Team</Button>
                           </Link>

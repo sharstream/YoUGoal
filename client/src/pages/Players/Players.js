@@ -71,17 +71,18 @@ export default class Players extends Component {
                         position={man.position}
                         img={man.plyrImg}
                       >
-                        <Link to={"/player/" + man._id}>
-                          <Card body inverse color="primary">
-                            <CardBody>
-                              <CardTitle>{man.name}</CardTitle>
-                            </CardBody>
-                            <Thumbnail alt={man.name} src={man.plyrImg} />
-                            <CardBody>
-                              <h6 className="card-title">Kit #: {man.jerseyNumber}</h6>
-                              <h6 className="card-title">Position: {man.postion}</h6>
-                              <h6 className="card-title">Nationality: {man.name1}</h6>
-                            </CardBody>
+
+                        <Card body inverse color="primary">
+                          <CardBody>
+                            <CardTitle>{man.name}</CardTitle>
+                          </CardBody>
+                          <Thumbnail alt={man.name} src={man.plyrImg} />
+                          <CardBody>
+                            <h6 className="card-title">Kit #: {man.jerseyNumber}</h6>
+                            <h6 className="card-title">Position: {man.postion}</h6>
+                            <h6 className="card-title">Nationality: {man.name1}</h6>
+                          </CardBody>
+                          <Link to={"/player/" + man._id}>
                             <Button
                               color="primary"
                               onClick={() => this.setState({modal: true})}
@@ -89,8 +90,8 @@ export default class Players extends Component {
                             >
                               Ratings
                             </Button>
-                          </Card>
-                        </Link>
+                          </Link>
+                        </Card>
                       </Col>
                     );
                   })}
