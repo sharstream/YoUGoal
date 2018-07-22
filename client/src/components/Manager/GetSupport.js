@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Modal, Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
+import {
+  InputGroup, InputGroupAddon, Input
+} from "reactstrap";
 
 export default class GetSupport extends Component {
   state = {
@@ -41,8 +44,11 @@ export default class GetSupport extends Component {
             <Modal.Body>
               <form>
                 <div className="form-group">
-                  <label htmlFor="recipient-name" className="col-form-label">Recipient:</label>
-                  <input type="text" className="form-control" id="recipient-name" />
+                  <InputGroup>
+                    <InputGroupAddon addonType="prepend">@</InputGroupAddon>
+                    <Input placeholder="username" />
+                  </InputGroup>
+                  <br />
                 </div>
                 <div className="form-group">
                   <label htmlFor="message-text" className="col-form-label">Message:</label>

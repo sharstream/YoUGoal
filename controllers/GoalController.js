@@ -12,6 +12,7 @@ module.exports = {
   },
 
   findAllTeamsWithAvgRatings: function (req, res) {
+    req.setTimeout(500000);
     db.teams
       .find()
       .then(dbModel => {

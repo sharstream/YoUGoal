@@ -1,4 +1,7 @@
 import React from "react";
+import {
+  FormGroup, Label, Input, FormText
+} from "reactstrap";
 // form modal sign up component
 export default class SignupForm extends React.Component {
 	render() {
@@ -22,6 +25,7 @@ export default class SignupForm extends React.Component {
 						className="form-control"
 					/>
 				</div>
+        <br />
 				<div>
 					<label className="control-label">Email Address</label>
 					<input
@@ -31,6 +35,14 @@ export default class SignupForm extends React.Component {
 						className="form-control"
 					/>
 				</div>
+        <br />
+        <FormGroup>
+          <Label for="exampleFile">File</Label>
+          <Input type="file" name="file" id="exampleFile" />
+          <FormText color="muted">
+            Upload your images or avatar.
+          </FormText>
+        </FormGroup>
 			</form>
 		);
 	}

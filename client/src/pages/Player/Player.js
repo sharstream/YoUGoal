@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Thumbnail } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
+import {
+  Badge
+} from 'reactstrap';
 
 import API from "../../utils/API";
 import { Col, Container } from "../../components/Grid";
@@ -56,14 +59,14 @@ export default withAuth(
     LoadRatingByPlayerID = _id => {
       API.findRatingByPlayerID(_id)
       .then(res => this.setState({ ratings: res.data}))
-      .then(res => console.log(this.state.ratings))
-      .then(res => this.setState({overallRating: this.state.ratings[0].overall}))
-      .then(res => this.setState({pace: this.state.ratings[0].pace}))
-      .then(res => this.setState({dribbling: this.state.ratings[0].dribbling}))
-      .then(res => this.setState({passing: this.state.ratings[0].passing}))
-      .then(res => this.setState({shooting: this.state.ratings[0].shooting}))
-      .then(res => this.setState({defense: this.state.ratings[0].defense}))
-      .then(res => this.setState({physicality: this.state.ratings[0].physicality}))
+      .then(() => console.log(this.state.ratings))
+      .then(() => this.setState({overallRating: this.state.ratings[0].overall}))
+      .then(() => this.setState({pace: this.state.ratings[0].pace}))
+      .then(() => this.setState({dribbling: this.state.ratings[0].dribbling}))
+      .then(() => this.setState({passing: this.state.ratings[0].passing}))
+      .then(() => this.setState({shooting: this.state.ratings[0].shooting}))
+      .then(() => this.setState({defense: this.state.ratings[0].defense}))
+      .then(() => this.setState({physicality: this.state.ratings[0].physicality}))
       .catch(err => console.log(err));
     }
 
@@ -217,7 +220,9 @@ export default withAuth(
                           <Thumbnail alt={man.name} src={man.plyrImg} />
                           <CardBody>
                             <h6 className="card-title">
-                              Kit #: {man.jerseyNumber}
+                              <p>
+                                Kit #: <Badge color="primary">{man.jerseyNumber}</Badge>
+                              </p>
                             </h6>
                             <p className="card-text">
                               Position: {man.postion}

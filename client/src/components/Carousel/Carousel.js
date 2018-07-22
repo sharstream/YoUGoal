@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Carousel } from "react-responsive-carousel";
 
-
 export default class ParentCarousel extends Component {
   render() {
     return (

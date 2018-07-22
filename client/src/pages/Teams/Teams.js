@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
-import { Breadcrumb, Grid, Row, Col, Panel, PageHeader } from "react-bootstrap";
+import {
+  Breadcrumb, Grid, Row, Col,
+  Panel, PageHeader, ButtonToolbar,
+  OverlayTrigger, Tooltip
+} from "react-bootstrap";
+import {
+  Badge, Pagination, PaginationItem, PaginationLink
+} from 'reactstrap';
 import StarRatingComponent from "../../components/StarRatingComponent";
 import {
   Card,
@@ -60,6 +67,12 @@ export default class Teams extends Component {
   };
 
   render() {
+    const tooltip = (
+      <Tooltip id="tooltip">
+        <strong>Overall rating</strong> Check this info.
+      </Tooltip>
+    );
+
     return (
       <div>
         <PageHeader>
@@ -114,10 +127,17 @@ export default class Teams extends Component {
                             />
                           )}
                           <br/>
-                          Rating:{team.overallAvg}
+                          <p>
+                            <Badge color="light">Rating: </Badge>
+                            <Badge color="warning">{team.overallAvg}</Badge>
+                          </p>
                           <br/>
                           <Link to={"/teamsGet/" + team._id}>
-                            <Button color="primary">Display Team</Button>
+                            <ButtonToolbar>
+                              <OverlayTrigger placement="left" overlay={tooltip}>
+                                <Button color="primary">Display Team</Button>
+                              </OverlayTrigger>
+                            </ButtonToolbar>
                           </Link>
                         </CardBody>
                       </Card>
@@ -128,6 +148,39 @@ export default class Teams extends Component {
             </Grid>
           )}
           <Panel.Footer>
+            <Pagination aria-label="Page navigation example">
+              <PaginationItem disabled>
+                <PaginationLink previous href="#" />
+              </PaginationItem>
+              <PaginationItem active>
+                <PaginationLink href="#">
+                  1
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">
+                  2
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">
+                  3
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">
+                  4
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">
+                  5
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink next href="#" />
+              </PaginationItem>
+            </Pagination>
             <Breadcrumb>
               <Breadcrumb.Item href="/">
                 Home
