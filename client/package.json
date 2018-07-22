@@ -2,19 +2,25 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3000/",
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@okta/okta-react": "^1.0.2",
     "@okta/okta-signin-widget": "^2.10.0",
     "axios": "^0.18.0",
+    "mdbreact": "^4.6.0",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
+    "react-bootstrap4-modal": "^1.4.0",
     "react-dom": "^16.4.1",
+    "react-fontawesome": "^1.6.1",
     "react-modal": "^3.5.1",
+    "react-responsive-carousel": "^3.1.41",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "react-star-rating-component": "^1.4.1"
+    "react-script": "^2.0.5",
+    "react-scripts": "1.0.14",
+    "react-star-rating-component": "^1.4.1",
+    "reactstrap": "^6.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

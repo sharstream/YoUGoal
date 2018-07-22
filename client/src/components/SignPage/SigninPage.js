@@ -42,13 +42,17 @@ export default withAuth(class SigninPage extends Component {
   }
 
   onSuccess = res => {
-    return this.props.auth.redirect({
-      sessionToken: res.session.token
-    });
+    if(res.status === "SUCCESS") {
+      // res.session.setCookieAndRedirect(redirectUrl);
+      return this.props.auth.redirect({
+        sessionToken: res.session.token
+      });
+    }
   }
 
   onError = err => {
     console.log('error logging in', err);
+    // If a recoverable error occurs, this error will be lost
   }
 
 	render() {
@@ -58,7 +62,7 @@ export default withAuth(class SigninPage extends Component {
         <Redirect to={{ pathname: "/" }}/>
       ) : (
         <div className="static-modal">
-          <Modal show={this.state.showModal} onHide={this.handleClose}>
+          <Modal show={this.state.showModal} animation={false} onHide={this.handleClose}>
             <Modal.Header>
               <Modal.Title>Login Page</Modal.Title>
             </Modal.Header>
@@ -70,7 +74,7 @@ export default withAuth(class SigninPage extends Component {
               />
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsStyle="primary" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
         </div>

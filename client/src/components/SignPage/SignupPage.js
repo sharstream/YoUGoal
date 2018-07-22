@@ -1,15 +1,18 @@
 import React from "react";
 import { default as SignupForm } from "./SignupForm";
 import { Modal, Button } from "react-bootstrap";
+import { Redirect } from "react-router-dom";
 
 export default class SignupPage extends React.Component {
 
   state = {
-    showModal: true
+    showModal: false,
+    redirect: ""
   };
 
-  handleClose = () => {
-    this.setState({ showModal: false });
+  handleClose = e => {
+    e.preventDefault();
+    this.setState({ showModal: true, redirect: "/" });
   }
 
   handleShow = () => {
@@ -18,20 +21,31 @@ export default class SignupPage extends React.Component {
 
 	render() {
 		return (
-			<div className="static-modal">
-        <Modal show={this.state.showModal} onHide={this.handleClose}>
-          <Modal.Header>
-            <Modal.Title>Join our community!</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <SignupForm />
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
-            <Button bsStyle="primary">Sign Up</Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
+      !this.state.showModal ? (
+        <div className="static-modal">
+          <Modal
+            show={!this.state.showModal}
+            animation ={this.state.showModal}
+            backdrop={!this.state.modal}
+          >
+            <Modal.Header>
+              <Modal.Title>Join our community!</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <SignupForm />
+            </Modal.Body>
+            <Modal.Footer>
+              <Button bsStyle="primary" onClick={e => this.handleClose(e)}>Close</Button>
+              <Button bsStyle="primary" onClick={e => this.handleClose(e)}>Sign up</Button>
+            </Modal.Footer>
+          </Modal>
+        </div>
+      ) : (
+        <Redirect
+          from="*"
+          to="/"
+        />
+      )
 		);
 	}
 }
