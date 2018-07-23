@@ -16,11 +16,11 @@ export default withAuth(class NavLinks extends Component {
     }
   }
 
-  async componentDidMount() {
+  async componentWillMount() {
     this.checkAuthentication;
   }
 
-  async componentDidUpdate() {
+  async componentWillUpdate() {
     this.checkAuthentication;
   }
 
@@ -36,14 +36,14 @@ export default withAuth(class NavLinks extends Component {
     return (
       !this.state.authenticated ? (
         <li className="nav-item">
-          <Link className="nav-link" to="/" onClick={this.logout}>
+          <Link className="nav-link" to="/logout" onClick={this.logout}>
             <span className="glyphicon glyphicon-log-out"></span>
               Logout
           </Link>
         </li>
       ) : (
         <li className="nav-item">
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/login">
             <span className="glyphicon glyphicon-log-in"></span>
               Login
           </Link>

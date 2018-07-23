@@ -34,7 +34,7 @@ module.exports = {
             .catch(err => res.status(422).json(err));
         })
         .catch(err => res.status(422).json(err));
-    }, 200);
+    }, 1);
   },
   findPlayersByTeamID: function (req, res) {
     console.log('find players by team id')
