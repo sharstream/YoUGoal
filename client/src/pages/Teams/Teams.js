@@ -42,7 +42,6 @@ export default class Teams extends Component {
   loadRatingAllTeams = () => {
     API.findAvgRatingByTeam()
     .then(res => {
-      console.log(res.data)
       this.setState({avgRatings: res.data})
     })
   }
@@ -57,7 +56,6 @@ export default class Teams extends Component {
     this.setState({
 			[name]: nextValue
     });
-    console.log({[name] : nextValue});
   }
 
   loadTeams = () => {
@@ -94,7 +92,6 @@ export default class Teams extends Component {
             <Grid >
               <Row>
                 {this.state.teams.map(team => {
-                  console.log(team._id)
                   return (
                     <Col style={{ margin: '15px' }}
 										md={2}

@@ -59,7 +59,6 @@ export default withAuth(
     LoadRatingByPlayerID = _id => {
       API.findRatingByPlayerID(_id)
       .then(res => this.setState({ ratings: res.data}))
-      .then(() => console.log(this.state.ratings))
       .then(() => this.setState({overallRating: this.state.ratings[0].overall}))
       .then(() => this.setState({pace: this.state.ratings[0].pace}))
       .then(() => this.setState({dribbling: this.state.ratings[0].dribbling}))
@@ -166,7 +165,6 @@ export default withAuth(
 
     saveRanking = event => {
       event.preventDefault();
-      console.log(event);
       API.saveRanking({
         playerID: this.props.match.params._id,
         playerName: this.state.manName,
@@ -183,7 +181,6 @@ export default withAuth(
         defense: this.state.defense,
         physicality: this.state.physicality
       }).catch(err => console.log(err));
-      console.log(this.state);
       this.setState({ modal: true });
     };
 
