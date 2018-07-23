@@ -125,7 +125,7 @@ export default class Teams extends Component {
                             {isNaN(round(team.overallAvg, 2)) ? (
                               <Badge color="warning">{0}</Badge>
                             ):(
-                              <Badge color="warning">{round(team.overallAvg, 2)}</Badge>
+                              <Badge color="warning">{round(team.overallAvg, 1)}</Badge>
                             )}
                           </p>
                           <br/>
