@@ -21,9 +21,6 @@ export default {
   findRatingByPlayerID: function(_id) {
     return axios.get("/api/teamsGet/ratingPlayer/" + _id);
   },
-  findAvgRatingByTeam: function() {
-    return axios.get("/api/teamsGet/ratingTeam/");
-  },
   findAllTeamsWithAvgRatings: function() {
     return axios.get("/api/teamsGet/ratingAvgTeam/");
   }

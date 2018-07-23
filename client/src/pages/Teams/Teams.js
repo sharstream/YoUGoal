@@ -18,6 +18,11 @@ import {
   Button
 } from "reactstrap";
 
+function round(value, precision) {
+  var multiplier = Math.pow(10, precision || 0);
+  return Math.round(value * multiplier) / multiplier;
+}
+
 export default class Teams extends Component {
   constructor(props) {
     super(props);
@@ -29,21 +34,12 @@ export default class Teams extends Component {
       overallRating: 0,
       athletic: 0,
       offence: 0,
-      defence: 0,
-      avgRatings: []
+      defence: 0
     };
   }
 
   componentDidMount() {
     this.loadTeams();
-    this.loadRatingAllTeams();
-  }
-
-  loadRatingAllTeams = () => {
-    API.findAvgRatingByTeam()
-    .then(res => {
-      this.setState({avgRatings: res.data})
-    })
   }
 
   onOverallStarClick(nextValue, prevValue, name) {
@@ -113,7 +109,7 @@ export default class Teams extends Component {
                             name={team._id}
                             starCount={5}
                             value = {
-                              Math.round(team.overallAvg)
+                              round(team.overallAvg, 2)
                             }
                             />
                           ) : (
@@ -126,7 +122,11 @@ export default class Teams extends Component {
                           <br/>
                           <p>
                             <Badge color="light">Rating: </Badge>
-                            <Badge color="warning">{team.overallAvg}</Badge>
+                            {isNaN(round(team.overallAvg, 2)) ? (
+                              <Badge color="warning">{0}</Badge>
+                            ):(
+                              <Badge color="warning">{round(team.overallAvg, 2)}</Badge>
+                            )}
                           </p>
                           <br/>
                           <Link to={"/teamsGet/" + team._id}>
