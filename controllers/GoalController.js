@@ -1,6 +1,7 @@
 const db = require("../models");
 const axios = require('axios')
 
+const baseUrl = process.env.baseURL || "http://localhost:3001";
 // Defining methods for the booksController
 module.exports = {
   findAllTeams: function (req, res) {
@@ -15,7 +16,8 @@ module.exports = {
       db.teams
         .find()
         .then(dbModel => {
-          axios.get('http://localhost:3001/api/teamsGet/ratingTeam')
+          axios.get(baseUrl + "/api/teamsGet/ratingTeam")
+          // axios.get('http://localhost:3001/api/teamsGet/ratingTeam')
             .then(avgRatings => {
               const aggregatedData = dbModel.map(team => {
                 const newTeamObj = team
