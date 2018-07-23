@@ -12,31 +12,31 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
 
-  findAllTeamsWithAvgRatings: function (req, res) {
-    setTimeout(() => {
-      db.teams
-        .find()
-        .then(dbModel => {
-          axios.get(baseUrl + "/api/teamsGet/ratingTeam")
-          // axios.get('http://localhost:3001/api/teamsGet/ratingTeam')
-            .then(avgRatings => {
-              const aggregatedData = dbModel.map(team => {
-                const newTeamObj = team
-                avgRatings.data.forEach(rating => {
-                  if (rating._id === team._id) {
-                    newTeamObj.overallAvg = rating.overallAvg;
-                  }
-                });
+  // findAllTeamsWithAvgRatings: function (req, res) {
+  //   setTimeout(() => {
+  //     db.teams
+  //       .find()
+  //       .then(dbModel => {
+  //         axios.get(baseUrl + "/api/teamsGet/ratingTeam")
+  //         // axios.get('http://localhost:3001/api/teamsGet/ratingTeam')
+  //           .then(avgRatings => {
+  //             const aggregatedData = dbModel.map(team => {
+  //               const newTeamObj = team
+  //               avgRatings.data.forEach(rating => {
+  //                 if (rating._id === team._id) {
+  //                   newTeamObj.overallAvg = rating.overallAvg;
+  //                 }
+  //               });
 
-                return newTeamObj
-              })
-              res.send(stringify(aggregatedData))
-            })
-            .catch(err => res.status(422).json(err));
-        })
-        .catch(err => res.status(422).json(err));
-    }, 1);
-  },
+  //               return newTeamObj
+  //             })
+  //             res.send(stringify(aggregatedData))
+  //           })
+  //           .catch(err => res.status(422).json(err));
+  //       })
+  //       .catch(err => res.status(422).json(err));
+  //   }, 1);
+  // },
   findPlayersByTeamID: function (req, res) {
     db.players
       .find({

@@ -55,7 +55,7 @@ export default class Teams extends Component {
   }
 
   loadTeams = () => {
-    API.findAllTeamsWithAvgRatings()
+    API.getTeams()
       .then(res => this.setState({ teams: res.data }))
       .catch(err => console.log(err));
   };
@@ -104,29 +104,14 @@ export default class Teams extends Component {
                         <CardBody>
                           <CardTitle>{team.shortName}
                           </CardTitle>
-                          {(team.overallAvg !== 0) ? (
                             <StarRatingComponent
                             name={team._id}
                             starCount={5}
-                            value = {
-                              round(team.overallAvg, 2)
-                            }
+                            value = {3}
                             />
-                          ) : (
-                            <StarRatingComponent
-                            name={team._id}
-                            starCount={5}
-                            value = {0}
-                            />
-                          )}
                           <br/>
                           <p>
-                            <Badge color="light">Rating: </Badge>
-                            {isNaN(round(team.overallAvg, 2)) ? (
-                              <Badge color="warning">{0}</Badge>
-                            ):(
-                              <Badge color="warning">{round(team.overallAvg, 1)}</Badge>
-                            )}
+                            <Badge color="warning">{3}</Badge>
                           </p>
                           <br/>
                           <Link to={"/teamsGet/" + team._id}>
