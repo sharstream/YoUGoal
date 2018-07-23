@@ -1,5 +1,6 @@
 const db = require("../models");
 const axios = require('axios')
+const stringify = require('json-stringify-safe');
 
 const baseUrl = process.env.baseURL || "http://localhost:3001";
 // Defining methods for the booksController
@@ -12,7 +13,6 @@ module.exports = {
   },
 
   findAllTeamsWithAvgRatings: function (req, res) {
-    console.log(baseUrl)
     setTimeout(() => {
       db.teams
         .find()
@@ -30,7 +30,7 @@ module.exports = {
 
                 return newTeamObj
               })
-              res.send(JSON.stringify(aggregatedData))
+              res.send(stringify(aggregatedData))
             })
             .catch(err => res.status(422).json(err));
         })
