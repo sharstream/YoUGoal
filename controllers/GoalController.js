@@ -12,6 +12,7 @@ module.exports = {
   },
 
   findAllTeamsWithAvgRatings: function (req, res) {
+    console.log(baseUrl)
     setTimeout(() => {
       db.teams
         .find()
