@@ -111,6 +111,7 @@ export default class Teams extends Component {
                             />
                           <br/>
                           <p>
+                            <Badge color="light">Rating: </Badge>
                             <Badge color="warning">{3}</Badge>
                           </p>
                           <br/>
