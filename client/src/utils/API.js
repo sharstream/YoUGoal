@@ -20,8 +20,8 @@ export default {
   },
   findRatingByPlayerID: function(_id) {
     return axios.get("/api/teamsGet/ratingPlayer/" + _id);
-  },
-  findAllTeamsWithAvgRatings: function() {
-    return axios.get("/api/teamsGet/ratingAvgTeam/");
   }
+  // findAllTeamsWithAvgRatings: function() {
+  //   return axios.get("/api/teamsGet/ratingAvgTeam/");
+  // }
 };
