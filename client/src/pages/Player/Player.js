@@ -244,75 +244,75 @@ export default withAuth(
                           </button>
                           <Collapse isOpen={this.state.collapse}>
                             <CardBody>
-                                  <h5>
-                                    <Badge color="light" pill>Overall:</Badge>
-                                  </h5>
-                                  <StarRatingComponent
-                                    name="overall"
-                                    starCount={5}
-                                    value={this.state.overallRating}
-                                    onStarClick={this.onOverallStarClick.bind(this)}
-                                  />
-                                  <br />
-                                  <h5>
-                                    <Badge color="light" pill>Pace:</Badge>
-                                  </h5>
-                                  <StarRatingComponent
-                                    name="pace"
-                                    starCount={5}
-                                    value={this.state.pace}
-                                    onStarClick={this.onPaceStarClick.bind(this)}
-                                  />
-                                  <br />
-                                  <h5>
-                                    <Badge color="light" pill>Dribbling:</Badge>
-                                  </h5>
-                                  <StarRatingComponent
-                                    name="dribbling"
-                                    starCount={5}
-                                    value={this.state.dribbling}
-                                    onStarClick={this.onDribblingStarClick.bind(this)}
-                                  />
-                                  <br />
-                                  <h5>
-                                    <Badge color="light" pill>Passing:</Badge>
-                                  </h5>
-                                  <StarRatingComponent
-                                    name="passing"
-                                    starCount={5}
-                                    value={this.state.passing}
-                                    onStarClick={this.onPassingStarClick.bind(this)}
-                                  />
-                                  <br />
-                                  <h5>
-                                    <Badge color="light" pill>Shooting:</Badge>
-                                  </h5>
-                                  <StarRatingComponent
-                                    name="shooting"
-                                    starCount={5}
-                                    value={this.state.shooting}
-                                    onStarClick={this.onShootingStarClick.bind(this)}
-                                  />
-                                  <br />
-                                  <h5>
-                                    <Badge color="light" pill>Defense:</Badge>
-                                  </h5>
-                                  <StarRatingComponent
-                                    name="defense"
-                                    starCount={5}
-                                    value={this.state.defense}
-                                    onStarClick={this.onDefenseStarClick.bind(this)}
-                                  />
-                                  <br />
-                                  <h5>
-                                    <Badge color="light" pill>Physical:</Badge>
-                                  </h5>
-                                  <StarRatingComponent
-                                    name="physicality"
-                                    starCount={5}
-                                    value={this.state.physicality}
-                                    onStarClick={this.onPhysicalityStarClick.bind(this)}
-                                  />
+                              <h5>
+                                <Badge color="light" pill>Overall:</Badge>
+                              </h5>
+                              <StarRatingComponent
+                                name="overall"
+                                starCount={5}
+                                value={this.state.overallRating}
+                                onStarClick={this.onOverallStarClick.bind(this)}
+                              />
+                              <br />
+                              <h5>
+                                <Badge color="light" pill>Pace:</Badge>
+                              </h5>
+                              <StarRatingComponent
+                                name="pace"
+                                starCount={5}
+                                value={this.state.pace}
+                                onStarClick={this.onPaceStarClick.bind(this)}
+                              />
+                              <br />
+                              <h5>
+                                <Badge color="light" pill>Dribbling:</Badge>
+                              </h5>
+                              <StarRatingComponent
+                                name="dribbling"
+                                starCount={5}
+                                value={this.state.dribbling}
+                                onStarClick={this.onDribblingStarClick.bind(this)}
+                              />
+                              <br />
+                              <h5>
+                                <Badge color="light" pill>Passing:</Badge>
+                              </h5>
+                              <StarRatingComponent
+                                name="passing"
+                                starCount={5}
+                                value={this.state.passing}
+                                onStarClick={this.onPassingStarClick.bind(this)}
+                              />
+                              <br />
+                              <h5>
+                                <Badge color="light" pill>Shooting:</Badge>
+                              </h5>
+                              <StarRatingComponent
+                                name="shooting"
+                                starCount={5}
+                                value={this.state.shooting}
+                                onStarClick={this.onShootingStarClick.bind(this)}
+                              />
+                              <br />
+                              <h5>
+                                <Badge color="light" pill>Defense:</Badge>
+                              </h5>
+                              <StarRatingComponent
+                                name="defense"
+                                starCount={5}
+                                value={this.state.defense}
+                                onStarClick={this.onDefenseStarClick.bind(this)}
+                              />
+                              <br />
+                              <h5>
+                                <Badge color="light" pill>Physical:</Badge>
+                              </h5>
+                              <StarRatingComponent
+                                name="physicality"
+                                starCount={5}
+                                value={this.state.physicality}
+                                onStarClick={this.onPhysicalityStarClick.bind(this)}
+                              />
                               <br />
                             </CardBody>
                             <CardFooter className="text-muted" />
