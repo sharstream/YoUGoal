@@ -40,6 +40,9 @@ export default class GetSupport extends Component {
           >
             <Modal.Header>
               <Modal.Title>New Message to @{}</Modal.Title>
+              <button type="button" className="close" aria-label="Close" onClick={e => this.handleClose(e)}>
+                <span aria-hidden="true">&times;</span>
+              </button>
             </Modal.Header>
             <Modal.Body>
               <form>

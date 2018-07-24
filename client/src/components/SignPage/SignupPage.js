@@ -30,6 +30,9 @@ export default class SignupPage extends React.Component {
           >
             <Modal.Header>
               <Modal.Title>Join our community!</Modal.Title>
+              <button type="button" className="close" aria-label="Close" onClick={e => this.handleClose(e)}>
+                <span aria-hidden="true">&times;</span>
+              </button>
             </Modal.Header>
             <Modal.Body>
               <SignupForm />

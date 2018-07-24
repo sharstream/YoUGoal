@@ -65,6 +65,9 @@ export default withAuth(class SigninPage extends Component {
           <Modal show={this.state.showModal} animation={false} onHide={this.handleClose}>
             <Modal.Header>
               <Modal.Title>Login Page</Modal.Title>
+              <button type="button" className="close" aria-label="Close" onClick={e => this.handleClose(e)}>
+                <span aria-hidden="true">&times;</span>
+              </button>
             </Modal.Header>
             <Modal.Body>
               <SigninWidget

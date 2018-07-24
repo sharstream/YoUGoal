@@ -30,7 +30,6 @@ export default withAuth(class NavLinks extends Component {
 
   logout = async() => {
     this.props.auth.logout('/');
-    console.log(this.state);
   }
   render(){
     return (
