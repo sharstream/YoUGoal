@@ -6,16 +6,11 @@ import {
   Panel, PageHeader, ButtonToolbar,
   OverlayTrigger, Tooltip
 } from "react-bootstrap";
-import {
-  Badge, Pagination, PaginationItem, PaginationLink
-} from 'reactstrap';
+
 import StarRatingComponent from "../../components/StarRatingComponent";
 import {
-  Card,
-  CardImg,
-  CardBody,
-  CardTitle,
-  Button
+  Card, CardImg, CardBody, CardTitle, Button,
+  Badge, Pagination, PaginationItem, PaginationLink
 } from "reactstrap";
 
 function round(value, precision) {

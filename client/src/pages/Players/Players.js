@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 import API from "../../utils/API";
 import { Breadcrumb, Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
 import {
-  Card,
-  Button,
-  CardBody,
-  CardTitle,
+  Card, Button, CardBody, CardTitle,
+  Badge, Pagination, PaginationItem, PaginationLink
 } from 'reactstrap';
 
 export default class Players extends Component {
@@ -99,6 +97,39 @@ export default class Players extends Component {
 						  </Grid>
             )}
           <Panel.Footer>
+            <Pagination aria-label="Page navigation example">
+              <PaginationItem disabled>
+                <PaginationLink previous href="#" />
+              </PaginationItem>
+              <PaginationItem active>
+                <PaginationLink href="#">
+                  1
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">
+                  2
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">
+                  3
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">
+                  4
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="#">
+                  5
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink next href="#" />
+              </PaginationItem>
+            </Pagination>
             <Breadcrumb>
               <Breadcrumb.Item href="/">
                 Home
