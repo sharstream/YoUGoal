@@ -5,7 +5,7 @@ import API from "../../utils/API";
 import { Breadcrumb, Grid, Row, Col, Thumbnail, Panel, PageHeader } from "react-bootstrap";
 import {
   Card, Button, CardBody, CardTitle,
-  Badge, Pagination, PaginationItem, PaginationLink
+  Pagination, PaginationItem, PaginationLink
 } from 'reactstrap';
 
 export default class Players extends Component {

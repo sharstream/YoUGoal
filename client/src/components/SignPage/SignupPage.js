@@ -2,6 +2,7 @@ import React from "react";
 import { default as SignupForm } from "./SignupForm";
 import { Modal, Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
+import Stepper from "./Stepper";
 
 export default class SignupPage extends React.Component {
 
