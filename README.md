@@ -8,7 +8,6 @@
 
 ## API
    - ReactJS framework
-   - AWS S3
    - MongoDB database
    - ODM Mongoose
    - Express/NodeJS
@@ -18,8 +17,11 @@
   - Matt Bruder
   - David Perez
 
-## Overview
+## Overview: https://yougoal.herokuapp.com
 Overview of the application
+## Sign In to the Heroku Application using:
+## username: memes4all89@gmail.com  
+## password: AgentP06
 ![Overview]
 ![image alternative text](https://i.imgur.com/u4DOHfa.png)
 
