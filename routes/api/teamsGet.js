@@ -18,11 +18,6 @@ router
   .post(GoalController.saveRanking);
 
 router
-  .route("/player/:_id")
-  .get(GoalController.findPlayersByPlayerID)
-  .post(GoalController.saveRanking);
-
-router
   .route("/team/:teamID")
   .get(GoalController.findTeamByID);
 
