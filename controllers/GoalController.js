@@ -3,7 +3,7 @@ const axios = require('axios')
 const stringify = require('json-stringify-safe');
 
 const baseUrl = process.env.baseURL || "http://localhost:3001";
-// Defining methods for the booksController
+// Defining methods for the GoalController
 module.exports = {
   findAllTeams: function (req, res) {
     db.teams
